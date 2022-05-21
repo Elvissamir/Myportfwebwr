@@ -12,9 +12,15 @@ const Footer = () => {
                             <p className='ml-2'>elvissam.software@gmail.com</p>
                         </div>
                         <div>
-                            <p className="">Myportfweb icon</p>
-                            <p>my github icon</p>
-                            <p>My linkedin icon</p>
+                            <a href="">
+                                <FontAwesomeIcon icon={{prefix: 'fas', iconName: 'globe'}} />
+                            </a>
+                            <a href="">
+                                <FontAwesomeIcon icon={{prefix: 'fab', iconName: 'github'}} />
+                            </a>
+                            <a href="">
+                                <FontAwesomeIcon icon={{prefix: 'fab', iconName: 'linkedin'}} />
+                            </a>
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>
