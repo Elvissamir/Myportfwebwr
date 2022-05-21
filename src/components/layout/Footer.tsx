@@ -11,14 +11,14 @@ const Footer = () => {
                             <FontAwesomeIcon icon='envelope' />
                             <p className='ml-2'>elvissam.software@gmail.com</p>
                         </div>
-                        <div>
+                        <div className='flex justify-center text-3xl'>
                             <a href="">
                                 <FontAwesomeIcon icon={{prefix: 'fas', iconName: 'globe'}} />
                             </a>
-                            <a href="">
+                            <a href="" className='ml-3'>
                                 <FontAwesomeIcon icon={{prefix: 'fab', iconName: 'github'}} />
                             </a>
-                            <a href="">
+                            <a href="" className='ml-3'>
                                 <FontAwesomeIcon icon={{prefix: 'fab', iconName: 'linkedin'}} />
                             </a>
                         </div>
