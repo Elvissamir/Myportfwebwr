@@ -9,7 +9,7 @@ const Footer = () => {
                             <p>elvissam.software@gmail.com</p>
                         </div>
                         <div className="footer-networks">
-                            <p>Myportfweb icon</p>
+                            <p className="">Myportfweb icon</p>
                             <p>my github icon</p>
                             <p>My linkedin icon</p>
                         </div>
