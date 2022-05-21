@@ -1,7 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Footer = () => {
     return (
         <div className="footer-wrapper">
             <footer className="footer">
+                <div>
+                    <FontAwesomeIcon icon='coffee' />
+                </div>
                 <div className="footer-content">
                     <p>My Social Networks: </p>
                     <div className="footer-contact">
