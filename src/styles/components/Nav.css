@@ -1,5 +1,13 @@
 .nav {
-    @apply fixed z-[2000] w-full h-[90%] flex
+    @apply fixed z-[2000] w-full h-[90%] flex transition-all transform
+}
+
+.nav-hide {
+    @apply -translate-x-full
+}
+
+.nav-active {
+    @apply translate-x-0
 }
 
 .nav-content-wrapper {

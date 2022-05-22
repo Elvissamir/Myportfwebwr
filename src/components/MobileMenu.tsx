@@ -1,10 +1,14 @@
 import links from '../core/links';
 
-const MobileMenu = () => {
+interface MobileMenuProps {
+    onToggle: () => void
+}
+
+const MobileMenu = ({ onToggle }: MobileMenuProps) => {
     return ( 
         <div className="mobile-menu brand-bg brand-letter-light">
             <div className="mobile-content">
-                <button className="menu-btn">Menu</button>
+                <button onClick={onToggle} className="menu-btn">Menu</button>
                 <div className="menu-line">|</div>
                 <a 
                     href={links.github} 

@@ -3,9 +3,13 @@ import links from '../core/links';
 import sections from '../core/sections';
 import NavLink from './NavLink';
 
-const Nav = () => {
+interface NavProps {
+    show: boolean
+}
+
+const Nav = ({ show }: NavProps) => {
     return (
-        <nav className="nav brand-bg">
+        <nav className={show? 'nav-active nav brand-bg':'nav-hide nav brand-bg'}>
             <div className="nav-content-wrapper custom-padding">
                 <div className="nav-github-container">
                     <a href={links.github} className='nav-github-link'>
