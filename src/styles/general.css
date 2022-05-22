@@ -2,11 +2,11 @@
     @apply bg-gray-800;
 }
 
-.brand-light-letter {
+.brand-letter-light {
     @apply text-white;
 }
 
-.brand-dark-letter {
+.brand-letter-dark {
     @apply text-gray-800;
 }
 
