@@ -11,7 +11,7 @@ const NavLink = ({sectionsInfo}: NavLinkProps) => {
     return ( 
         <>
             {sectionsInfo.map(sectionInfo =>     
-                <a className="nav-link" href={sectionInfo.id}>
+                <a className="nav-link gradient-text" href={sectionInfo.id}>
                     {sectionInfo.name}
                 </a>
             )}

@@ -25,3 +25,18 @@
 .custom-padding {
     padding: var(--box-padding);
 }
+
+.gradient-text {
+    background: linear-gradient(to bottom right, #ffffff, #ffffff);
+    background-clip: text;
+    border-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+    border-image-slice: 1;
+    color: transparent;  
+    display: inline-block;
+}
+
+.gradient-text:hover {
+    background: linear-gradient(to bottom right, var(--brand-color-a), var(--brand-color-b));
+    background-clip: text;
+    border-image: linear-gradient(to bottom right, var(--brand-color-a), var(--brand-color-b));
+}
