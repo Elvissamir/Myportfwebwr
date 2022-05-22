@@ -13,7 +13,7 @@ const Nav = () => {
                         <p className='nav-github-text'>Check my Github</p>
                     </a>
                 </div>    
-                <div className='flex flex-col justify-center items-center'>
+                <div className='nav-links-wrapper'>
                     <NavLink sectionsInfo={sections} />
                 </div>
             </div>
