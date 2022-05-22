@@ -5,7 +5,9 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 const brandIcons = [faLinkedin, faGithub]
 const solidIcons = [faEnvelope, faRocket, faCogs, faGlobe]
 
-export default function () {
+const setupIcons = () => {
     solidIcons.forEach(icon => library.add(icon))
     brandIcons.forEach(icon => library.add(icon))
 }
+
+export default setupIcons

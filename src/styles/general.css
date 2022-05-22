@@ -1,0 +1,27 @@
+.brand-bg {
+    @apply bg-gray-800;
+}
+
+.brand-light-letter {
+    @apply text-white;
+}
+
+.brand-dark-letter {
+    @apply text-gray-800;
+}
+
+.brand-shadow {
+    box-shadow: var(--shadow-default);
+}
+
+.brand-shadow-active {
+    box-shadow: var(--shadow-active);
+}
+
+.custom-border {
+    border-radius: var(--border-radius);
+}
+
+.custom-padding {
+    padding: var(--box-padding);
+}

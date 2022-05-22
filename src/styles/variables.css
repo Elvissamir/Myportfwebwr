@@ -1,0 +1,10 @@
+/* VARIABLES */
+:root {
+    --brand-color-a: #29b3eb;
+    --brand-color-b: #21edba;
+    --brand-color-c: rgb(156, 163, 175);
+    --shadow-default: 0 0 22px rgba(189, 187, 197, 0.8);
+    --shadow-active: 0 0 22px rgba(33, 237, 186, 1);
+    --border-radius: 1rem;
+    --box-padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}

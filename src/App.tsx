@@ -1,4 +1,3 @@
-import './App.css';
 import Nav from './components/layout/Nav'
 import Footer from './components/layout/Footer'
 import Routes from './components/Routes';
