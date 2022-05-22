@@ -1,0 +1,46 @@
+.nav {
+    @apply fixed z-[2000] w-full h-full flex
+}
+
+.nav-content-wrapper {
+    @apply flex flex-col justify-center w-6/12 mx-auto 
+}
+
+.nav-github-link-container {
+    @apply flex flex-col justify-center items-center
+}
+
+.nav-github-link {
+    @apply flex flex-col justify-center w-[180px] mx-auto
+}
+
+.nav-github-icon {
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #ffffff, #ffffff);
+    @apply text-5xl text-gray-800 text-center mx-auto
+}
+
+.nav-github-text {
+    background: linear-gradient(to bottom right, #ffffff, #ffffff);
+    background-clip: text;
+    color: transparent;  
+    display: inline-block;
+    border-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+    border-image-slice: 1;
+
+    margin: auto;
+    @apply text-lg font-black
+}
+
+.nav-github-container:hover .nav-github-icon {
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, var(--brand-color-a), var(--brand-color-b));
+}
+
+.nav-github-container:hover .nav-github-text {
+    background: linear-gradient(to bottom right, var(--brand-color-a), var(--brand-color-b));
+    background-clip: text;
+    color: transparent;  
+    border-image: linear-gradient(to bottom right, var(--brand-color-a), var(--brand-color-b));
+    border-image-slice: 1;
+}
