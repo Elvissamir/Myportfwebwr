@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import links from '../core/links';
 import sections from '../core/sections';
 import NavLink from './NavLink';
+import NavIcon from './NavIcon';
 
 interface NavProps {
     show: boolean
@@ -12,10 +11,7 @@ const Nav = ({ show }: NavProps) => {
         <nav className={show? 'nav-active nav brand-bg':'nav-hide nav brand-bg'}>
             <div className="nav-content-wrapper">
                 <div className="nav-github-container">
-                    <a href={links.github} className='nav-github-link'>
-                        <FontAwesomeIcon className='nav-github-icon' icon={{ prefix: 'fab', iconName: 'github' }} />    
-                        <p className='nav-github-text'>Check my Github</p>
-                    </a>
+                    <NavIcon />
                 </div>    
                 <div className='nav-links-wrapper'>
                     <NavLink sectionsInfo={sections} />
