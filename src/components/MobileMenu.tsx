@@ -1,15 +1,16 @@
 import links from '../core/links';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import MobileBtn from './MobileBtn';
 
 interface MobileMenuProps {
     onToggle: () => void
 }
 
 const MobileMenu = ({ onToggle }: MobileMenuProps) => {
-    return ( 
+    return (
         <div className="mobile-menu brand-bg brand-letter-light">
             <div className="mobile-content">
-                <button onClick={onToggle} className="menu-btn">Menu</button>
+                <MobileBtn onToggle={onToggle} />
                 <div className="menu-line">|</div>
                 <a 
                     href={links.github} 
