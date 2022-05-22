@@ -13,7 +13,7 @@ const Home = () => {
     return ( 
         <div className=' w-full min-h-screen relative'>
             <Nav show={showNav} />
-            <MobileMenu onToggle={toggleNav} />
+            <MobileMenu onToggle={toggleNav} showingNav={showNav} />
         </div> 
     );
 }

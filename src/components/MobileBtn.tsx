@@ -1,15 +1,16 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import MobileBtnIcon from './MobileBtnIcon';
 
 interface MobileBtnProps {
-    onToggle: () => void
+    onToggle: () => void,
+    showingNav: boolean
 }
 
-const MobileBtn = ({ onToggle }: MobileBtnProps) => {
+const MobileBtn = ({ onToggle, showingNav }: MobileBtnProps) => {
     return ( 
         <>
             <button onClick={onToggle} className="menu-btn">
                 <p className='menu-btn-label'>Menu</p>
-                <FontAwesomeIcon className='menu-btn-icon' icon='bars' />
+                <MobileBtnIcon showingNav={showingNav} />
             </button>
         </>
     );

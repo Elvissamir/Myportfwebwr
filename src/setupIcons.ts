@@ -1,8 +1,8 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faBars, faCogs, faRocket, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBars, faCogs, faRocket, faGlobe, faClose } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
-const solidIcons = [faEnvelope, faBars, faRocket, faCogs, faGlobe]
+const solidIcons = [faEnvelope, faBars, faRocket, faCogs, faGlobe, faClose]
 const brandIcons = [faLinkedin, faGithub, faGithubSquare]
 
 const setupIcons = () => {
