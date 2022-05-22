@@ -1,5 +1,5 @@
 .nav {
-    @apply fixed z-[2000] w-full h-full flex
+    @apply fixed z-[2000] w-full h-[90%] flex
 }
 
 .nav-content-wrapper {

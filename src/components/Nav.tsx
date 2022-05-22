@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import links from '../../core/links';
-import sections from '../../core/sections';
-import NavLink from '../NavLink';
+import links from '../core/links';
+import sections from '../core/sections';
+import NavLink from './NavLink';
 
 const Nav = () => {
     return (

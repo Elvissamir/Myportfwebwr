@@ -1,0 +1,19 @@
+.mobile-menu {
+    @apply flex flex-col justify-center fixed w-full h-[10%] bottom-0 border-t border-white
+}
+
+.mobile-content {
+    @apply flex justify-around p-4 items-center
+}
+
+.menu-btn {
+    @apply font-black
+}
+
+.menu-line {
+    @apply font-black text-xl
+}
+
+.menu-github {
+    @apply font-black
+}
