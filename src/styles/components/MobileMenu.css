@@ -15,5 +15,9 @@
 }
 
 .menu-github {
-    @apply font-black
+    @apply flex justify-center items-center font-black
+}
+
+.menu-github-icon {
+    @apply font-black text-4xl ml-1
 }

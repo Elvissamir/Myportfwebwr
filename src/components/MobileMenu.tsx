@@ -1,4 +1,5 @@
 import links from '../core/links';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface MobileMenuProps {
     onToggle: () => void
@@ -14,7 +15,10 @@ const MobileMenu = ({ onToggle }: MobileMenuProps) => {
                     href={links.github} 
                     target='_blank' 
                     rel="noreferrer" 
-                    className="menu-github">Github</a>
+                    className="menu-github">
+
+                    <FontAwesomeIcon className='menu-github-icon' icon={{ prefix: 'fab', iconName: 'github-square' }} />
+                </a>
             </div>
         </div>
     );

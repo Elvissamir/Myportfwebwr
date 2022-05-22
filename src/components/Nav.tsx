@@ -10,7 +10,7 @@ interface NavProps {
 const Nav = ({ show }: NavProps) => {
     return (
         <nav className={show? 'nav-active nav brand-bg':'nav-hide nav brand-bg'}>
-            <div className="nav-content-wrapper custom-padding">
+            <div className="nav-content-wrapper">
                 <div className="nav-github-container">
                     <a href={links.github} className='nav-github-link'>
                         <FontAwesomeIcon className='nav-github-icon' icon={{ prefix: 'fab', iconName: 'github' }} />    
