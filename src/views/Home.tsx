@@ -1,10 +1,18 @@
 import { useState } from 'react';
 import Nav from '../components/Nav';
 import MobileMenu from '../components/MobileMenu';
+import useWindowSize from '../hooks/useWindowSize';
+import { useEffect } from 'react';
 
 const Home = () => {
     const [showMobile, setShowMobile] = useState(true)
     const [showNav, setShowNav] = useState(false)
+    const windowWidth = useWindowSize()
+
+    useEffect(() => {
+        if (windowWidth >= 1024)
+            setShowNav(true)
+    }, [windowWidth])
 
     const toggleNav = () => {
         setShowNav(!showNav)
