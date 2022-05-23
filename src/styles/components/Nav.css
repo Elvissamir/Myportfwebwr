@@ -1,5 +1,5 @@
 .nav {
-    @apply fixed z-[2000] w-full h-[90%] flex transition-all transform
+    @apply fixed z-[2000] w-full h-[90%] flex transition-all transform 2xl:w-2/12
 }
 
 .nav-hide {
@@ -11,7 +11,7 @@
 }
 
 .nav-content-wrapper {
-    @apply flex flex-col justify-center w-6/12 mx-auto 
+    @apply flex flex-col justify-center w-8/12 mx-auto 
 }
 
 .nav-github-link-container {

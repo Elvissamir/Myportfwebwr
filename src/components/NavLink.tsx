@@ -15,7 +15,10 @@ const NavLink = ({sectionsInfo}: NavLinkProps) => {
                     className="nav-link gradient-text" 
                     href={sectionInfo.id}
                     key={sectionInfo.name}>
-                        {sectionInfo.name}
+                        <div>
+                            {sectionInfo.name}
+                        </div>
+                        <div className="nav-link-line"></div>
                 </a>
             )}
         </>
