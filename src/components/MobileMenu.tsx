@@ -12,9 +12,13 @@ const MobileMenu = ({ onToggle, showingNav, show }: MobileMenuProps) => {
         return (
             <div className="mobile-menu brand-bg brand-letter-light">
                 <div className="mobile-content">
-                    <MobileBtn onToggle={onToggle} showingNav={showingNav} />
+                    <div className='mobile-left-side'>
+                        <MobileBtn onToggle={onToggle} showingNav={showingNav} />
+                    </div>
                     <div className="menu-line">|</div>
-                    <MobileLink />
+                    <div className='mobile-right-side'>
+                        <MobileLink />
+                    </div>
                 </div>
             </div>
         );

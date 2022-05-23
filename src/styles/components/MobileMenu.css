@@ -6,12 +6,20 @@
     @apply flex justify-around p-4 items-center
 }
 
+.mobile-left-side {
+    @apply flex w-6/12 justify-center
+}
+
+.mobile-right-side {
+    @apply flex w-6/12 justify-center
+}
+
 .menu-btn {
     @apply flex items-center font-black w-[80px]
 }
 
 .menu-btn-icon {
-    @apply ml-2 text-xl
+    @apply ml-2 text-2xl
 }
 
 .menu-line {
