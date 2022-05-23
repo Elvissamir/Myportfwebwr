@@ -10,8 +10,13 @@ const Home = () => {
     const windowWidth = useWindowSize()
 
     useEffect(() => {
-        if (windowWidth >= 1024)
+        if (windowWidth >= 1024) {
             setShowNav(true)
+            setShowMobile(false)
+        }
+        else {
+            setShowMobile(true)
+        }
     }, [windowWidth])
 
     const toggleNav = () => {
@@ -21,7 +26,10 @@ const Home = () => {
     return ( 
         <div className=' w-full min-h-screen relative'>
             <Nav show={showNav} />
-            <MobileMenu onToggle={toggleNav} showingNav={showNav} />
+            <MobileMenu 
+                show={showMobile}
+                onToggle={toggleNav} 
+                showingNav={showNav} />
         </div> 
     );
 }
