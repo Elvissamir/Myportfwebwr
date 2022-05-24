@@ -1,5 +1,4 @@
 import Footer from './components/layout/Footer'
-// import Routes from './components/Routes';
 import Home from './views/Home';
 
 function App() {

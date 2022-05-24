@@ -1,8 +1,8 @@
-
-
 const Routes = () => {
+
+   
     return (
-        <div></div>
+        <div>Routes</div>
     )
 }
 

@@ -1,7 +1,7 @@
 .nav-link {
     max-width: 150px;
     
-    @apply text-lg font-bold text-center overflow-hidden mt-5 
+    @apply text-lg font-lora font-black text-center overflow-hidden mt-5 
             lg:mt-0 lg:h-8 lg:text-lg 
             2xl:mx-auto 2xl:w-auto 2xl:mt-4;
 }
