@@ -47,7 +47,7 @@
     border-image-slice: 1;
 
     margin: auto;
-    @apply text-lg font-black
+    @apply text-xl font-black font-lora
 }
 
 .nav-github-container:hover .nav-github-icon {

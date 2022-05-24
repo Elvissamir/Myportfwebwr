@@ -4,13 +4,13 @@ import links from '../../core/links';
 const Footer = () => {
     return (
         <div className='w-full'>
-            <footer className='w-full custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
+            <footer className='w-full relative z-[3000] font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
                 <div className='font-bold w-8/12 mx-auto'>
-                    <p className='text-center text-lg'>My Social Networks: </p>
+                    <p className='text-center text-xl'>My Social Networks: </p>
                     <div className='flex flex-col'>
                         <div className='flex justify-center items-center'>
                             <FontAwesomeIcon icon='envelope' className='text-xl' />
-                            <p className='ml-2'>elvissam.software@gmail.com</p>
+                            <p className='ml-2 text-lg'>elvissam.software@gmail.com</p>
                         </div>
                         <div className='flex justify-center text-3xl mt-2'>
                             <a href={links.portfolio} target='_blank' rel="noreferrer">
@@ -25,13 +25,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex flex-col mt-5'>
-                        <div className='flex justify-center items-center'>
+                        <div className='flex justify-center items-center text-lg'>
                             <FontAwesomeIcon icon='cogs' />
                             <p className='ml-2'>Designed and Developed by Elvis Carrasco</p>
                         </div>
-                        <div className='flex justify-center items-center'>
+                        <div className='flex justify-center items-center text-lg'>
                             <p>Myportfweb</p>
-                            <p className='ml-2 mr-2'>2022</p>
+                            <p className='ml-2 mr-2 text'>2022</p>
                             <FontAwesomeIcon icon='rocket' />
                         </div>
                     </div>

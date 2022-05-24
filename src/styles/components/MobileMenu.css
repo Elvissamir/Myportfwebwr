@@ -15,7 +15,7 @@
 }
 
 .menu-btn {
-    @apply flex items-center font-black w-[80px]
+    @apply flex items-center text-xl font-lora font-black w-[80px]
 }
 
 .menu-btn-icon {
