@@ -7,17 +7,17 @@ import { useEffect } from 'react';
 const Home = () => {
     const [showMobile, setShowMobile] = useState(true)
     const [showNav, setShowNav] = useState(false)
-    const windowWidth = useWindowSize()
+    const windowSize = useWindowSize()
 
     useEffect(() => {
-        if (windowWidth >= 1024) {
+        if (windowSize.width >= 1024) {
             setShowNav(true)
             setShowMobile(false)
         }
         else {
             setShowMobile(true)
         }
-    }, [windowWidth])
+    }, [windowSize.width])
 
     const toggleNav = () => {
         setShowNav(!showNav)

@@ -2,9 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import links from '../../core/links';
 
 const Footer = () => {
+    
+
     return (
         <div className='w-full'>
-            <footer className='w-full relative z-[3000] font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
+            <footer className='w-full font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
                 <div className='font-bold w-8/12 mx-auto'>
                     <p className='text-center text-xl'>My Social Networks: </p>
                     <div className='flex flex-col'>
