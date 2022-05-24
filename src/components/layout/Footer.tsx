@@ -1,8 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import links from '../../core/links';
+import { useEffect } from 'react';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Footer = () => {
-    
+    const windowSize = useWindowSize()
+
+    useEffect(() => {
+        console.log('Window height changed', windowSize.height * 0.1)
+    }, [windowSize.height])
 
     return (
         <div className='w-full'>

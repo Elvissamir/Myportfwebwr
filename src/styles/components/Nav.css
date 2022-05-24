@@ -1,5 +1,5 @@
 .nav {
-    @apply fixed z-[2000] w-full h-[90%] flex transition-all transform 
+    @apply fixed z-[2000] w-full h-[calc(100%_-_64px)] flex transition-all transform 
             lg:p-4 lg:h-auto 
             2xl:h-full 2xl:w-2/12
 }
