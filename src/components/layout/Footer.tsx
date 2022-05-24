@@ -1,18 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import links from '../../core/links';
-import { useEffect } from 'react';
-import useWindowSize from '../../hooks/useWindowSize';
 
 const Footer = () => {
-    const windowSize = useWindowSize()
-
-    useEffect(() => {
-        console.log('Window height changed', windowSize.height * 0.1)
-    }, [windowSize.height])
-
     return (
         <div className='w-full'>
-            <footer className='w-full font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
+            <footer className='w-full mb-16 lg:mb-0 font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
                 <div className='font-bold w-8/12 mx-auto'>
                     <p className='text-center text-xl'>My Social Networks: </p>
                     <div className='flex flex-col'>
