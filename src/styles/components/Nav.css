@@ -1,7 +1,7 @@
 .nav {
     @apply fixed z-[2000] w-full h-[calc(100%_-_64px)] flex transition-all transform 
             lg:p-4 lg:h-auto 
-            2xl:h-full 2xl:w-2/12
+            2xl:h-full 2xl:w-2/12 2xl:border-gray-400 2xl:border-r-2
 }
 
 .nav-hide {
@@ -29,7 +29,7 @@
 }
 
 .nav-github-link {
-    @apply flex flex-col justify-center w-[180px] mx-auto
+    @apply flex flex-col justify-center items-center w-full mx-auto
 }
 
 .nav-github-icon {
