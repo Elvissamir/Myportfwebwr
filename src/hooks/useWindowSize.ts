@@ -7,16 +7,16 @@ const useWindowSize = () => {
     }
 
     const [windowSize, setWindowSize] = useState(initialSize)
-    const setWidthOnResize = () => setWindowSize({
+    const setSizeOnResize = () => setWindowSize({
         height: window.innerHeight,
         width: window.innerWidth
     })
 
     useEffect(() => {
-        window.addEventListener('resize', setWidthOnResize)
+        window.addEventListener('resize', setSizeOnResize)
 
         return () => {
-            window.removeEventListener('resize', setWidthOnResize)
+            window.removeEventListener('resize', setSizeOnResize)
         }
     }, [])
 
