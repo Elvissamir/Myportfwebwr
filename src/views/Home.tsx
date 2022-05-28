@@ -2,7 +2,7 @@ import Nav from '../components/Nav';
 import MobileMenu from '../components/MobileMenu';
 import useMenus from '../hooks/useMenus';
 import useWindowSize from '../hooks/useWindowSize';
-import Sections from '../components/Sections';
+import Main from '../components/Main';
 
 const Home = () => {
     const windowSize = useWindowSize()
@@ -19,9 +19,7 @@ const Home = () => {
                 show={showMobile}
                 onToggle={toggleNav} 
                 showingNav={showNav} />
-            <main className='main'>
-                <Sections /> 
-            </main>
+            <Main />
         </div> 
     );
 }
