@@ -1,10 +1,10 @@
-const sections = [
-    {id: '#start', name: 'Start'},
-    {id: '#skills', name: 'Skills'},
-    {id: '#projects', name: 'Projects'},
-    {id: '#education', name: 'Education'},
-    {id: '#about', name: 'About Me'},
-    {id: '#contact', name: 'Contact Me'},
-]
+const sections = {
+    start:  {id: '#start', name: 'Start'},
+    skills: {id: '#skills', name: 'Skills'},
+    projects: {id: '#projects', name: 'Projects'},
+    education: {id: '#education', name: 'Education'},
+    about: {id: '#about', name: 'About Me'},
+    contact: {id: '#contact', name: 'Contact Me'},
+}
 
 export default sections
