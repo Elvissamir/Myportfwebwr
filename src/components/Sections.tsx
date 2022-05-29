@@ -5,10 +5,12 @@ const Sections = () => {
         <Start />
     ]
 
+    console.log('rendered...')
+
     return ( 
         <div className='sections-wrapper'>
-            {sections.map(section => 
-                <section className='section'>
+            {sections.map((section, index) => 
+                <section key={index} className='section'>
                     {section}        
                 </section>                
             )}
