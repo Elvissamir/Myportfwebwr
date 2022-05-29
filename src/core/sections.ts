@@ -8,9 +8,9 @@ const sections = {
 }
 
 const sectionsArray = () => {
-    for (let section of Object.keys(sections)) {
-        console.log(section)
-    }
+    const keys = Object.keys(sections)
+    type k = keyof typeof sections
+    return keys.map(key => sections[key as k])
 }
 
 export default sections

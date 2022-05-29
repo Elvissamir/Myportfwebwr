@@ -7,8 +7,6 @@ interface NavProps {
 }
 
 const Nav = ({ show }: NavProps) => {
-    sectionsArray()
-
     return (
         <nav className={show? 'nav-active nav brand-bg':'nav-hide nav brand-bg'}>
             <div className="nav-content-wrapper">
@@ -16,7 +14,7 @@ const Nav = ({ show }: NavProps) => {
                     <NavIcon />
                 </div>    
                 <div className='nav-links-wrapper'>
-                    <NavLink sectionsInfo={[]} />
+                    <NavLink sectionsInfo={sectionsArray()} />
                 </div>
             </div>
         </nav>
