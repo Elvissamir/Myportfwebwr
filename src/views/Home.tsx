@@ -1,10 +1,12 @@
 import Main from '../components/Main';
 import Menus from '../components/Menus';
+import Start from '../components/Start';
 
 const Home = () => {
     return ( 
-        <div className=' w-full min-h-screen relative'>
+        <div className='app-content-wrapper'>
             <Menus />
+            <Start />
             <Main />
         </div> 
     );

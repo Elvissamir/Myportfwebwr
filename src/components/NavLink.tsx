@@ -1,5 +1,6 @@
 interface SectionInfo {
     id: string,
+    url: string,
     name: string
 }
 
@@ -13,7 +14,7 @@ const NavLink = ({sectionsInfo}: NavLinkProps) => {
             {sectionsInfo.map(sectionInfo =>     
                 <a 
                     className="nav-link gradient-text" 
-                    href={sectionInfo.id}
+                    href={sectionInfo.url}
                     key={sectionInfo.name}>
                         <div>
                             {sectionInfo.name}

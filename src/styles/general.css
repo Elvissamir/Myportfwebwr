@@ -1,3 +1,18 @@
+.app-content-wrapper {
+    background-image: url('../../public/images/grid_transparent_tile.png');
+    background-color: rgb(31, 41, 55);
+    left: 0;
+    right: 0;
+    background-size: 180px;
+    top: calc(63px - 180px);
+    bottom: 0;
+    background-repeat: repeat;
+    background-position: top center;
+    z-index: -1;
+
+    @apply w-full min-h-screen
+}
+
 .brand-bg {
     @apply bg-gray-800;
 }

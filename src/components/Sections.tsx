@@ -1,8 +1,8 @@
-import Start from './Start';
+import Skills from './Skills';
 
 const Sections = () => {
     const sections = [
-        <Start />
+        <Skills />
     ]
 
     return ( 
