@@ -7,4 +7,14 @@ const sections = {
     contact: {id: '#contact', name: 'Contact Me'},
 }
 
+const sectionsArray = () => {
+    for (let section of Object.keys(sections)) {
+        console.log(section)
+    }
+}
+
 export default sections
+
+export {
+    sectionsArray
+}

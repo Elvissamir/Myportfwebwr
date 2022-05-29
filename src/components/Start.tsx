@@ -1,8 +1,8 @@
-
+import sections from '../core/sections';
 
 const Start = () => {
     return ( 
-        <p>Start</p>
+        <p id={sections.start.id}>{sections.start.name}</p>
     );
 }
 

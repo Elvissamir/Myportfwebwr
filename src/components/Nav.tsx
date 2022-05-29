@@ -1,4 +1,4 @@
-import sections from '../core/sections';
+import { sectionsArray } from '../core/sections';
 import NavLink from './NavLink';
 import NavIcon from './NavIcon';
 
@@ -7,6 +7,8 @@ interface NavProps {
 }
 
 const Nav = ({ show }: NavProps) => {
+    sectionsArray()
+
     return (
         <nav className={show? 'nav-active nav brand-bg':'nav-hide nav brand-bg'}>
             <div className="nav-content-wrapper">
@@ -14,7 +16,7 @@ const Nav = ({ show }: NavProps) => {
                     <NavIcon />
                 </div>    
                 <div className='nav-links-wrapper'>
-                    <NavLink sectionsInfo={sections} />
+                    <NavLink sectionsInfo={[]} />
                 </div>
             </div>
         </nav>
