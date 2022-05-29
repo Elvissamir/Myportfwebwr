@@ -5,8 +5,6 @@ const Sections = () => {
         <Start />
     ]
 
-    console.log('rendered...')
-
     return ( 
         <div className='sections-wrapper'>
             {sections.map((section, index) => 

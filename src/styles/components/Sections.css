@@ -1,0 +1,7 @@
+.sections-wrapper {
+    @apply w-full h-full flex
+}
+
+.section {
+    @apply flex w-full h-auto
+}

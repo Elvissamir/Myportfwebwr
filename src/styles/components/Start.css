@@ -1,0 +1,78 @@
+.wall-container {
+    @apply flex flex-col justify-center items-center w-full h-full absolute z-20
+}
+
+.wall {
+    @apply flex flex-col justify-center items-center w-6/12 
+            md:w-10/12
+}
+
+.name-text {
+    @apply text-5xl text-center font-playfair 
+            sm:text-6xl md:text-7xl xl:text-8xl
+}
+
+.dev-text {
+    @apply text-3xl text-white text-center font-playfair font-black mt-6 
+            sm:text-4xl md:text-5xl xl:text-6xl
+}
+
+.theta-gradient {
+    background-image: linear-gradient(to right, #73b1e4, #4a96ee, var(--brand-color-a), var(--brand-color-b), #09e0ab);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    background-position: -100%;
+    color: transparent;
+    font-weight: 700;
+ 
+    animation: animatedTheta 2s infinite alternate-reverse;
+}
+
+@keyframes animatedTheta {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+
+.mouse {
+    width: 30px;
+    height: 60px;
+    border: 3px solid var(--brand-color-b);
+    border-radius: 60px;
+    position: relative;
+
+    @apply mt-20 md:mt-36 lg:mt-[42]
+}
+  
+.mouse::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--brand-color-b);
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+}
+  
+@keyframes wheel {
+    to {
+      opacity: 0;
+      top: 50px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 50px;
+    }
+}

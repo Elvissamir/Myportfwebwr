@@ -1,0 +1,4 @@
+.main {
+    @apply flex w-full min-h-screen ml-auto relative
+            2xl:w-10/12
+}
