@@ -7,7 +7,9 @@ const Content = () => {
 
     return (
         <div className="content-container">
-            <main className="content"></main>
+            <main className="content">
+                
+            </main>
         </div>
     )
 }
