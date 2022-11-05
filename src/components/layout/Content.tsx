@@ -2,7 +2,7 @@ import SkillsSection from "../sections/SkillsSection"
 
 const Content = () => {
     const sectionList: JSX.Element[] = [
-        <SkillsSection />,
+        // <SkillsSection />,
     ]
 
     return (

@@ -1,3 +1,4 @@
+import links from "../../core/links"
 import CogIcon from "../icons/CogIcon"
 import GithubIcon from "../icons/GithubIcon"
 import LinkedinIcon from "../icons/LinkedinIcon"
@@ -9,27 +10,35 @@ const Footer = () => {
     return (
         <div className="footer-container">
             <footer className="footer">
-                <p className="text-md">My Social Networks:</p>
+                <p className="top-text text-md">My Social Networks:</p>
                 <div className="email-container">
                     <MailIcon />
                     <p className="text-sm">elvissam.software@gmail.com</p>
                 </div>
                 <div className="social-networks-container">
-                    <WorldIcon />
-                    <GithubIcon />
-                    <LinkedinIcon />
+                    <a className="footer-link" href={links.portfolio}>
+                        <WorldIcon />
+                    </a>
+                    <a className="footer-link" href={links.github}>
+                        <GithubIcon />
+                    </a>
+                    <a className="footer-link" href={links.linkedin}>
+                        <LinkedinIcon />
+                    </a>
                 </div>
                 <div className="details-container">
                     <div className="designed-text">
-                        <CogIcon />
                         <p className="text-sm">Designed & Developed</p>
                     </div>
                     <p className="text-sm">by</p>
                     <p className="text-sm">Elvis Carrasco</p>
                 </div>
                 <div className="bottom">
-                    <p className="text-xs">Myportfweb 2022</p>
-                    <ReactIcon />
+                    <p className="text-xs">My web portfolio</p>
+                    <div className="text-with-icon">
+                        <p className="text-xs">Myportfweb 2022</p>
+                        <ReactIcon />
+                    </div>
                 </div>
             </footer>
         </div>
