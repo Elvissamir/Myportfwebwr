@@ -3,6 +3,7 @@ import BackgroundGrid from "./BackgroundGrid"
 import Content from "./Content"
 import Footer from "./Footer"
 import Mobilebar from "./Mobilebar"
+import MobileMenu from './MobileMenu'
 import Navbar from "./Navbar"
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
             <BackgroundGrid />
             <div className="layout-blocks">
                 <Navbar />
+                <MobileMenu showMobileMenu={showMobileMenu} />
                 <Mobilebar 
                     showMobileMenu={showMobileMenu}
                     toggleMobileMenu={handleToggleMobileMenu} />

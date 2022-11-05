@@ -1,4 +1,14 @@
-const sections = {
+interface SectionData {
+    id: string 
+    url: string 
+    name: string
+}
+
+interface SectionKey {
+    [key: string]: SectionData
+}
+
+const sections: SectionKey = {
     start:  {id: 'start', url: '#start', name: 'Start'},
     skills: {id: 'skills', url: '#skills', name: 'Skills'},
     projects: {id: 'projects', url: '#projects', name: 'Projects'},
@@ -7,12 +17,7 @@ const sections = {
     contact: {id: 'contact', url:'#contact', name: 'Contact Me'},
 }
 
-const sectionsArray = () => {
-    const keys = Object.keys(sections)
-    type k = keyof typeof sections
-    
-    return keys.map(key => sections[key as k])
-}
+const sectionsArray = Object.keys(sections).map((key, index) => sections[key as keyof typeof sections] as SectionData)
 
 export default sections
 
