@@ -1,11 +1,5 @@
-:root {
-    --g1: rgb(98, 0, 234);
-    --g2: rgb(236, 64, 122);
-}
-
 .grid-background {
-    // background-color: rgb(20, 20, 20);
-    background-image: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+    background-image: linear-gradient(to right, var(--brand-color-a), var(--brand-color-b), var(--brand-color-a));
     height: 100vh;
     overflow: hidden;
     background-size: 200%;
@@ -38,12 +32,8 @@
 }
 
 .tile:before {
-    background-color: rgb(20, 20, 20);
+    background-color: var(--brand-bg);
     content: "";
     position: absolute;
     inset: 0.5px;
-}
-
-.tile:hover {
-    opacity: 0.95;
 }
