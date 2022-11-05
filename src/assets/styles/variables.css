@@ -2,6 +2,7 @@
 :root {
     --brand-color-a: #29b3eb;
     --brand-color-b: #21edba;
+    --brand-bg: rgb(31, 41, 55);
     --brand-color-c: rgb(156, 163, 175);
     --shadow-default: 0 0 22px rgba(189, 187, 197, 0.8);
     --shadow-active: 0 0 22px rgba(33, 237, 186, 1);

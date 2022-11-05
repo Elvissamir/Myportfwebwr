@@ -1,7 +1,0 @@
-.sections-wrapper {
-    @apply flex flex-col w-full;
-}
-
-.section {
-    @apply flex w-full
-}
