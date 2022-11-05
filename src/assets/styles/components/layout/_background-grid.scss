@@ -1,11 +1,13 @@
 .grid-background {
     background-image: linear-gradient(to right, var(--brand-color-a), var(--brand-color-b), var(--brand-color-a));
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+    position: fixed;
     background-size: 200%;
     margin: 0;
     width: 100%;
     animation: backgroundG 5s linear infinite;
+    z-index: 1;
 
     @keyframes backgroundG {
         from {
@@ -19,7 +21,7 @@
 }
 
 .tiles {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     display: grid;
