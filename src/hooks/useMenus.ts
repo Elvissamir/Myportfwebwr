@@ -16,10 +16,8 @@ const useMenus = (windowSize: WindowSize) => {
     }, [windowSize.width])
 
     return {
-        showNav, 
-        setShowNav, 
+        showNav,  
         showMobile, 
-        setShowMobile
     }
 }
 

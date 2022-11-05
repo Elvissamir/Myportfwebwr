@@ -1,17 +1,11 @@
-import Footer from './components/layout/Footer'
-import Home from './views/Home';
-
 function App() {
   return (
     <div className="App">
-      <div className='app-content'>
-        <Home />
-      </div>
-      <div className='app-footer'>
-        <Footer />
+      <div className="app-container">
+        
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
