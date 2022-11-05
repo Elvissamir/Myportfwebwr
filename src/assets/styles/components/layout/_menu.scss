@@ -1,0 +1,48 @@
+.menu-container {
+    display: flex;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .menu-link {
+                color: white;
+                background-clip: text;
+                background-image: linear-gradient(to left, transparent, transparent);
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .menu-link:nth-child(odd) {
+                margin-top: 15px;
+            }
+
+            .menu-link-underline {
+                background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
+                height: 2.5px;
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+                transform: translateX(-100%);
+            }
+        }
+
+        .menu-item:hover {
+            .menu-link {
+                color: transparent;
+                background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
+            }
+
+            .menu-link-underline {
+                transform: translateX(0);
+            }
+        }
+    }
+}

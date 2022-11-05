@@ -1,0 +1,15 @@
+.mobile-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-bg);
+    position: fixed;
+    height: calc(100vh - 50px);
+    width: 100%;
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

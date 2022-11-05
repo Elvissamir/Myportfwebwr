@@ -6,9 +6,10 @@ const Menu = () => {
             <ul className="menu">
                 {sectionsArray.map((section, index) => 
                     <li className="menu-item">
-                        <a className="menu-link" href={section.url}>
+                        <a className="menu-link text-lg" href={section.url}>
                             {section.name}
                         </a>
+                        <div className="menu-link-underline"></div>
                     </li>
                 )}
             </ul>

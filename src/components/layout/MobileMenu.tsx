@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion"
 import Menu from "./Menu"
 
 interface MobileMenuProps {
@@ -6,11 +7,19 @@ interface MobileMenuProps {
 
 const MobileMenu = ({ showMobileMenu }: MobileMenuProps) => {
     return (
-        <div className="mobile-menu-container">
-            <div className="mobile-menu">
-                <Menu />
-            </div>
-        </div>
+        <AnimatePresence>
+            {showMobileMenu && 
+                <motion.div 
+                    initial={{ x: '-100%' }}
+                    animate={{ x: '0' }}
+                    exit={{ x: '-100%' }}
+                    transition={{ bounce: 0 }}
+                    className="mobile-menu-container">
+                        <div className="mobile-menu">
+                            <Menu />
+                        </div>
+                </motion.div>}
+        </AnimatePresence>
     )
 }
 
