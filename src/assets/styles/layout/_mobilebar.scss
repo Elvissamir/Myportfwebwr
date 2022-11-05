@@ -1,0 +1,50 @@
+.mobilebar-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px white solid;
+    height: 50px;
+    width: 100%;
+
+    .mobilebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--brand-bg);
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .center-line {
+            background-color: white;
+            height: 100%;
+            width: 2px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            .text {
+                color: white;
+                font-weight: bolder;
+            }
+
+            .github-icon {
+                fill: white;
+                margin-left: 8px;
+                height: 27px;
+                width: 27px;
+            }
+        }
+    }
+}
