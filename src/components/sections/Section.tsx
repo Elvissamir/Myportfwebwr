@@ -15,7 +15,7 @@ const Section = ({ id, title, description, content}: SectionProps) => {
                 </div>
                 <div className="description">{description}</div>
                 <div className="content">
-                    
+                    {content}
                 </div>
             </section>
         </div>
