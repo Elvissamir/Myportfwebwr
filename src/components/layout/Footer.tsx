@@ -5,14 +5,14 @@ const Footer = () => {
     return (
         <div className='w-full'>
             <footer className='w-full mb-16 lg:mb-0 font-lora custom-padding brand-bg brand-letter-light 2xl:w-10/12 2xl:ml-auto'>
-                <div className='font-bold w-8/12 mx-auto'>
-                    <p className='text-center text-xl'>My Social Networks: </p>
+                <div className='font-bold mx-auto'>
+                    <p className='text-center text-xl w-full'>My Social Networks: </p>
                     <div className='flex flex-col'>
-                        <div className='flex justify-center items-center'>
+                        <div className='flex justify-center items-center mt-1'>
                             <FontAwesomeIcon icon='envelope' className='text-xl' />
                             <p className='ml-2 text-lg'>elvissam.software@gmail.com</p>
                         </div>
-                        <div className='flex justify-center text-3xl mt-2'>
+                        <div className='flex justify-center text-3xl mt-6'>
                             <a href={links.portfolio} target='_blank' rel="noreferrer">
                                 <FontAwesomeIcon icon={{prefix: 'fas', iconName: 'globe'}} />
                             </a>
@@ -25,9 +25,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex flex-col mt-5'>
-                        <div className='flex justify-center items-center text-lg'>
-                            <FontAwesomeIcon icon='cogs' />
-                            <p className='ml-2'>Designed and Developed by Elvis Carrasco</p>
+                        <div className='flex justify-center items-center text-lg flex-col '>
+                            <div className='flex'>
+                                <FontAwesomeIcon icon='cogs' />
+                                <p className='ml-2'>Designed and Developed</p>
+                            </div>
+                            <p className=''>by</p>
+                            <p>Elvis Carrasco</p>
                         </div>
                         <div className='flex justify-center items-center text-lg'>
                             <p>Myportfweb</p>

@@ -1,5 +1,5 @@
-import MobileBtn from './MobileBtn';
-import MobileLink from './MobileLink';
+import MobileBtn from '../MobileBtn';
+import MobileLink from '../MobileLink';
 
 interface MobileMenuProps {
     show: boolean,

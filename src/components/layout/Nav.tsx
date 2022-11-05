@@ -1,6 +1,6 @@
-import { sectionsArray } from '../core/sections';
-import NavLink from './NavLink';
-import NavIcon from './NavIcon';
+import { sectionsArray } from '../../core/sections';
+import NavLink from '../NavLink';
+import NavIcon from '../NavIcon';
 
 interface NavProps {
     show: boolean

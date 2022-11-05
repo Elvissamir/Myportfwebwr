@@ -1,7 +1,7 @@
 import useWindowSize from '../hooks/useWindowSize';
 import useMenus from '../hooks/useMenus';
-import MobileMenu from './MobileMenu';
-import Nav from './Nav';
+import MobileMenu from './layout/MobileMenu';
+import Nav from './layout/Nav';
 
 const Menus = () => {
     const windowSize = useWindowSize()

@@ -10,6 +10,7 @@ const sections = {
 const sectionsArray = () => {
     const keys = Object.keys(sections)
     type k = keyof typeof sections
+    
     return keys.map(key => sections[key as k])
 }
 
