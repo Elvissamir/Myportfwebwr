@@ -36,7 +36,7 @@ const BackgroundGrid = () => {
                 id="tiles" 
                 className="tiles">
                     {tiles.map((tile, index) => 
-                        <div className="tile" key={index}>{index}</div>
+                        <div className="tile" key={index}></div>
                     )}
             </div>
         </div>
