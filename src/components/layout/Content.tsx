@@ -1,8 +1,12 @@
+import HireMeBanner from "../sections/HireMe"
+import ProjectsSection from "../sections/ProjectsSection"
 import SkillsSection from "../sections/SkillsSection"
 
 const Content = () => {
     const sectionList: JSX.Element[] = [
         <SkillsSection />,
+        <ProjectsSection />,
+        <HireMeBanner />
     ]
 
     return (
