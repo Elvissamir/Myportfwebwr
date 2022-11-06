@@ -1,5 +1,5 @@
 import sections from "../../core/sections"
-import SkillsGraph from "../SkillsGraph"
+import SkillsGraph from "./SkillsGraph"
 import Section from "./Section"
 
 const SkillsSection = () => {

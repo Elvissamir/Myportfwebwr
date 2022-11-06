@@ -1,0 +1,49 @@
+.skill-item-container {
+    display: flex;
+    z-index: 1;
+
+    .skill-item {
+        display: flex;
+
+        .icon-container {
+            display: flex;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0 0 10px white;
+            border: 2px white solid;
+            padding: 15px;
+            height: 77px;
+            width: 77px;
+
+            .icon {
+                height: 100%;
+                width: 100%;
+            }
+
+            .javascript-icon {
+                fill: gold;
+            }
+
+            .react-icon {
+                fill: var(--brand-color-a);
+            }
+
+            .typescript-icon {
+                fill: rgb(0, 100, 200);
+            }
+
+            .sass-icon {
+                fill: palevioletred;
+            }
+
+            .git-icon {
+                fill: orangered;
+            }
+        }
+
+        .icon-container:hover {
+            border: 2px var(--brand-color-a) solid;
+            box-shadow: 0 0 20px var(--brand-color-a);
+        }
+    }
+}

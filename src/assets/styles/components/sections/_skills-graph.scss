@@ -1,0 +1,24 @@
+.skill-graph-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .skill-graph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .skill-row {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .space {
+                margin: 0 10px;
+            }
+        }
+    }
+}

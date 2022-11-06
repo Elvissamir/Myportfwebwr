@@ -1,12 +1,12 @@
-import FirebaseIcon from "./icons/FirebaseIcon"
-import GitIcon from "./icons/GitIcon"
-import GoogleMapIcon from "./icons/GoogleMapIcon"
-import JavascriptIcon from "./icons/JavascriptIcon"
-import MongoIcon from "./icons/MongoIcon"
-import NodeJsIcon from "./icons/NodeJsIcon"
-import ReactIcon from "./icons/ReactIcon"
-import SassIcon from "./icons/SassIcon"
-import TypescriptIcon from "./icons/TypescriptIcon"
+import FirebaseIcon from "../icons/FirebaseIcon"
+import GitIcon from "../icons/GitIcon"
+import GoogleMapIcon from "../icons/GoogleMapIcon"
+import JavascriptIcon from "../icons/JavascriptIcon"
+import MongoIcon from "../icons/MongoIcon"
+import NodeJsIcon from "../icons/NodeJsIcon"
+import ReactIcon from "../icons/ReactIcon"
+import SassIcon from "../icons/SassIcon"
+import TypescriptIcon from "../icons/TypescriptIcon"
 import SkillItem from "./SkillItem"
 
 const SkillsGraph = () => {
@@ -18,15 +18,19 @@ const SkillsGraph = () => {
                 </div>
                 <div className="skill-row row-2">
                     <SkillItem name="Typescript" icon={<TypescriptIcon />} />
+                    <div className="space"></div>
                     <SkillItem name="React" icon={<ReactIcon />} />
                 </div>
                 <div className="skill-row row-3">
                     <SkillItem name="Node" icon={<NodeJsIcon />} />
+                    <div className="space"></div>
                     <SkillItem name="MongoDB" icon={<MongoIcon />} />
+                    <div className="space"></div>
                     <SkillItem name="Firebase Auth" icon={<FirebaseIcon />} />
                 </div>
                 <div className="skill-row row-4">
                     <SkillItem name="Google Maps" icon={<GoogleMapIcon />} />
+                    <div className="space"></div>
                     <SkillItem name="Sass" icon={<SassIcon />} />
                 </div>
                 <div className="skill-row row-5">
