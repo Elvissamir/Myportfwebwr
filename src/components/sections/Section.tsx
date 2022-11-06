@@ -10,8 +10,12 @@ const Section = ({ id, title, description, content}: SectionProps) => {
         <div className="section-container">
             <section id={id} className="section">
                 <div className="title-container">
-                    <p className="title">{title}</p>
-                    <div className="title-underline"></div>
+                    <div className="title-text">
+                        <p className="title">
+                            {title}
+                        </p>
+                        <div className="title-underline"></div>
+                    </div>
                 </div>
                 <div className="description">{description}</div>
                 <div className="content">
