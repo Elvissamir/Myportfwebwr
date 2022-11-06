@@ -13,6 +13,7 @@ const sections: SectionKey = {
     skills: {id: 'skills', url: '#skills', name: 'Skills'},
     projects: {id: 'projects', url: '#projects', name: 'Projects'},
     education: {id: 'education', url: '#education', name: 'Education'},
+    challenges: {id: 'challenges', url: '#challenges', name: 'Challenges'},
     about: {id: 'about', url: '#about', name: 'About Me'},
     contact: {id: 'contact', url:'#contact', name: 'Contact Me'},
 }
