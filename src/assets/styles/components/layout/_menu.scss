@@ -16,13 +16,10 @@
             .menu-link {
                 color: white;
                 background-clip: text;
+                font-size: 18px;
                 background-image: linear-gradient(to left, transparent, transparent);
                 font-weight: bold;
                 text-decoration: none;
-            }
-
-            .menu-link:nth-child(odd) {
-                margin-top: 15px;
             }
 
             .menu-link-underline {
@@ -32,6 +29,10 @@
                 transition: all 0.3s ease-in-out;
                 transform: translateX(-100%);
             }
+        }
+
+        .menu-item:not(:first-child) {
+            margin-top: 15px;
         }
 
         .menu-item:hover {

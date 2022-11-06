@@ -9,7 +9,9 @@ const Content = () => {
         <div className="content-container">
             <main className="content">
                 {sectionList.map((section, index) => 
-                    section
+                    <div className="content-section" key={index}>
+                        {section}
+                    </div>
                 )}
             </main>
         </div>
