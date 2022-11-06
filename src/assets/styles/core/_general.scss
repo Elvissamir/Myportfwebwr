@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 
-.text-xs {
-    font-size: 14px;
+.x-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
-.text-sm {
-    font-size: 16px;
+@media (min-width: 1024px) {
+
 }
 
-.text-md {
-    font-size: 18px;
+@media (min-width: 1024px) {
+
 }
 
-.text-lg {
-    font-size: 22px;
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1024px) {
+
 }

@@ -1,0 +1,12 @@
+.navbar-container {
+    background-color: var(--brand-bg);
+    border-bottom: 1px white solid;
+    display: flex;
+    position: fixed;
+    width: 100%;
+
+    .navbar {
+        display: flex;
+        padding: 20px 0;
+    }
+}
