@@ -1,7 +1,8 @@
 .navbar-container {
-    background-color: rgba(31, 41, 55, 0.5);
-    border-bottom: 1px white solid;
-    backdrop-filter: blur(20px);
+    background-color: rgba(31, 41, 55, 0.3);
+    border-bottom: 1px var(--brand-color-a) solid;
+    box-shadow: 0 0 20px var(--brand-color-a);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(20px);
     display: flex;
     position: fixed;

@@ -1,11 +1,11 @@
 .grid-background {
-    background-image: linear-gradient(to right, var(--brand-color-a), var(--brand-color-b), var(--brand-color-a));
+    background-image: linear-gradient(to right, var(--brand-color-a), #2e327e, var(--brand-color-a));
     height: 100%;
     position: absolute;
     background-size: 200%;
     margin: 0;
     width: 100%;
-    animation: backgroundG 5s linear infinite;
+    animation: backgroundG 10s linear infinite;
     z-index: 1;
 
     @keyframes backgroundG {

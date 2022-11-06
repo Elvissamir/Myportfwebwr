@@ -16,20 +16,22 @@
             overflow: hidden;
 
             .menu-link {
-                color: white;
-                background-clip: text;
-                font-size: 18px;
-                background-image: linear-gradient(to left, transparent, transparent);
+                // background-clip: text;
+                // background-image: linear-gradient(to left, transparent, transparent);
+                font-size: 20px;
+                padding: 0 5px;
                 font-weight: bold;
                 text-decoration: none;
+                color: white;
             }
 
             .menu-link-underline {
-                background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
+                // background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
+                background-color: var(--brand-color-a);
                 height: 2.5px;
                 width: 100%;
                 transition: all 0.3s ease-in-out;
-                transform: translateX(-100%);
+                transform: translateX(-105%);
             }
         }
 
@@ -39,8 +41,10 @@
 
         .menu-item:hover {
             .menu-link {
-                color: transparent;
-                background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
+                text-shadow:
+                    0 0 1px #fff,
+                    0 0 10px var(--brand-color-a);
+                // background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
             }
 
             .menu-link-underline {

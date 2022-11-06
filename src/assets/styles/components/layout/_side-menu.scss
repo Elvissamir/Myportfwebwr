@@ -1,0 +1,10 @@
+.side-menu {
+    border-right: 2px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-bg);
+    position: fixed;
+    height: 100vh;
+    width: 15%;
+}
