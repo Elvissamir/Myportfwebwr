@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--brand-bg);
+    background-color: rgba(31, 41, 55, 0.6);
+    backdrop-filter: blur(5px);
     position: fixed;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 65px);
     width: 100%;
 
     .mobile-menu {

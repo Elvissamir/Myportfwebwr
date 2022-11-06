@@ -2,15 +2,18 @@
     display: flex;
     position: fixed;
     bottom: 0;
-    border-top: 1px white solid;
+    border-top: 1px var(--brand-color-a) solid;
+    box-shadow: 0 0 20px var(--brand-color-a);
     height: 50px;
     width: 100%;
+    z-index: 3;
 
     .mobilebar {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--brand-bg);
+        background-color: rgba(31, 41, 55, 0.6);
+        backdrop-filter: blur(5px);
         padding: 10px;
         height: 100%;
         width: 100%;
