@@ -3,12 +3,12 @@ import { useEffect, useRef, useState } from "react"
 const BackgroundGrid = () => {
     const wrapper = useRef<HTMLDivElement | null>(null)
     const [columns, setColumns] = useState(Math.floor(window.innerWidth / 100))
-    const [rows, setRows] = useState(Math.floor(window.innerHeight / 100))
+    const [rows, setRows] = useState(Math.floor(document.body.scrollHeight / 100))
     const [tiles, setTiles] = useState<number[]>(new Array(columns * rows).fill(0))
 
     const createGrid = () => {
         const ncolums = Math.floor(window.innerWidth / 100)
-        const nrows = Math.floor(window.innerHeight / 100)
+        const nrows = Math.floor(document.body.scrollHeight / 100)
         const ntiles = new Array(ncolums * nrows).fill(0)
 
         if (wrapper.current) {
