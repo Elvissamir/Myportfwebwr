@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import ProjectCard from "./ProjectCard"
-import ProjectWindow from './ProjectWindow'
 
 export interface ProjectData {
     title: string 
@@ -20,7 +19,7 @@ const ProjectList = () => {
             frontImage: '', 
             images: [], 
             description: 'CPT keeps track of your crypto portfolio and markets. The main features are: portfolio management, charts (top cryptos, distribution), crypto markets.',
-            stack: [],
+            stack: ['Laravel', 'Vue', 'Php', 'PostgresSQL', 'Inertia'],
             githubUrl: 'https://github.com/Elvissamir/cryptoPT'
         },
         {
@@ -84,10 +83,6 @@ const ProjectList = () => {
 
     return (
         <>
-            <ProjectWindow 
-                show={showDetails} 
-                data={currentProject}
-                closeWindow={handleCloseWindow} />  
             <div className="project-list-container">
                 <div className="project-list">
                     {projectList.map((project, index) => 

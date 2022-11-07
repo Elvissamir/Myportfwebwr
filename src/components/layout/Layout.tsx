@@ -19,6 +19,7 @@ const Layout = () => {
         <div className="app-layout">
             <BackgroundGrid />
             <div className="layout-blocks">
+
                 { width >= 1024 && <Navbar />}
                 { width < 1024 && <MobileMenu showMobileMenu={showMobileMenu} />}
                 { width < 1024 && <Mobilebar 

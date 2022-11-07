@@ -1,4 +1,4 @@
-.project-window-container {
+.window-container {
     display: flex;
     position: fixed;
     justify-content: center;
@@ -9,7 +9,7 @@
     width: 100%;
     z-index: 100;
 
-    .project-window {
+    .window {
         height: 100%;
         margin-top: 60px;
         padding: 10px;
@@ -39,4 +39,10 @@
             }
         }
     }
+}
+
+@media (min-width: 1024px) {
+    .window-container {
+        height: 100vh;
+    }   
 }

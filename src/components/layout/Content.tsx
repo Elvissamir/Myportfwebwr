@@ -6,6 +6,7 @@ import HireMeBanner from "../sections/HireMe"
 import ProjectsSection from "../sections/ProjectsSection"
 import SkillsSection from "../sections/SkillsSection"
 import Wall from "../sections/Wall"
+import Window from "../Window"
 
 const Content = () => {
     const sectionList: JSX.Element[] = [
@@ -20,15 +21,17 @@ const Content = () => {
     ]
 
     return (
-        <div className="content-container">
-            <main className="content">
-                {sectionList.map((section, index) => 
-                    <div className="content-section x-container" key={index}>
-                        {section}
-                    </div>
-                )}
-            </main>
-        </div>
+        <>
+            <div className="content-container">
+                <main className="content">
+                    {sectionList.map((section, index) => 
+                        <div className="content-section x-container" key={index}>
+                            {section}
+                        </div>
+                    )}
+                </main>
+            </div>
+        </>
     )
 }
 

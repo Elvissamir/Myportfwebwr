@@ -1,33 +1,32 @@
 import { motion, AnimatePresence } from "framer-motion"
-import ProjectDetails from "./ProjectDetails"
-import { ProjectData } from "./ProjectList"
 
-interface ProjectWindowProps {
+interface WindowProps {
     show: boolean
-    data: ProjectData | null
+    content: JSX.Element
     closeWindow: () => void
 }
 
-const ProjectWindow = ({ show, data, closeWindow }: ProjectWindowProps) => {
+const Window = ({ show, content, closeWindow}: WindowProps) => {
+
     return (
         <AnimatePresence>
-            { show && data && 
+            { show && 
                 <motion.div 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="project-window-container">
-                        <div className="project-window">
+                    className="window-container">
+                        <div className="window">
                             <div className="window-top">
                                 <button 
                                     onClick={closeWindow} 
                                     className="close-btn">X</button>
                             </div>
-                            <ProjectDetails data={data} />
+                            {content}
                         </div>
                 </motion.div>}
         </AnimatePresence>
     )
 }
 
-export default ProjectWindow
+export default Window
