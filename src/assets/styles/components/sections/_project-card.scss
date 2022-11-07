@@ -67,16 +67,25 @@
 
                 .project-github-link {
                     border: 2px white solid;
+                    opacity: 0.8;
                     background-color: transparent;
                     color: white;
                     text-decoration: none;
                     margin-right: 15px;
                 }
 
+                .project-github-link:hover {
+                    background-color: gray;
+                }
+
                 .project-details-btn {
                     color: var(--brand-bg);
                     border: 2px var(--brand-color-a) solid;
                     background-color: var(--brand-color-a);
+                }
+
+                .project-details-btn:hover {
+                    box-shadow: 0 0 10px var(--brand-color-a);
                 }
             }
         }

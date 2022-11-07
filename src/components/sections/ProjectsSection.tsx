@@ -34,8 +34,8 @@ const ProjectsSection = () => {
         {
             title: 'Takenjobs', 
             subtitle: 'Takenjobs - Encuentra tu nuevo futuro', 
-            frontImage: imagesDir+'tkj/tkj_p01.png', 
-            images: [], 
+            frontImage: imagesDir+'tkj/tkj01.png', 
+            images: [imagesDir+'tkj/tkj02.png', imagesDir+'tkj/tkj03.png', imagesDir+'tkj/tkj04.png', imagesDir+'tkj/tkj05.png'], 
             description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply to jobs and contact companies.',
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />, <NodeJsIcon />, <FirebaseIcon />, <GoogleMapIcon />],
             githubUrl: ''
@@ -61,8 +61,8 @@ const ProjectsSection = () => {
         {
             title: 'AAC', 
             subtitle: 'Algorithms & Challenges', 
-            frontImage: imagesDir+'algoaac/shortest_c.png', 
-            images: [], 
+            frontImage: imagesDir+'algoaac/shortest.png', 
+            images: [imagesDir+'algoaac/fizzbuzz.png', imagesDir+'algoaac/binarytree.png',  imagesDir+'algoaac/maxchars.png', imagesDir+'algoaac/linkedlist.png'], 
             description: 'AAC is a project aimed to gather cool algorithms and coding challenges, and present a UI for them.',
             stack: [  <JavascriptIcon />, <VueIcon />, <TailwindIcon />],
             githubUrl: 'https://github.com/Elvissamir/AAC'
@@ -70,8 +70,8 @@ const ProjectsSection = () => {
         {
             title: 'CPT', 
             subtitle: 'Crypto Portfolio Tracker', 
-            frontImage: imagesDir+'cpt/cpt_p01.png', 
-            images: [], 
+            frontImage: imagesDir+'cpt/cpt01.png', 
+            images: [imagesDir+'cpt/cpt02.png', imagesDir+'cpt/cpt03.png', imagesDir+'cpt/cpt04.png',imagesDir+'cpt/cpt05.png'], 
             description: 'CPT keeps track of your crypto portfolio and markets. The main features are: portfolio management, charts (top cryptos, distribution), crypto markets.',
             stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/cryptoPT'
@@ -88,8 +88,8 @@ const ProjectsSection = () => {
         {
             title: 'Servm', 
             subtitle: 'School Management', 
-            frontImage: imagesDir+'servm/servm_p01.png', 
-            images: [], 
+            frontImage: imagesDir+'servm/servm01.png', 
+            images: [imagesDir+'servm/servm02.png', imagesDir+'servm/servm03.png', imagesDir+'servm/servm04.png', imagesDir+'servm/servm05.png',], 
             description: 'Servm is a management system developed for the "Antonio José" school. It allows management of students, teachers, courses, subjects and more.',
             stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/registrationManager'

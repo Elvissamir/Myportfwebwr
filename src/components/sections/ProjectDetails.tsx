@@ -1,6 +1,5 @@
 import { ProjectData } from "./ProjectsSection"
 
-
 interface ProjectDetailsProps {
     data: ProjectData
 }
@@ -12,9 +11,16 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
                 <p className="title">{data.title}</p>
                 <p className="subtitle">{data.subtitle}</p>
             </div>
-            <p className="details">{data.description}</p>
+            <div className="description-container">
+                <div className="point">
+                    <p className="text-description">Description:</p>
+                </div>
+                <p className="details">{data.description}</p>
+            </div>
             <div className="stack-container">
-                <p className="stack-text">Technologies used: </p>
+                <div className="point">
+                    <p className="stack-text">Technologies used: </p>
+                </div>
                 <ul className="stack-list">
                     {data.stack.map((item, index) => 
                         <li className="stack-item" key={index}>
@@ -23,10 +29,15 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
                     )}
                 </ul>
             </div>
-            <div className="images-list">
-                {data.images.map((image, index) => 
-                    <img className="image" src={image} alt={data.title+' '+index} />
-                )}
+            <div className="images-container">
+                <div className="point">
+                    <p className="images-text">Pictures: </p>
+                </div>
+                <div className="images-list">
+                    {data.images.map((image, index) => 
+                        <img className="image" src={image} width='280' height='180' alt={data.title+' '+index} key={index} />
+                    )}
+                </div>
             </div>
             <a className="check-btn" target="__blank" href={data.githubUrl} >Github</a>
         </div>
