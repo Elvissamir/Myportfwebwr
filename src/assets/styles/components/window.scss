@@ -3,6 +3,7 @@
     position: fixed;
     justify-content: center;
     align-items: center;
+    background-color: var(--brand-bg);
     top: 0;
     left: 0;
     height: calc(100vh - 50px);
@@ -12,9 +13,9 @@
     .window {
         height: 100%;
         background-color: var(--brand-bg);
-        margin-top: 60px;
-        padding: 10px;
-        width: 90%;
+        overflow-y: scroll;
+        padding: 30px;
+        width: 100%;
 
         .window-top {
             display: flex;
