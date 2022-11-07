@@ -1,32 +1,32 @@
+import { motion, AnimatePresence } from "framer-motion"
+import ProjectDetails from "./ProjectDetails"
+import { ProjectData } from "./ProjectList"
+
 interface ProjectWindowProps {
-    title: string 
-    subtitle: string 
-    images: string[]
-    stack: JSX.Element[]
-    description: string 
-    githubLink: string
+    show: boolean
+    data: ProjectData | null
+    closeWindow: () => void
 }
 
-const ProjectWindow = ({ title, subtitle, description, images, stack, githubLink }: ProjectWindowProps) => {
+const ProjectWindow = ({ show, data, closeWindow }: ProjectWindowProps) => {
     return (
-        <div className="project-window-container">
-            <div className="project-window">
-                <div className="top">
-                    <p className="title">{title}</p>
-                    <p className="subtitle">{subtitle}</p>
-                </div>
-                <p className="description">{description}</p>
-                <div className="stack-container">
-                    <p className="stack-text">Technologies used: </p>
-                    <ul className="stack-list">
-                        {stack.map((item, index) => 
-                            <li className="stack-item" key={index}>{item}</li>   
-                        )}
-                    </ul>
-                </div>
-                <button className="check-btn">Github</button>
-            </div>
-        </div>
+        <AnimatePresence>
+            { show && data && 
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="project-window-container">
+                        <div className="project-window">
+                            <div className="window-top">
+                                <button 
+                                    onClick={closeWindow} 
+                                    className="close-btn">X</button>
+                            </div>
+                            <ProjectDetails data={data} />
+                        </div>
+                </motion.div>}
+        </AnimatePresence>
     )
 }
 
