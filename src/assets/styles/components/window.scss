@@ -3,14 +3,15 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    background-color: var(--brand-bg);
     top: 0;
+    left: 0;
     height: calc(100vh - 50px);
     width: 100%;
     z-index: 100;
-
+    
     .window {
         height: 100%;
+        background-color: var(--brand-bg);
         margin-top: 60px;
         padding: 10px;
         width: 90%;
@@ -28,8 +29,8 @@
                 cursor: pointer;
                 font-weight: bolder;
                 padding: 5px;
-                height: 30px;
-                width: 30px;
+                height: 35px;
+                width: 35px;
             }
 
             .close-btn:hover {
@@ -44,5 +45,16 @@
 @media (min-width: 1024px) {
     .window-container {
         height: 100vh;
+        background-color: rgba(180, 180, 180, 0.8);
+
+        .window {
+            height: 55%;
+            background-color: rgba(31, 41, 55, 0.8);
+            border-radius: 15px;
+            padding: 30px 45px;
+            box-shadow: 0 0 20px var(--brand-color-a);
+            backdrop-filter: blur(20px);
+            width: 50%;
+        }
     }   
 }
