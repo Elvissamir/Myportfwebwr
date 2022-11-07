@@ -6,8 +6,8 @@ const AboutMeSection = () => {
 
     return (
         <Section
-            title={sections.aboutMe.name}
-            id={sections.aboutMe.id}
+            title={sections.about.name}
+            id={sections.about.id}
             description={description}
             content={ <p></p> } />
     )

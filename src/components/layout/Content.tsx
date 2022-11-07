@@ -1,5 +1,6 @@
 import AboutMeSection from "../sections/AboutMeSection"
 import ChallengesSection from "../sections/ChallengesSection"
+import ContactMeSection from "../sections/ContactMeSection"
 import EducationSection from "../sections/EducationSection"
 import HireMeBanner from "../sections/HireMe"
 import ProjectsSection from "../sections/ProjectsSection"
@@ -14,7 +15,8 @@ const Content = () => {
         <HireMeBanner />,
         <EducationSection />,
         <ChallengesSection />,
-        <AboutMeSection />
+        <AboutMeSection />,
+        <ContactMeSection />
     ]
 
     return (
