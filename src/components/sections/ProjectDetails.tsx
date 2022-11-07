@@ -17,7 +17,9 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
                 <p className="stack-text">Technologies used: </p>
                 <ul className="stack-list">
                     {data.stack.map((item, index) => 
-                        <li className="stack-item" key={index}>{item}</li>   
+                        <li className="stack-item" key={index}>
+                            {item}
+                        </li>   
                     )}
                 </ul>
             </div>

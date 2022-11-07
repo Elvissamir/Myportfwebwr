@@ -28,13 +28,37 @@
     .stack-container {
         display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: 20px;
         width: 100%;
 
         .stack-list {
             display: flex;
+            flex-wrap: wrap;
             list-style: none;
-            margin-left: 10px;
+
+            .stack-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 50%;
+                border: 2px white solid;
+                margin-top: 10px;
+                margin-right: 5px;
+                height: 45px;
+                width: 45px;
+
+                .icon {
+                    padding: 2px;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .stack-item:hover {
+                box-shadow: 0 0 15px var(--brand-color-a);
+                border: 2px var(--brand-color-a) solid;
+            }
         }
     }
 
