@@ -1,0 +1,42 @@
+.project-window-container {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-bg);
+    top: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 100;
+
+    .project-window {
+        height: 100%;
+        margin-top: 60px;
+        padding: 10px;
+        width: 90%;
+
+        .window-top {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .close-btn {
+                border: 2px var(--brand-color-a) solid;
+                background-color: lightgray;
+                border-radius: 50%;
+                color: var(--brand-bg);
+                cursor: pointer;
+                font-weight: bolder;
+                padding: 5px;
+                height: 30px;
+                width: 30px;
+            }
+
+            .close-btn:hover {
+                box-shadow: 0 0 10px var(--brand-color-a);
+                background-color: var(--brand-color-a);
+                color: white;
+            }
+        }
+    }
+}

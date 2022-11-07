@@ -11,7 +11,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
                 <p className="title">{data.title}</p>
                 <p className="subtitle">{data.subtitle}</p>
             </div>
-            <p className="description">{data.description}</p>
+            <p className="details">{data.description}</p>
             <div className="stack-container">
                 <p className="stack-text">Technologies used: </p>
                 <ul className="stack-list">

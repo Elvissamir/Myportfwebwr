@@ -13,9 +13,6 @@ export interface ProjectData {
 }
 
 const ProjectList = () => {
-    const [currentProject, setCurrentProject] = useState<null | ProjectData>(null)
-    const [showDetails, setShowDetails] = useState(false)
-
     const projectList: ProjectData[] = [
         {
             title: 'CPT', 
@@ -72,6 +69,9 @@ const ProjectList = () => {
             githubUrl: 'https://github.com/Elvissamir/Scweb'
         }
     ]
+
+    const [currentProject, setCurrentProject] = useState<null | ProjectData>(projectList[0])
+    const [showDetails, setShowDetails] = useState(true)
 
     const handleSeeDetails = (index: number) => {
         setCurrentProject(projectList[index])

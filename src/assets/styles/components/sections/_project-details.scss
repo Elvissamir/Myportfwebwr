@@ -1,0 +1,60 @@
+.project-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        
+        .title {
+            font-size: 26px;
+            font-weight: bolder;
+            text-shadow: 0 0 10px var(--brand-color-a);
+        }
+
+        .subtitle {
+            color: white;
+        }
+    }
+
+    .details {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .stack-container {
+        display: flex;
+        margin-top: 15px;
+        width: 100%;
+
+        .stack-list {
+            display: flex;
+        }
+    }
+
+    .images-list {  
+        display: flex;
+    }
+
+    .check-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--brand-bg);
+        border: 2px var(--brand-color-a) solid;
+        background-color: var(--brand-color-a);
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 15px;
+        padding: 10px;
+        width: 100px;
+    }
+
+    .check-btn:hover {
+        background-color: var(--brand-bg);
+        color: var(--brand-color-a);
+        box-shadow: 0 0 10px var(--brand-color-a);
+    }
+}
