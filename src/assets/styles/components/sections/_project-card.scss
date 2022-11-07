@@ -1,0 +1,105 @@
+.project-card-container {
+    display: flex;
+    background-color: rgba(31, 41, 55, 0.3);
+    backdrop-filter: blur(5px);
+    border: 2px white solid;
+    box-shadow: 0 0 10px white;
+    width: 350px;
+
+    .project-card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+
+        .top {
+            display: flex;
+
+            .project-front-image {
+                transition: all 0.5s ease-in-out;
+                width: 100%;
+            }
+        }
+
+        .project-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            position: absolute;
+            background-color: transparent;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+
+            .project-text-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .project-title {
+                    font-size: 22px;
+                    text-shadow: 0 0 10px var(--brand-color-a);
+                }
+
+                .project-subtitle {
+                    margin-top: 5px;
+                }
+            }
+
+            .project-btns {
+                display: flex;
+                margin-top: 20px;
+                
+                .project-github-link, .project-details-btn {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    justify-content: center;
+                    padding: 10px 10px;
+                    font-size: 14px;
+                    border-radius: 10px;
+                    width: 85px;
+                }
+
+                .project-github-link {
+                    border: 2px white solid;
+                    background-color: transparent;
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 15px;
+                }
+
+                .project-details-btn {
+                    color: var(--brand-bg);
+                    border: 2px var(--brand-color-a) solid;
+                    background-color: var(--brand-color-a);
+                }
+            }
+        }
+    }
+}
+
+.project-card-container:not(:first-child) {
+    margin-top: 25px;
+}
+
+.project-card-container:hover {
+    border: 2px var(--brand-color-a) solid;
+    box-shadow: 0 0 20px var(--brand-color-a);
+
+    .project-card {
+        .top {
+            .project-front-image {
+                opacity: 0;
+            }
+        }
+
+        .project-info {
+            opacity: 1;
+        }
+    }
+}
