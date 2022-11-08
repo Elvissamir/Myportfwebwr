@@ -1,5 +1,23 @@
 .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    background-color: rgba(180, 180, 180, 0.7);
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 110px;
+}
 
+.action-btn:hover {
+    border: 2px var(--brand-color-a) solid;
+    text-shadow: 0 0 10px var(--brand-color-a);
+    box-shadow: 0 0 10px var(--brand-color-a);
 }
 
 .close-btn {
