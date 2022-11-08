@@ -1,9 +1,9 @@
 .navbar-container {
-    background-color: rgba(31, 41, 55, 0.6);
+    background-color: var(--brand-bg-glass);
     box-shadow: 0 0 20px var(--brand-color-a);
     border-bottom: 1px var(--brand-color-a) solid;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(--glass);
+    -webkit-backdrop-filter: blur(--glass);
     display: flex;
     position: fixed;
     width: 100%;

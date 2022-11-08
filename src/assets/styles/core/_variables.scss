@@ -1,13 +1,25 @@
 /* VARIABLES */
 :root {
+    // Colors 
     --brand-color-a: #29b3eb;
     --brand-color-b: #21edba;
     --brand-color-c: #2e327e;
     --brand-bg: rgb(31, 41, 55);
+    --brand-bg-glass: rgba(31, 41, 55, 0.8);
+    --window-bg: rgba(180, 180, 180, 0.8);
+
+    // Glass
+    --glass: blur(20px);
+
+    // Shadow
     --shadow-default: 0 0 22px rgba(189, 187, 197, 0.8);
     --shadow-active: 0 0 22px rgba(33, 237, 186, 1);
+
+    // Border
     --border-radius: 1rem;
     --box-padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+    // Text
     --simple-text: white;
     --title-size: 45px; 
     --description-size: 20px;

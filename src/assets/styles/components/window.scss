@@ -46,15 +46,15 @@
 @media (min-width: 1024px) {
     .window-container {
         height: 100vh;
-        background-color: rgba(180, 180, 180, 0.8);
+        background-color: var(--window-bg);
 
         .window {
             height: 55%;
-            background-color: rgba(31, 41, 55, 0.8);
+            background-color: var(--brand-bg-glass);
             border-radius: 15px;
             padding: 30px 45px;
             box-shadow: 0 0 20px var(--brand-color-a);
-            backdrop-filter: blur(20px);
+            backdrop-filter: var(--glass);
             width: 50%;
         }
     }   

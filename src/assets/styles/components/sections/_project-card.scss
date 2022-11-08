@@ -1,7 +1,7 @@
 .project-card-container {
     display: flex;
-    background-color: rgba(31, 41, 55, 0.3);
-    backdrop-filter: blur(5px);
+    background-color: var(--brand-bg-glass);
+    backdrop-filter: blur(--glass);
     border: 2px white solid;
     box-shadow: 0 0 10px white;
     width: 350px;
