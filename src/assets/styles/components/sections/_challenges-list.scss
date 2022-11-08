@@ -1,0 +1,14 @@
+.challenges-list-container {
+    display: flex;
+    width: 100%;
+
+    .challenges-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, max-content));
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+    }
+}
