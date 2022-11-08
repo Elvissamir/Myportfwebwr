@@ -2,6 +2,7 @@ import { useState } from "react"
 import sections from "../../core/sections"
 import FirebaseIcon from "../icons/FirebaseIcon"
 import GoogleMapIcon from "../icons/GoogleMapIcon"
+import GraphqlIcon from "../icons/GraphqlIcon"
 import JavascriptIcon from "../icons/JavascriptIcon"
 import LaravelIcon from "../icons/LaravelIcon"
 import MongoIcon from "../icons/MongoIcon"
@@ -52,8 +53,8 @@ const ProjectsSection = () => {
         {
             title: 'Fullrvmovies', 
             subtitle: 'React VMovies', 
-            frontImage: '', 
-            images: [], 
+            frontImage: imagesDir+'/fullrvmovies/01.png', 
+            images: [imagesDir+'/fullrvmovies/02.png', imagesDir+'/fullrvmovies/03.png', imagesDir+'/fullrvmovies/04.png', imagesDir+'/fullrvmovies/05.png',], 
             description: 'Movie inventory manager created with Node and React.',
             stack: [ <NodeJsIcon />, <ReactIcon />, <MongoIcon />, <JavascriptIcon />, <TailwindIcon />],
             githubUrl: 'https://github.com/Elvissamir/Fullrvmovies'
@@ -79,10 +80,10 @@ const ProjectsSection = () => {
         {
             title: 'Front Store', 
             subtitle: 'React/Redux Front Store', 
-            frontImage: '', 
-            images: [], 
+            frontImage: imagesDir+'/frontStore/01.png',
+            images: [imagesDir+'/frontStore/02.png', imagesDir+'/frontStore/03.png', imagesDir+'/frontStore/04.png', imagesDir+'/frontStore/05.png',], 
             description: 'Front Store developed using react and redux made for Scandiweb.',
-            stack: [ <ReactIcon />, <JavascriptIcon />],
+            stack: [ <ReactIcon />, <JavascriptIcon />, <GraphqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/Scweb'
         },
         {
