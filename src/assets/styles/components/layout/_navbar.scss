@@ -2,8 +2,8 @@
     background-color: var(--brand-bg-glass);
     box-shadow: 0 0 20px var(--brand-color-a);
     border-bottom: 1px var(--brand-color-a) solid;
-    backdrop-filter: blur(--glass);
-    -webkit-backdrop-filter: blur(--glass);
+    backdrop-filter: var(--glass);
+    -webkit-backdrop-filter: var(--glass);
     display: flex;
     position: fixed;
     width: 100%;

@@ -1,5 +1,5 @@
 .grid-background {
-    background-image: linear-gradient(to right, var(--brand-color-a), #2e327e, var(--brand-color-a));
+    background-image: linear-gradient(to right, var(--brand-color-a), var(--brand-color-c), var(--brand-color-a));
     height: 100%;
     position: absolute;
     background-size: 200%;
@@ -37,4 +37,5 @@
     content: "";
     position: absolute;
     inset: 0.5px;
+    border-radius: 6px;
 }

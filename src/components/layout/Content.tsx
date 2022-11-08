@@ -23,8 +23,10 @@ const Content = () => {
         <div className="content-container">
             <main className="content">
                 {sectionList.map((section, index) => 
-                    <div className="content-section x-container" key={index}>
-                        {section}
+                    <div 
+                        className={ index === 3? "content-section full-container" : "content-section x-container"} 
+                        key={index}>
+                            {section}
                     </div>
                 )}
             </main>

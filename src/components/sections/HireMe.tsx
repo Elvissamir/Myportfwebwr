@@ -3,7 +3,7 @@ const HireMeBanner = () => {
         <div className="hire-me-container">
             <div className="hire-me">
                 <p className="hire-me-text">Want to hire Me?</p>
-                <button className="lets-talk-btn">Let's talk!</button>
+                <button className="action-btn">Let's talk!</button>
             </div>
         </div>
     )

@@ -39,7 +39,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
                     )}
                 </div>
             </div>
-            <a className="check-btn" target="__blank" href={data.githubUrl} >Github</a>
+            <a className="action-btn" target="__blank" href={data.githubUrl} >Github</a>
         </div>
     )
 }

@@ -21,7 +21,7 @@ const ProjectCard = ({ title, subtitle, frontImage, githubUrl, index, seeDetails
                     </div>
                     <div className="project-btns">
                         <a className="project-github-link" href={githubUrl}>Github</a>
-                        <button onClick={() => seeDetails(index)} className="project-details-btn">Details</button>
+                        <button onClick={() => seeDetails(index)} className="action-btn">Details</button>
                     </div>
                 </div>
             </div>

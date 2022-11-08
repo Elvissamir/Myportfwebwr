@@ -1,0 +1,40 @@
+.hire-me-container {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(31, 44, 180, 0.5), var(--brand-bg-glass), rgb(31, 44, 180));
+    backdrop-filter: var(--glass);
+    box-shadow: 0 0 10px var(--brand-color-a);
+    background-size: 200%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 120px;
+    width: 100%;
+    animation: backgroundI 5s linear infinite;
+
+    @keyframes backgroundI {
+        from {
+            background-position: 0% center;
+        }
+    
+        to {
+            background-position: -200% center;
+        }
+    }
+
+    .hire-me {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bolder;
+        height: 100%;
+        width: 100%;
+
+        .hire-me-text {
+            font-size: 30px;
+            text-shadow: 0 0 3px var(--brand-color-a);
+            margin-right: 10px;
+        }
+    }
+}

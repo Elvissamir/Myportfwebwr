@@ -21,24 +21,6 @@
             display: flex;
             justify-content: flex-end;
             width: 100%;
-
-            .close-btn {
-                border: 2px var(--brand-color-a) solid;
-                background-color: lightgray;
-                border-radius: 50%;
-                color: var(--brand-bg);
-                cursor: pointer;
-                font-weight: bolder;
-                padding: 5px;
-                height: 35px;
-                width: 35px;
-            }
-
-            .close-btn:hover {
-                box-shadow: 0 0 10px var(--brand-color-a);
-                background-color: var(--brand-color-a);
-                color: white;
-            }
         }
     }
 }
