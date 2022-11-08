@@ -1,4 +1,5 @@
 import sections from "../../core/sections"
+import EducationList from "./EducationList"
 import Section from "./Section"
 
 const EducationSection = () => {
@@ -9,7 +10,7 @@ const EducationSection = () => {
             id={sections.education.id}
             title={sections.education.name}
             description={description}
-            content={ <p></p> } />
+            content={ <EducationList /> } />
     )
 }
 

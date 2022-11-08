@@ -1,0 +1,90 @@
+.education-list-container {
+    display: flex;
+    width: 100%;
+
+    .education-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill(), minmax(350px, 1fr));
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+
+        .course-details-container {
+            display: flex;
+            width: 100%;
+
+            .course-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                text-decoration: none;
+                width: 350px;
+                overflow: hidden;
+
+                .course-image {
+                    display: flex;
+                    width: 100%;
+                }
+                
+                .course-text-container {
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--brand-color-d);
+                    justify-content: center;
+                    bottom: 10px;
+                    position: absolute;
+                    transform: translateX(-100%);
+                    transition: all 1s ease-in-out;
+                    width: 100%;
+
+                    .right-line {
+                        background-color: var(--brand-color-a);
+                        height: 3px;
+                        width: 10px;
+                    }
+
+                    
+                    .left-line {
+                        background-color: var(--brand-color-a);
+                        height: 3px;
+                        width: 10px;
+                    }
+
+                    .course-text {
+                        color: white;
+                        padding: 5px;
+                        text-shadow: 0 0 10px white;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .course-details-container:hover {
+            box-shadow: 0 0 15px var(--brand-color-a);
+
+            .course-details {
+                .course-text-container {
+                    transform: translateX(0%);
+
+                    .course-text {
+                        text-shadow: 0 0 10px var(--brand-color-a);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .education-list-container {
+        .education-list {
+            // grid-template-columns: repeat(2, 350px);
+        }
+    }
+}

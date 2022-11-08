@@ -17,23 +17,28 @@
 .action-btn:hover {
     border: 2px var(--brand-color-a) solid;
     text-shadow: 0 0 10px var(--brand-color-a);
-    box-shadow: 0 0 10px var(--brand-color-a);
+    box-shadow: 0 0 15px var(--brand-color-a);
 }
 
 .close-btn {
-    border: 2px var(--brand-color-a) solid;
-    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
     border-radius: 50%;
-    color: var(--brand-bg);
-    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    background-color: rgba(180, 180, 180, 0.7);
     font-weight: bolder;
-    padding: 5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
     height: 35px;
     width: 35px;
 }
 
 .close-btn:hover {
-    box-shadow: 0 0 10px var(--brand-color-a);
-    background-color: var(--brand-color-a);
-    color: white;
+    border: 2px var(--brand-color-a) solid;
+    color: var(--brand-color-a);
+    text-shadow: 0 0 10px var(--brand-color-a);
+    box-shadow: 0 0 15px var(--brand-color-a);
 }
