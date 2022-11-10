@@ -1,3 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion"
+import { useState } from "react"
 import FavoriteBooksList from "./FavoriteBooksList"
 import FavoriteMoviesList from "./FavoriteMoviesList"
 import FavoriteSeries from "./FavoriteSeries"
@@ -20,20 +22,40 @@ const AboutDropdown = () => {
         { text: "Some of my interests, things I'd like to learn and hobbies?", content: <HobbiesAndInterestsList /> },
     ]
 
+    const [ activeIndex, setActiveIndex ] = useState<number | null>(null)
+
+    const handleOpenDropdown = (index: number) => {
+        if (index === activeIndex) 
+            return setActiveIndex(null)
+        
+        setActiveIndex(index)
+    }
+
     return (
         <div className="about-dropdown">
-            <ul className="dropdown-list">         
-                {dropdownList.map((dropdownItem, index) => 
-                    <li className="dropdown-item" key={index}>
-                        <button className="dropdown-btn">{dropdownItem.text}</button>
-                        <div className="dropdown-content">
-                            <div className="details">
-                                {dropdownItem.content}
-                            </div>
-                        </div>
-                    </li>
-                )}
-            </ul>
+            <motion.ul 
+                layout
+                className="dropdown-list">         
+                    {dropdownList.map((dropdownItem, index) => 
+                        <li className="dropdown-item" key={index}>
+                            <button 
+                                onClick={() => handleOpenDropdown(index)}
+                                className="dropdown-btn">{dropdownItem.text}</button>
+                            <AnimatePresence mode="wait">
+                                {activeIndex === index && 
+                                    <motion.div 
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        className="dropdown-content">
+                                            <div className="details">
+                                                {dropdownItem.content}
+                                            </div>
+                                    </motion.div>}
+                            </AnimatePresence>
+                        </li>
+                    )}
+            </motion.ul>
         </div>
     )
 }
