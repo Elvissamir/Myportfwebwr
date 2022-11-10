@@ -12,7 +12,7 @@ const ProjectCard = ({ title, subtitle, frontImage, githubUrl, index, seeDetails
         <div className="project-card-container">
             <div className="project-card">
                 <div className="top">
-                    <img className="project-front-image" src={frontImage} alt="project image" width='280' height='180' />
+                    <img className="project-front-image" src={frontImage} alt={title} width='280' height='180' />
                 </div>
                 <div className="project-info">
                     <div className="project-text-container">

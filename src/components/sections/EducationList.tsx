@@ -26,7 +26,7 @@ const EducationList = () => {
                 {educationList.map((course, index) => 
                     <li className="course-details-container" key={index}>
                         <a href={course.link} className="course-details">
-                            <img className="course-image" src={course.imageUrl} alt={'course'+' '+course.name}  width='350' height='180' />
+                            <img className="course-image" src={course.imageUrl} alt={'course '+course.name}  width='350' height='180' />
                             <div className="course-text-container">
                                 <span className="right-line"></span>
                                 <p className="course-text">{course.name}</p>
