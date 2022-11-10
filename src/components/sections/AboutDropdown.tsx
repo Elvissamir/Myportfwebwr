@@ -27,16 +27,6 @@ const AboutDropdown = () => {
                 </div>
             </div>
             <p>
-                Five of my favorite non-instrumental songs? 
-                1 - Second Wind (You're only human) by Billy Joel 
-                2 - Don't worry be happy by Bobby Mcferrin 
-                3 - I can see clearly now by Johnny Nash
-                4 - Raindrops keep falling on my head by Bj Thomas
-                5 - The year of the cat by Al Stewart
-                <br />
-                Oh man, I could make a long list...
-            </p>
-            <p>
                 Some of my interests, things I'd like to learn and hobbies? 
                 <br />
                 1 - Stoicism 
