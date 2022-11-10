@@ -1,4 +1,4 @@
-import Window from "../Window"
+import Window from "../../Window"
 import ProjectDetails from "./ProjectDetails"
 import { ProjectData } from "./ProjectsSection"
 

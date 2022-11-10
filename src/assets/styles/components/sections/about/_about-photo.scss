@@ -1,0 +1,29 @@
+.my-photo-container {
+    display: flex;
+
+    .me-photo {
+        display: flex;
+        border-radius: 50%;
+        padding: 3px;
+        background-image: linear-gradient(to left, rgba(31, 44, 150, 1), var(--brand-color-a), rgba(31, 44, 100, 1));
+        animation: animatedgradient 3s ease alternate infinite;
+        background-size: 300% 300%;
+        height: 150px;
+        width: 150px;
+
+        @keyframes animatedgradient {
+            0% {
+                background-position: 0% 50%;
+                box-shadow: 0 0 5px var(--brand-color-a);
+            }
+            50% {
+                background-position: 100% 50%;
+                box-shadow: 0 0 10px var(--brand-color-a);
+            }
+            100% {
+                background-position: 0% 50%;
+                box-shadow: 0 0 15px var(--brand-color-a);
+            }
+        }
+    }
+}

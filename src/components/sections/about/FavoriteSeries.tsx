@@ -1,4 +1,4 @@
-import CobraIcon from "../icons/CobraIcon"
+import CobraIcon from "../../icons/CobraIcon"
 
 const FavoriteSeries = () => {
     return (

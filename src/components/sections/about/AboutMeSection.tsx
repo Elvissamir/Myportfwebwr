@@ -1,6 +1,6 @@
-import sections from "../../core/sections"
+import sections from "../../../core/sections"
 import AboutMe from "./AboutMe"
-import Section from "./Section"
+import Section from "../Section"
 
 const AboutMeSection = () => {
     return (

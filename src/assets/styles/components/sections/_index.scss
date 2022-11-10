@@ -1,13 +1,10 @@
 @import './section';
 
 // Skills 
-@import './skills-graph';
-@import './skill-item';
+@import './skills/index';
 
 // Projects
-@import './project-list';
-@import './project-details';
-@import './project-card';
+@import './projects/index';
 
 // Hire me 
 @import './hire-me';
@@ -16,5 +13,7 @@
 @import './education-list';
 
 // Challenges
-@import './challenges-list';
-@import './challenges-card';
+@import './challenges/index';
+
+// About
+@import './about/index';

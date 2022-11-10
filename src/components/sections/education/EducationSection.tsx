@@ -1,6 +1,6 @@
-import sections from "../../core/sections"
+import sections from "../../../core/sections"
 import EducationList from "./EducationList"
-import Section from "./Section"
+import Section from "../Section"
 
 const EducationSection = () => {
     const description = "These are some of the courses I've completed"

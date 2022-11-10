@@ -1,10 +1,10 @@
-import AboutMeSection from "../sections/AboutMeSection"
-import ChallengesSection from "../sections/ChallengesSection"
-import ContactMeSection from "../sections/ContactMeSection"
-import EducationSection from "../sections/EducationSection"
+import AboutMeSection from "../sections/about/AboutMeSection"
+import ChallengesSection from "../sections/challenges/ChallengesSection"
+import ContactMeSection from "../sections/contact/ContactMeSection"
+import EducationSection from "../sections/education/EducationSection"
 import HireMeBanner from "../sections/HireMe"
-import ProjectsSection from "../sections/ProjectsSection"
-import SkillsSection from "../sections/SkillsSection"
+import ProjectsSection from "../sections/projects/ProjectsSection"
+import SkillsSection from "../sections/skills/SkillsSection"
 import Wall from "../sections/Wall"
 
 const Content = () => {
