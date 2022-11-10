@@ -13,7 +13,8 @@ const AboutDropdown = () => {
         { text: 'My favorite books?', content: <FavoriteBooksList /> },
         { text: '', content: <ToReadList /> },
         { text: 'My favorite movies?', content: <FavoriteMoviesList /> },
-        { text: 'My favorite series of all time?', content: <FavoriteSeries /> }
+        { text: 'My favorite series of all time?', content: <FavoriteSeries /> },
+        { text: "Some of my interests, things I'd like to learn and hobbies?", content:  },
     ]
 
     return (
@@ -26,15 +27,6 @@ const AboutDropdown = () => {
                     </div>
                 </div>
             </div>
-            <p>
-                Some of my interests, things I'd like to learn and hobbies? 
-                <br />
-                1 - Stoicism 
-                2 - Machine learning 
-                3 - Leetcode (love it and hate it)
-                4 - Testing (TDD) 
-                5 - Playing the guitar
-            </p>
             <p>
                 Now, what about software? I love the whole experience of software engineering: typing on the keyboard, the colors of the code editor,
                 learning a new language, creating a system, and then discovering a bug, going to bed thinking about the strategies to solve the problem, 
