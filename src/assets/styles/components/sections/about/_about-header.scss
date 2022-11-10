@@ -1,5 +1,24 @@
 .about-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        .text {
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .text-header {
+            font-weight: bolder;
+        }
+    }
 }
