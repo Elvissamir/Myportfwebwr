@@ -1,0 +1,21 @@
+.about-dropdown-content {
+    display: flex;
+    width: 100%;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--brand-bg-glass);
+        backdrop-filter: var(--glass);
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px var(--brand-color-a);
+        padding: 30px 0;
+        width: 100%;
+
+        .list-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

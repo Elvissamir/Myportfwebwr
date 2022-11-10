@@ -1,0 +1,33 @@
+.about-dropdown {
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+
+    .dropdown-list {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        .dropdown-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .dropdown-btn {
+                display: flex;
+                align-items: center;
+                background-color: var(--brand-color-d);
+                border: 2px white solid;
+                cursor: pointer;
+                color: white;
+                justify-content: center;
+                text-shadow: 0 0 10px white;
+                height: 50px;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+}

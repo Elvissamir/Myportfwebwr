@@ -1,5 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { useState } from "react"
+import AboutDropdownContent from "./AboutDropdownContent"
 import FavoriteBooksList from "./FavoriteBooksList"
 import FavoriteMoviesList from "./FavoriteMoviesList"
 import FavoriteSeries from "./FavoriteSeries"
@@ -7,7 +8,7 @@ import FavoriteSongsList from "./FavoriteSongsList"
 import HobbiesAndInterestsList from "./HobbiesAndInterestsList"
 import ToReadList from "./ToReadList"
 
-interface DropdownItem {
+export interface DropdownItem {
     text: string 
     content: JSX.Element | string
 }
@@ -19,7 +20,7 @@ const AboutDropdown = () => {
         { text: 'My favorite movies?', content: <FavoriteMoviesList /> },
         { text: 'My favorite series of all time?', content: <FavoriteSeries /> },
         { text: 'My favorite songs?', content: <FavoriteSongsList /> },
-        { text: "Some of my interests, things I'd like to learn and hobbies?", content: <HobbiesAndInterestsList /> },
+        { text: "Things I'd like to learn and hobbies?", content: <HobbiesAndInterestsList /> },
     ]
 
     const [ activeIndex, setActiveIndex ] = useState<number | null>(null)
@@ -40,23 +41,18 @@ const AboutDropdown = () => {
                         <li className="dropdown-item" key={index}>
                             <button 
                                 onClick={() => handleOpenDropdown(index)}
-                                className="dropdown-btn">{dropdownItem.text}</button>
-                            <AnimatePresence mode="wait">
-                                {activeIndex === index && 
-                                    <motion.div 
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: 'auto' }}
-                                        exit={{ opacity: 0, height: 0 }}
-                                        custom={index}
-                                        transition={{ bounce: 0, duration: 0.15 }}
-                                        className="dropdown-content">
-                                            <div className="details">
-                                                {dropdownItem.content}
-                                            </div>
-                                    </motion.div>}
-                            </AnimatePresence>
+                                className="dropdown-btn">
+                                    {dropdownItem.text}
+                            </button>
+                            <AboutDropdownContent
+                                activeIndex={activeIndex}
+                                index={index}
+                                dropdownItem={dropdownItem} />
                         </li>
                     )}
+                    <div className="dropdown-item">
+                        <button className="dropdown-btn"></button>
+                    </div>
             </motion.ul>
         </div>
     )
