@@ -1,14 +1,15 @@
 import AboutDropdown from "./AboutDropdown"
-import AboutPhoto from "./AboutPhoto"
+import AboutHeader from "./AboutHeader"
+import AboutSoftware from "./AboutSoftware"
 
 const AboutMe = () => {
     return (
         <div className="about-me-container">
             <div className="about-me">
                 <div className="about-content">
-                    <AboutPhoto />
-                    
+                    <AboutHeader />
                     <AboutDropdown />
+                    <AboutSoftware />
                 </div>
             </div>
         </div>
