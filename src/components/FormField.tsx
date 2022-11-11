@@ -16,8 +16,6 @@ const FormField = ({ id, label, inputType, value, disabled, error, onChange }: F
     const selectCss = () => {
         const baseCss = inputType === 'input-text'? 'input-text' : 'input-area'
 
-        console.log(disabled)
-
         if (disabled) return baseCss + ' disabled-input'
         if (error) return baseCss + ' input-error'
 

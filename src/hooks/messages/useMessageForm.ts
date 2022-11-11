@@ -21,6 +21,8 @@ const useMessageForm = () => {
         const result = await MessagesService.save(messageData)
         finishLoading()
 
+        console.log('result', result)
+
         if (result) return setSentStatus('success')
 
         setSentStatus('failed')
