@@ -18,7 +18,7 @@ const useMessageForm = () => {
         const nmessageData = {...messageData}
 
         if (e.target.id === 'name') 
-            nmessageData.author_name = e.target.value
+            nmessageData.name = e.target.value
         else if (e.target.id === 'subject')
             nmessageData.subject = e.target.value
         else if (e.target.id === 'email')

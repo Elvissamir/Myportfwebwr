@@ -3,7 +3,7 @@ import { MessageData } from '../../services/Messages/MessagesService'
 
 const useMessageData = () => {
     const [messageData, setMessageData] = useState<MessageData>({
-        author_name: '',
+        name: '',
         subject: '',
         email: '',
         content: ''

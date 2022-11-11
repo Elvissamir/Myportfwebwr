@@ -3,7 +3,7 @@ import FirebaseDB from "../Firebase/FirebaseDB"
 
 export interface MessageData {
     subject: string 
-    author_name: string
+    name: string
     email: string 
     content: string 
 }
