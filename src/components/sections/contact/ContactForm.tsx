@@ -18,29 +18,33 @@ const ContactForm = () => {
                     id="name"
                     label="Your name" 
                     error={errors['name']? errors['name'] : null}
+                    value={messageData.name}
                     inputType='input-text'
-                    disabled={disabled || loading}
+                    disabled={loading}
                     onChange={handleChangeInput}/>
                 <FormField 
                     id="subject"
                     label="Subject" 
                     error={errors['subject']? errors['subject'] : null}
+                    value={messageData.subject}
                     inputType='input-text'
-                    disabled={disabled || loading}
+                    disabled={loading}
                     onChange={handleChangeInput}/>
                 <FormField 
                     id="email"
                     label="Email" 
                     error={errors['email']? errors['email'] : null}
+                    value={messageData.email}
                     inputType='input-text'
-                    disabled={disabled || loading}
+                    disabled={loading}
                     onChange={handleChangeInput}/>
                 <FormField 
                     id="content"
                     label="Message" 
                     error={errors['content']? errors['content'] : null}
+                    value={messageData.content}
                     inputType='textarea'
-                    disabled={disabled || loading}
+                    disabled={loading}
                     onChange={handleChangeInput}/>
                 <div className="control-btns">
                     <button 

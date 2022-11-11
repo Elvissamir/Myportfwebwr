@@ -6,6 +6,16 @@
     fill: var(--brand-color-a);
 }
 
+.error-icon {
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    border-radius: 50%;
+
+    path {
+        fill: var(--brand-color-a);
+    }
+}
+
 .cobra-icon {
     path {
         fill: white;

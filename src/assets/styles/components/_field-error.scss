@@ -1,0 +1,9 @@
+.field-error {
+    display: flex;
+    margin-top: 10px;
+
+    .error-text {
+        color: var(--brand-color-error);
+        margin-left: 5px;
+    }
+}

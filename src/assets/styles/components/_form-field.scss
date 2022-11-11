@@ -1,0 +1,34 @@
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+    .input-label {
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    .input-text, .input-area {
+        font-size: 16px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .input-area {
+        height: 150px;
+        resize: none;
+    }
+
+    .input-error {
+        border: 2px var(--brand-color-a) solid;
+    }
+
+    .input-area:hover, .input-text:hover {
+        box-shadow: 0 0 10px var(--brand-color-a);
+    }
+}
+
+.form-field:not(:first-child) {
+    margin-top: 15px;
+}

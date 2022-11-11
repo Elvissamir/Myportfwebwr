@@ -8,15 +8,18 @@ interface FormFieldProps {
     disabled: boolean
     inputType: 'input-text' | 'textarea'
     error: FormFieldError | null
+    value: string 
     onChange: (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => void
 }
 
-const FormField = ({ id, label, inputType, disabled, error, onChange }: FormFieldProps) => {
+const FormField = ({ id, label, inputType, value, disabled, error, onChange }: FormFieldProps) => {
     const selectCss = () => {
         const baseCss = inputType === 'input-text'? 'input-text' : 'input-area'
 
+        console.log(disabled)
+
         if (disabled) return baseCss + ' disabled-input'
-        if (error) return baseCss + ' error-input'
+        if (error) return baseCss + ' input-error'
 
         return baseCss
     }
@@ -30,12 +33,14 @@ const FormField = ({ id, label, inputType, disabled, error, onChange }: FormFiel
                 <input 
                     onChange={onChange}
                     className={selectCss()}
+                    value={value}
                     id={id} 
                     type="text" />}
             { inputType === 'textarea' && 
                 <textarea 
                     onChange={onChange}
                     className={selectCss()} 
+                    value={value}
                     id={id} />}
             { error && <FieldError error={error} />}
         </div>

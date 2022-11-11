@@ -1,34 +1,20 @@
-import { errorMessages, FormError } from "../core/types"
-import { MessageData } from "../services/Messages/MessagesService"
+import { errorMessages, FormError, FormFieldError } from "../core/types"
 
 interface MessageValidatorI {
-    valid: (message: MessageData) => null | FormError
+    checkValue: (value: string) => null | FormFieldError 
 }
 
 class MessageValidatorC implements MessageValidatorI {
-    valid(message: MessageData) {
-        for (let key in message) {
-            let error: null | FormError = null
-            const result = this.checkValue(message[key as keyof typeof message])
-            
-            if (result) {
-                error = {}
-                error[key] = { message: result }
-                return error
-            }
-        }
+    checkValue(value: string) {
+        let error: FormFieldError | null = null
 
-        return null
-    }
-
-    private checkValue(value: string) {
         if (value.length === 0) 
-            return errorMessages.empty
+            error = { message: errorMessages.empty}
 
-        if (value.length < 3) 
-            return errorMessages.moreThan
+        else if (value.length < 3) 
+            error = { message: errorMessages.moreThan}
 
-        return null
+        return error
     }
 }
 

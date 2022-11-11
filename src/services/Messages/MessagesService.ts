@@ -13,8 +13,8 @@ interface MessageServiceI {
 }
 
 class MessagesHandler implements MessageServiceI {
-    collection: string 
-    dbHandler: DBI
+    private collection: string 
+    private dbHandler: DBI
 
     constructor (db: DBI) {
         this.collection = 'messages'
