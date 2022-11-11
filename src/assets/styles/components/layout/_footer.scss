@@ -1,10 +1,12 @@
 .footer-container {
     display: flex;
-    background-color: rgb(31, 41, 55);
-    padding: 40px 0 80px 0;
+    background-color: rgb(31, 41, 80);
+    border-top: 2px var(--brand-color-a) solid;
+    box-shadow: 0 0 15px var(--brand-color-a);
     color: var(--simple-text);
     font-weight: bolder;
     margin-top: 50px;
+    padding: 60px 0 80px 0;
     width: 100%;
 
     .footer {
