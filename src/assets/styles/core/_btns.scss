@@ -5,9 +5,9 @@
     border: 2px white solid;
     border-radius: 10px;
     box-shadow: 0 0 10px white;
-    background-color: rgba(180, 180, 180, 0.7);
+    background-color: var(--brand-btn-bg);
     font-weight: bolder;
-    color: white;
+    color: var(--brand-btn-text);
     cursor: pointer;
     padding: 10px 15px;
     text-decoration: none;

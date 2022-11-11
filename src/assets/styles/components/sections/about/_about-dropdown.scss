@@ -1,32 +1,50 @@
 .about-dropdown {
     display: flex;
-    margin-top: 35px;
+    margin-top: 40px;
     width: 100%;
 
     .dropdown-list {
         display: flex;
-        list-style: none;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        list-style: none;
         width: 100%;
 
         .dropdown-item {
             display: flex;
+            justify-content: center;
             flex-direction: column;
             width: 100%;
+            max-width: 450px;
 
             .dropdown-btn {
                 display: flex;
                 align-items: center;
-                background-color: var(--brand-color-d);
+                background-color: var(--brand-color-e);
                 border: 2px white solid;
                 cursor: pointer;
                 color: white;
                 justify-content: center;
-                text-shadow: 0 0 10px white;
+                box-shadow: 0 0 5px white;
                 height: 50px;
                 width: 100%;
                 z-index: 2;
+                transition: all 0.25s ease-in-out;
+            }
+
+            .dropdown-btn:hover {
+                border: 2px white solid;
+                background-color: rgba(31, 100, 150);
+                text-shadow: 0 0 10px var(--brand-color-a);
+                box-shadow: 0 0 10px var(--brand-color-a);
+            }
+
+            .active-btn {
+                background-color: var(--brand-color-d);
+                box-shadow: 0 0 10px var(--brand-color-a);
+                border: 2px var(--brand-color-a) solid;
+                text-shadow: 0 0 5px var(--brand-color-a);
             }
         }
     }

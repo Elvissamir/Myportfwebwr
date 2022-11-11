@@ -41,7 +41,7 @@ const AboutDropdown = () => {
                         <li className="dropdown-item" key={index}>
                             <button 
                                 onClick={() => handleOpenDropdown(index)}
-                                className="dropdown-btn">
+                                className={ index === activeIndex? "dropdown-btn active-btn" : "dropdown-btn"}>
                                     {dropdownItem.text}
                             </button>
                             <AboutDropdownContent
