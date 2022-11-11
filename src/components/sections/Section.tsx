@@ -1,7 +1,7 @@
 interface SectionProps {
     id: string 
     title: string
-    description: string 
+    description: string | null
     content: JSX.Element | JSX.Element[]
 }
 
@@ -17,7 +17,7 @@ const Section = ({ id, title, description, content}: SectionProps) => {
                         <div className="title-underline"></div>
                     </div>
                 </div>
-                <div className="description">{description}</div>
+                { description && <div className="description">{description}</div>}
                 <div className="content">
                     {content}
                 </div>

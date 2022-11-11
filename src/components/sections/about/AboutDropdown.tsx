@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import AboutDropdownContent from "./AboutDropdownContent"
+import AboutSoftware from "./AboutSoftware"
 import FavoriteBooksList from "./FavoriteBooksList"
 import FavoriteMoviesList from "./FavoriteMoviesList"
 import FavoriteSeries from "./FavoriteSeries"
@@ -15,6 +16,7 @@ export interface DropdownItem {
 
 const AboutDropdown = () => {
     const dropdownList: DropdownItem[] = [
+        { text: 'Why do I like software?', content: <AboutSoftware /> },
         { text: 'My favorite books?', content: <FavoriteBooksList /> },
         { text: 'Books I want to read', content: <ToReadList /> },
         { text: 'My favorite movies?', content: <FavoriteMoviesList /> },

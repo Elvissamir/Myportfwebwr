@@ -7,7 +7,7 @@ const AboutMeSection = () => {
         <Section
             title={sections.about.name}
             id={sections.about.id}
-            description={''}
+            description={null}
             content={ <AboutMe /> } />
     )
 }

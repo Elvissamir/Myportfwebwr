@@ -1,6 +1,5 @@
 import AboutDropdown from "./AboutDropdown"
 import AboutHeader from "./AboutHeader"
-import AboutSoftware from "./AboutSoftware"
 
 const AboutMe = () => {
     return (
@@ -9,7 +8,6 @@ const AboutMe = () => {
                 <div className="about-content">
                     <AboutHeader />
                     <AboutDropdown />
-                    <AboutSoftware />
                 </div>
             </div>
         </div>
