@@ -15,6 +15,7 @@ class FirebaseDBHandler implements DBI {
                 ...data,
                 created: Timestamp.now()
             })
+            
             return true
         }
         catch (err) {

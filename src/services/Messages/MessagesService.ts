@@ -1,7 +1,7 @@
 import { DBI } from "../DB/DBService"
 import FirebaseDB from "../Firebase/FirebaseDB"
 
-interface MessageData {
+export interface MessageData {
     subject: string 
     author_name: string
     email: string 
@@ -22,12 +22,10 @@ class MessagesHandler implements MessageServiceI {
     }
 
     async save(data: MessageData) {
-        const result = await this.dbHandler.save({
+        return await this.dbHandler.save({
             document: this.collection,
             data
         })
-
-        return result
     }
 }
 

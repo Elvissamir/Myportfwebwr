@@ -1,25 +1,46 @@
+import useMessageForm from "../../../hooks/messages/useMessageForm"
+
 const ContactForm = () => {
+    const {
+        messageData, 
+        loading, 
+        disabled,
+        handleChangeInput,
+        handleSendMessage
+    } = useMessageForm()
+
     return (
         <div className="contact-form-container">
             <form className="contact-form">
                 <div className="form-field">
                     <label className="input-label" htmlFor="subject">Subject</label>
-                    <input className="input-text" id="subject" type="text" />
+                    <input 
+                        onChange={handleChangeInput} 
+                        className="input-text" 
+                        id="subject" 
+                        type="text" />
                 </div>
-                <div className="form-field">
-                    <label className="input-label" htmlFor="name">Your Name</label>
-                    <input className="input-text" id="name" type="text" />
-                </div>
+                
                 <div className="form-field">
                     <label className="input-label" htmlFor="email">Email</label>
-                    <input className="input-text" id="email" type="text" />
+                    <input 
+                        onChange={handleChangeInput}
+                        className="input-text" 
+                        id="email" 
+                        type="email" />
                 </div>
                 <div className="form-field">
                     <label className="input-label" htmlFor="message">Message</label>
-                    <textarea className="input-area" id="message" />
+                    <textarea 
+                        onChange={handleChangeInput}
+                        className="input-area" 
+                        id="message" />
                 </div>
                 <div className="control-btns">
-                    <button className="action-btn">Send</button>
+                    <button 
+                        className="action-btn"
+                        disabled={disabled || loading} 
+                        type="button">Send</button>
                 </div>
             </form>
         </div>
