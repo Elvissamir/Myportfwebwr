@@ -24,6 +24,10 @@
         border: 2px var(--brand-color-a) solid;
     }
 
+    .disabled-input {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
     .input-area:hover, .input-text:hover {
         box-shadow: 0 0 10px var(--brand-color-a);
     }

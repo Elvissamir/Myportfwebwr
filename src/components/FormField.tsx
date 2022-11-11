@@ -32,12 +32,14 @@ const FormField = ({ id, label, inputType, value, disabled, error, onChange }: F
                     onChange={onChange}
                     className={selectCss()}
                     value={value}
+                    disabled={disabled}
                     id={id} 
                     type="text" />}
             { inputType === 'textarea' && 
                 <textarea 
                     onChange={onChange}
                     className={selectCss()} 
+                    disabled={disabled}
                     value={value}
                     id={id} />}
             { error && <FieldError error={error} />}

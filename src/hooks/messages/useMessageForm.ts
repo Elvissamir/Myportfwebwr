@@ -11,7 +11,6 @@ type SentState = 'failed' | 'success' | null
 const useMessageForm = () => {
     const { messageData, setMessageData } = useMessageData()
     const { loading, startLoading, finishLoading } = useLoading()
-    const [ disabled, setDisabled ] = useState(false)
     const [ errors, setErrors ] = useState<FormError>({})
     const { handleSingleError } = useHandleFormError({ errors, setErrors })
     const [ sentStatus, setSentStatus ] = useState<SentState>(null)
@@ -20,8 +19,6 @@ const useMessageForm = () => {
         startLoading()
         const result = await MessagesService.save(messageData)
         finishLoading()
-
-        console.log('result', result)
 
         if (result) return setSentStatus('success')
 
@@ -47,7 +44,6 @@ const useMessageForm = () => {
 
     return {
         loading,
-        disabled,
         messageData,
         errors,
         sentStatus,

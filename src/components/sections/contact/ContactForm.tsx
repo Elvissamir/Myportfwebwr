@@ -6,8 +6,8 @@ const ContactForm = () => {
     const {
         messageData, 
         loading, 
-        disabled,
         errors,
+        sentStatus,
         handleChangeInput,
         handleSendMessage
     } = useMessageForm()
@@ -51,7 +51,7 @@ const ContactForm = () => {
                     <SendBtn 
                         text="Send" 
                         loading={loading}
-                        disabled={Object.keys(errors).length > 0}
+                        disabled={Object.keys(errors).length > 0 || sentStatus === 'success'}
                         sendMessage={handleSendMessage}/>
                 </div>
             </form>
