@@ -1,5 +1,5 @@
 import sections from "../../../core/sections"
-import ContactMeForm from "./ContactMeForm"
+import ContactMeForm from "./ContactForm"
 import Section from "../Section"
 
 const ContactMeSection = () => {
