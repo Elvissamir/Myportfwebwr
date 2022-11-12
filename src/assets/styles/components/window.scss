@@ -16,6 +16,7 @@
         overflow-y: scroll;
         padding: 30px;
         width: 100%;
+        z-index: 200;
 
         .window-top {
             display: flex;
@@ -31,13 +32,15 @@
         background-color: var(--window-bg);
 
         .window {
-            height: 55%;
+            height: auto;
+            max-height: 400px;
             background-color: var(--brand-bg-glass);
             border-radius: 15px;
             padding: 30px 45px;
             box-shadow: 0 0 20px var(--brand-color-a);
             backdrop-filter: var(--glass);
-            width: 50%;
+            width: auto;
+            max-width: 800px;
         }
     }   
 }

@@ -48,7 +48,7 @@ const useMessageForm = () => {
         setSentStatus('failed')
     }
 
-    const handleChangeInput = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => {
+    const handleChangeInput = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const nmessageData = {...messageData}
         let error = MessageValidator.checkValue(e.target.value)
 

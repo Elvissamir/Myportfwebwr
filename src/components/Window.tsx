@@ -14,6 +14,7 @@ const Window = ({ show, content, closeWindow}: WindowProps) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    id='window-container'
                     className="window-container">
                         <div className="window">
                             <div className="window-top">

@@ -1,18 +1,21 @@
-import useMessageForm from "../../../hooks/messages/useMessageForm"
+import { ChangeEvent } from 'react'
+import { FormError } from "../../../core/types"
+import { SentState } from '../../../hooks/messages/useMessageForm'
+import { MessageData } from "../../../services/Messages/MessagesService"
 import FormField from "../../FormField"
 import SendMessageBtn from "./SendMessageBtn"
 import SentStatusMessage from "./SentStatusMessage"
 
-const ContactForm = () => {
-    const {
-        messageData, 
-        loading, 
-        errors,
-        sentStatus,
-        handleChangeInput,
-        handleSendMessage
-    } = useMessageForm()
+interface ContactFormProps {
+    messageData: MessageData
+    loading: boolean 
+    sentStatus: SentState
+    errors: FormError
+    handleChangeInput: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+    handleSendMessage: () => void
+}
 
+const ContactForm = ({ messageData, loading, sentStatus, errors, handleChangeInput, handleSendMessage }: ContactFormProps) => {
     return (
         <div className="contact-form-container">
             <form className="contact-form">
