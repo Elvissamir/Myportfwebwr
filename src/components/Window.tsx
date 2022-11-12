@@ -7,7 +7,6 @@ interface WindowProps {
 }
 
 const Window = ({ show, content, closeWindow}: WindowProps) => {
-
     return (
         <AnimatePresence>
             { show && 
