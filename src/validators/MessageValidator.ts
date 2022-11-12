@@ -1,7 +1,9 @@
 import { errorMessages, FormError, FormFieldError } from "../core/types"
+import { MessageData } from "../services/Messages/MessagesService"
 
 interface MessageValidatorI {
     checkValue: (value: string) => null | FormFieldError 
+    checkMessage: (message: MessageData) => FormError | null 
 }
 
 class MessageValidatorC implements MessageValidatorI {
@@ -15,6 +17,20 @@ class MessageValidatorC implements MessageValidatorI {
             error = { message: errorMessages.moreThan}
 
         return error
+    }
+
+    checkMessage(message: MessageData) {
+        let formErrors: FormError | null = null
+
+        for (let key in message) {
+            const error = this.checkValue(message[key as keyof typeof message])
+            if (error) {
+                formErrors = { [key]: error }
+                break
+            }
+        }
+
+        return formErrors
     }
 }
 

@@ -9,7 +9,7 @@ import MessagesService from '../../services/Messages/MessagesService'
 export type SentState = 'failed' | 'success' | null
 
 const useMessageForm = () => {
-    const { messageData, setMessageData } = useMessageData()
+    const { initialData, messageData, setMessageData } = useMessageData()
     const { loading, startLoading, finishLoading } = useLoading()
     const [ errors, setErrors ] = useState<FormError>({})
     const { handleSingleError } = useHandleFormError({ errors, setErrors })
@@ -18,17 +18,32 @@ const useMessageForm = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setSentStatus(null)
-        }, 2000)
+        }, 2500)
 
         return () => clearInterval(timer)
     }, [ sentStatus ])
 
+    const checkBeforeSending = () => {
+        const formErrors = MessageValidator.checkMessage(messageData)
+        if (formErrors) {
+            setErrors(formErrors)
+            return false
+        }
+
+        return true
+    }
+
     const handleSendMessage = async () => {
+        if (!checkBeforeSending()) return 
+
         startLoading()
         const result = await MessagesService.save(messageData)
         finishLoading()
 
-        if (result) return setSentStatus('success')
+        if (result) {
+            setMessageData({...initialData})
+            return setSentStatus('success')
+        }
 
         setSentStatus('failed')
     }
