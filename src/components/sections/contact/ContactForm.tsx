@@ -1,6 +1,7 @@
 import useMessageForm from "../../../hooks/messages/useMessageForm"
 import FormField from "../../FormField"
-import SendBtn from "./SendBtn"
+import SendMessageBtn from "./SendMessageBtn"
+import SentStatusMessage from "./SentStatusMessage"
 
 const ContactForm = () => {
     const {
@@ -48,7 +49,8 @@ const ContactForm = () => {
                     disabled={loading}
                     onChange={handleChangeInput}/>
                 <div className="control-btns">
-                    <SendBtn 
+                    <SentStatusMessage sentStatus={sentStatus} />
+                    <SendMessageBtn 
                         text="Send" 
                         loading={loading}
                         disabled={Object.keys(errors).length > 0 || sentStatus === 'success'}

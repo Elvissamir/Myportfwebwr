@@ -5,7 +5,7 @@ interface SendBtnProps {
     sendMessage: () => void
 }
 
-const SendBtn = ({ text, loading, disabled, sendMessage }: SendBtnProps) => {
+const SendMessageBtn = ({ text, loading, disabled, sendMessage }: SendBtnProps) => {
     return (
         <button 
             onClick={sendMessage}
@@ -17,4 +17,4 @@ const SendBtn = ({ text, loading, disabled, sendMessage }: SendBtnProps) => {
     )
 }
 
-export default SendBtn
+export default SendMessageBtn

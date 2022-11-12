@@ -1,0 +1,24 @@
+.sent-status-container {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+
+    .success-message-container {
+        display: flex;
+
+        .correct-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 1.5px;
+            border-radius: 50%;
+            height: 17px;
+            width: 17px;
+        }
+
+        .success-message {
+            margin-left: 5px;
+        }
+    }
+}

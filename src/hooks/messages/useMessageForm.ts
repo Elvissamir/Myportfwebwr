@@ -6,14 +6,14 @@ import { FormError } from '../../core/types'
 import useHandleFormError from '../useHandleFormError'
 import MessagesService from '../../services/Messages/MessagesService'
 
-type SentState = 'failed' | 'success' | null
+export type SentState = 'failed' | 'success' | null
 
 const useMessageForm = () => {
     const { messageData, setMessageData } = useMessageData()
     const { loading, startLoading, finishLoading } = useLoading()
     const [ errors, setErrors ] = useState<FormError>({})
     const { handleSingleError } = useHandleFormError({ errors, setErrors })
-    const [ sentStatus, setSentStatus ] = useState<SentState>(null)
+    const [ sentStatus, setSentStatus ] = useState<SentState>('success')
 
     const handleSendMessage = async () => {
         startLoading()
