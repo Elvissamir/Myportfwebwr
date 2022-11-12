@@ -1,6 +1,7 @@
 .sent-status-container {
     display: flex;
     margin-top: 30px;
+    overflow: hidden;
     width: 100%;
 
     .success-message-container {
@@ -18,6 +19,14 @@
         }
 
         .success-message {
+            margin-left: 5px;
+        }
+    }
+
+    .failed-message-container {
+        display: flex;
+
+        .failed-message {
             margin-left: 5px;
         }
     }

@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { SentState } from "../../../hooks/messages/useMessageForm"
+import FailedMessage from "./FailedMessage"
 import SuccessMessage from "./SuccessMessage"
 
 interface SentStatusMessageProps {
@@ -12,11 +13,24 @@ const SentStatusMessage = ({ sentStatus }: SentStatusMessageProps) => {
             <AnimatePresence>
                 {sentStatus === 'success' && 
                     <motion.div
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: '-100%', opacity: 0 }}
+                        transition={{ bounce: 0 }}
                         className="success-message-container">
                             <SuccessMessage />
                     </motion.div>
                 }
-                {sentStatus === 'failed' && <SuccessMessage />}
+                {sentStatus === 'failed' && 
+                    <motion.div
+                        initial={{ x: '-100%' }}
+                        animate={{ x: 0 }}
+                        exit={{ x: '-100%' }}
+                        transition={{ bounce: 0 }}
+                        className="failed-message-container">
+                            <FailedMessage />
+                    </motion.div>
+                }
             </AnimatePresence>
         </div>
     )

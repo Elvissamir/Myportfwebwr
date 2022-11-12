@@ -1,4 +1,4 @@
-import {  useState, ChangeEvent } from 'react'
+import {  useState, ChangeEvent, useEffect } from 'react'
 import useLoading from "../useLoading"
 import useMessageData from "./useMessageData"
 import MessageValidator from '../../validators/MessageValidator'
@@ -13,7 +13,15 @@ const useMessageForm = () => {
     const { loading, startLoading, finishLoading } = useLoading()
     const [ errors, setErrors ] = useState<FormError>({})
     const { handleSingleError } = useHandleFormError({ errors, setErrors })
-    const [ sentStatus, setSentStatus ] = useState<SentState>('success')
+    const [ sentStatus, setSentStatus ] = useState<SentState>(null)
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setSentStatus(null)
+        }, 2000)
+
+        return () => clearInterval(timer)
+    }, [ sentStatus ])
 
     const handleSendMessage = async () => {
         startLoading()
