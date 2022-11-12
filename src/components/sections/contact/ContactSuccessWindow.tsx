@@ -18,18 +18,27 @@ const ContactSuccessWindow = ({ show, closeWindow }: ContactSuccessWindowProps) 
     return (
         <AnimatePresence>
             { show && 
-                <motion.div className="success-window-container">
-                    <Fireworks
-                        className="fireworks-container"
-                        options={{
-                            rocketsPoint: {
-                                min: 0,
-                                max: 100
-                            }
-                        }} />
-                    <div className="success-window">    
-                        <SuccessWindowContent />
-                    </div>
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="success-window-container">
+                        <Fireworks
+                            className="fireworks-container"
+                            options={{
+                                rocketsPoint: {
+                                    min: 0,
+                                    max: 100
+                                }
+                            }} />
+                        <div className="success-window">    
+                            <div className="top">
+                                <button 
+                                    onClick={closeWindow} 
+                                    className="close-btn">X</button>
+                            </div>
+                            <SuccessWindowContent />
+                        </div>
                 </motion.div>}
         </AnimatePresence>
     )
