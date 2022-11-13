@@ -39,15 +39,27 @@
                         font-weight: bolder;
                     }
 
-                    .ec-my-name {
+                    .ec-letter {
                         color: transparent;
-                        background-image: linear-gradient(to right, #18a3fa, #30adfc, #9bebfc);
-                        background-clip: text;
-                    }
+                        letter-spacing: 2px;
+                        -webkit-text-stroke-color: white;
+                        -webkit-text-stroke-width: 1px;
+                        animation: elvisAnimation 3s infinite;
 
-                    .ec-my-lname {
-                        color: white;
-                        margin-left: 10px;
+                        @keyframes elvisAnimation {
+                            0% {
+                                opacity: 0;
+                            }
+
+                            50% {
+                                color: transparent;
+                            }
+
+                            100% {
+                                opacity: 1;
+                                color: white;
+                            }
+                        }
                     }
                 }
 

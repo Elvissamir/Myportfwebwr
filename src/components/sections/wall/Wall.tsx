@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react"
-import ECCircuit from "../ECCircuit"
+import ECCircuit from "../../ECCircuit"
+import ECName from "./ECName"
 
 type Lang = 'eng' | 'spa'
 
@@ -16,8 +17,7 @@ const Wall = () => {
                 <div className="top">
                     <div className="wall-text-container">
                         <div className="name-container">
-                            <span className="ec-my-name">ELVIS</span>
-                            <span className="ec-my-lname">CARRASCO</span>
+                            <ECName />
                         </div>
                         <div className="ec-line"></div>
                         <p className="ec-career">Software Engineer</p>
