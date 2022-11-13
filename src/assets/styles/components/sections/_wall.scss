@@ -1,5 +1,9 @@
 .wall-container {
     display: flex;
+    background-color: var(--brand-bg);
+    backdrop-filter: var(--glass);
+    border-bottom: 2px var(--brand-color-a) solid;
+    box-shadow: 0 0 10px var(--brand-color-a);
     height: 100vh;
     width: 100%;
 
@@ -10,6 +14,49 @@
         height: 100%;
         width: 100%;
 
-        
+        .top {
+
+        }
+
+        .bottom {
+            .mouse {
+                width: 30px;
+                height: 50px;
+                border: 3px solid var(--brand-color-a);
+                border-radius: 60px;
+                position: relative;
+                box-shadow: 0 0 15px var(--brand-color-a);
+            }
+              
+            .mouse::before {
+                content: "";
+                width: 9px;
+                height: 9px;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                box-shadow: 0 0 20px var(--brand-color-a);
+                background-color: var(--brand-color-a);
+                border-radius: 50%;
+                opacity: 1;
+                animation: wheel 2s infinite;
+                -webkit-animation: wheel 2s infinite;
+            }
+              
+            @keyframes wheel {
+                to {
+                  opacity: 0;
+                  top: 35px;
+                }
+            }
+            
+            @-webkit-keyframes wheel {
+                to {
+                  opacity: 0;
+                  top: 35px;
+                }
+            }            
+        }
     }
 }

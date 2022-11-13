@@ -3,11 +3,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
-    margin-bottom: 500px;
-    background-color: var(--brand-color-c);
-    min-height: 100vh;
-    padding: 10px;
     width: 100%;
 
     .square-logo {
@@ -38,18 +33,10 @@
             }
     
             .ec-logo-circuit {
-                // border-radius: 50%;
-                // background-color: white;
-                // border: 2px white solid;
-                // box-shadow: 0 0 10px var(--brand-color-a);
                 margin-left: 10px;
-                // padding: 1px;
+                
                 circle {
                     fill: white;
-                }
-
-                circle:first-child {
-                    // fill: var(--brand-color-c);
                 }
     
                 path:nth-child(2) {
@@ -76,7 +63,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
 
         .logo-top {
             display: flex;
@@ -141,7 +127,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
 
         .logo-top {
             display: flex;
@@ -160,6 +145,7 @@
 
             .ec-letter {
                 font-size: 60px;
+                letter-spacing: 2px;
                 font-family: sans-serif;
                 color: white;
             }
@@ -168,7 +154,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 2px var(--brand-color-c) solid;
+                border: 2px white solid;
                 box-shadow: 0 0 15px var(--brand-color-a);
                 background-color: white;
                 border-radius: 50%;
@@ -206,7 +192,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
 
         .logo-top {
             display: flex;
@@ -225,6 +210,7 @@
 
             .ec-letter {
                 font-size: 60px;
+                letter-spacing: 2px;
                 font-family: sans-serif;
                 color: white;
             }
@@ -235,13 +221,17 @@
                 justify-content: center;
                 border: 2px var(--brand-color-c) solid;
                 box-shadow: 0 0 15px var(--brand-color-a);
-                background-color: white;
+                background-color: var(--brand-color-a);
                 border-radius: 50%;
                 margin-left: 5px;
                 padding: 2px;   
     
-                path, circle, line {
-                    fill: white;
+                circle {
+                    fill: var(--brand-color-a);
+                }
+
+                path {
+                    fill: var(--brand-color-a);
                 }
     
                 path:first-child {
@@ -270,7 +260,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
         justify-content: center;
         width: auto;
     
@@ -284,8 +273,12 @@
             border: 2px white solid;
             background-color: white;
 
-            path, circle, line {
+            circle, line {
                 fill: var(--brand-color-c)
+            }
+
+            path {
+                fill: var(--brand-color-c);
             }
 
             path:first-child {
