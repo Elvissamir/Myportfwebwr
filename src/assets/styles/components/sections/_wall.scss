@@ -128,13 +128,34 @@
             flex-direction: column;
             margin-top: 40px;
 
+            .resume-download-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .resume-download-selection {
+                    display: flex;
+                    color: white;
+                    
+                    .wall-bottom-text {
+                        margin-right: 10px;
+                    }
+                }
+
+                .action-btn {
+                    margin-top: 20px
+                }
+            }
+
             .mouse {
-                width: 30px;
-                height: 50px;
                 border: 3px solid var(--brand-color-a);
                 border-radius: 60px;
-                position: relative;
                 box-shadow: 0 0 15px var(--brand-color-a);
+                margin-top: calc(100% - 20px);
+                position: relative;
+                height: 50px;
+                width: 30px;
             }
               
             .mouse::before {
