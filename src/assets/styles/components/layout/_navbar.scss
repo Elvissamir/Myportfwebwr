@@ -1,11 +1,13 @@
 .navbar-container {
+    display: flex;
+    align-items: center;
     background-color: var(--brand-bg-glass);
     box-shadow: 0 0 20px var(--brand-color-a);
     border-bottom: 2px var(--brand-color-a) solid;
     backdrop-filter: var(--glass);
     -webkit-backdrop-filter: var(--glass);
-    display: flex;
     position: fixed;
+    height: 60px;
     width: 100%;
     z-index: 5;
 
