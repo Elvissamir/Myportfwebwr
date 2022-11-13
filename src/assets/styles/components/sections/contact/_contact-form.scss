@@ -10,8 +10,8 @@
         background-color: var(--brand-bg-glass);
         backdrop-filter: var(--glass);
         border-radius: 15px;
-        box-shadow: 0 0 10px white;
-        border: 2px white solid;
+        box-shadow: 0 0 10px var(--brand-color-a);
+        border: 2px var(--brand-color-a) solid;
         padding: 30px 25px 30px 25px;
         width: 100%;
         max-width: 300px;
@@ -24,6 +24,6 @@
 
     .contact-form:hover {
         border: 2px var(--brand-color-a) solid;
-        box-shadow: 0 0 15px var(--brand-color-a);
+        box-shadow: 0 0 20px var(--brand-color-a);
     }
 }

@@ -1,7 +1,11 @@
+import ECLogo from "../ECLogo"
+
 const Wall = () => {
     return (
-        <div className="wall-container">
-            <div className="wall"></div>
+        <div id="start" className="wall-container">
+            <div className="wall">
+                <ECLogo />
+            </div>
         </div>
     )
 }

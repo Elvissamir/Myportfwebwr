@@ -1,5 +1,7 @@
 .challenge-card-container {
     display: flex;
+    border: 2px white solid;
+    box-shadow: 0 0 10px white;
     width: 100%;
 
     .challenge-card {
@@ -9,10 +11,10 @@
 
         .challenge-info {
             display: flex;
-            flex-direction: column;
-            background-color: rgba(31, 41, 150, 0.85);
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            background-color: rgba(31, 41, 150, 0.85);
             position: absolute;
             height: 100%;
             width: 100%;
@@ -38,6 +40,7 @@
 
 .challenge-card-container:hover {
     box-shadow: 0 0 20px var(--brand-color-a);
+    border: 2px var(--brand-color-a) solid;
 }
 
 @media (min-width: 1366px) {

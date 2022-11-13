@@ -16,7 +16,7 @@ const ContactMeSection = () => {
         handleSendMessage
     } = useMessageForm()
 
-    const [ show, setShow ] = useState(true)
+    const [ show, setShow ] = useState(false)
 
     const closeWindow = () => {
         setShow(false)

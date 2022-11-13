@@ -1,0 +1,15 @@
+.wall-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    .wall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        
+    }
+}

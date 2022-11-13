@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import Fireworks from "@fireworks-js/react"
 import { AnimatePresence, motion } from "framer-motion"
 import SuccessWindowContent from "./SuccessWindowContent"
@@ -9,12 +8,6 @@ interface ContactSuccessWindowProps {
 }
 
 const ContactSuccessWindow = ({ show, closeWindow }: ContactSuccessWindowProps) => {
-    const [activeFireworks, setActiveFireworks] = useState(true)
-
-    useEffect(() => {
-        
-    }, [ activeFireworks ])
-
     return (
         <AnimatePresence>
             { show && 
