@@ -27,7 +27,7 @@ const ECName = ({ onFinishedName }: ECNameProps) => {
     
             return () => clearInterval(timer)
         }
-
+    
         onFinishedName()
     }, [ myName, myLName ])
 

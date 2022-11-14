@@ -26,7 +26,7 @@ const Wall = () => {
                         <div className="name-container">
                             <ECName onFinishedName={handleFinishedName} />
                         </div>
-                        <div className="ec-line"></div>
+                        <div className={showAfterName? 'ec-line full-line' : 'ec-line'}></div>
                         <p className="ec-career">Software Engineer</p>
                     </div>
                     <div className="wall-circuit-container">
