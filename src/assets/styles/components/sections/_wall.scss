@@ -87,48 +87,35 @@
 
                 .wall-circuit {
                     display: flex;
+                    opacity: 0;
                     position: relative;
                     width: 100%;
+                    transition: all 2s ease-in-out;
 
                     .ec-logo-circuit {
                         border-radius: 50%;
                         padding: 5px;
+                        border: 2px white solid;
                         height: 120px;
                         width: 120px;
-                        animation: ringAnimation 3s infinite alternate-reverse;
                         
                         path:not(:first-child) {
-                            animation: circuitAnimation 3s infinite alternate-reverse;
-                            
-                            @keyframes circuitAnimation {
-                                0% {
-                                    fill: transparent;
-                                }
-    
-                                100% {
-                                    fill: white;
-                                }
-                            }
+                           fill: white;
                         }
 
                         circle {
                             animation: circleAnimation 3s infinite alternate-reverse;
-
-                            @keyframes circleAnimation {
-                                0% {
-                                    fill: transparent;
-                                }
-    
-                                100% {
-                                    fill: white;
-                                }
-                            }
+                            fill: white
                         }
 
                         path:first-child {
                             fill: var(--brand-color-c);
                         }
                     }
+                }
+
+                .show-circuit {
+                    opacity: 1;
                 }
             }
         }
@@ -139,6 +126,8 @@
             justify-content: center;
             flex-direction: column;
             margin-top: 40px;
+            opacity: 0;
+            transition: all 2s ease-in-out;
 
             .resume-download-container {
                 display: flex;
@@ -199,6 +188,10 @@
                   top: 35px;
                 }
             }            
+        }
+
+        .show-bottom {
+            opacity: 1;
         }
     }
 }

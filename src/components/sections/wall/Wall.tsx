@@ -6,9 +6,16 @@ type Lang = 'eng' | 'spa'
 
 const Wall = () => {
     const [resume_lang, setResume_lang] = useState<Lang>('eng')
+    const [showAfterName, setShowAfterName] = useState(false)
 
     const handleChangeSelectInput = (e: ChangeEvent<HTMLSelectElement>) => {
         setResume_lang(e.target.value as Lang)
+    }
+
+    const handleFinishedName = () => {
+        setTimeout(() => {
+            setShowAfterName(true)
+        }, 6500)
     }
 
     return (
@@ -17,19 +24,18 @@ const Wall = () => {
                 <div className="top">
                     <div className="wall-text-container">
                         <div className="name-container">
-                            <ECName />
+                            <ECName onFinishedName={handleFinishedName} />
                         </div>
                         <div className="ec-line"></div>
                         <p className="ec-career">Software Engineer</p>
                     </div>
                     <div className="wall-circuit-container">
-                        <div className="wall-circuit">
+                        <div className={ showAfterName? "wall-circuit show-circuit" : "wall-circuit"}>
                             <ECCircuit />
-                            <div className="background-gradient"></div>
                         </div>
                     </div>
                 </div>
-                <div className="bottom">
+                <div className={showAfterName? "bottom show-bottom" : "bottom"}>
                     <div className="resume-download-container">
                         <div className="resume-download-selection">
                             <p className="wall-bottom-text">My Resume:</p>

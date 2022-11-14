@@ -1,29 +1,34 @@
 import { useState, useEffect } from 'react'
-import { AnimatePresence, motion, Variant, Variants } from 'framer-motion'
+import { AnimatePresence, motion, Variants } from 'framer-motion'
 
 const name = ['E', 'L', 'V', 'I', 'S']
 const lname = ['C', 'A', 'R', 'R', 'A', 'S', 'C', 'O']
 
-const ECName = () => {
+interface ECNameProps {
+    onFinishedName: () => void
+}
+
+const ECName = ({ onFinishedName }: ECNameProps) => {
     const [myName, setMyName] = useState<string[]>(name)
     const [myLName, setMyLName] = useState<string[]>(lname)
+
+    const writeName = () => {
+        if (myName.length < name.length)
+            setMyName([...myName, name[myName.length]])
+        else if (myLName.length < lname.length)
+            setMyLName([...myLName, lname[myLName.length]])
+    }
    
     useEffect(() => {
-        if (myName.length < name.length) {
+        if (myName.length < name.length || myLName.length < lname.length) {
             const timer = setInterval(() => {
-                setMyName([...myName, name[myName.length]])
+                writeName()
             }, 500)
     
             return () => clearInterval(timer)
         }
 
-        else if (myLName.length < lname.length) {
-            const timer = setInterval(() => {
-                setMyLName([...myLName, lname[myLName.length]])
-            }, 500)
-    
-            return () => clearInterval(timer)
-        }
+        onFinishedName()
     }, [ myName, myLName ])
 
     const container: Variants = {
