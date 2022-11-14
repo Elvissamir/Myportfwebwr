@@ -17,3 +17,11 @@
         }
     }
 }
+
+@media (min-width: 640px) {
+    .challenges-list-container {
+        .challenges-list {
+            grid-template-columns: repeat(2, minmax(270px, max-content));
+        }
+    }
+}
