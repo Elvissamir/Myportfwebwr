@@ -7,18 +7,23 @@
 
     .text-container {
         display: flex;
+        background-color: var(--brand-bg-glass);
+        backdrop-filter: var(--glass);
+        padding: 30px;
+        border: 1px var(--brand-color-a) solid;
+        box-shadow: 0 0 10px var(--brand-color-a);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 40px;
-
-        .text {
-            font-weight: bolder;
-            margin-top: 10px;
-        }
+        width: 100%;
 
         .text-header {
-            font-weight: bolder;
+            font-size: 16px;
+        }
+
+        .text {
+            margin-top: 10px;
         }
     }
 }
