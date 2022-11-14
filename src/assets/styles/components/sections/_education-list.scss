@@ -80,3 +80,11 @@
         }
     }
 }
+
+@media (min-width: 640px) {
+    .education-list-container {
+        .education-list {
+            grid-template-columns: repeat(2, minmax(auto, max-content));
+        }
+    }
+}
