@@ -11,23 +11,8 @@ interface ECNameProps {
 const ECName = ({ onFinishedName }: ECNameProps) => {
     const [myName, setMyName] = useState<string[]>(name)
     const [myLName, setMyLName] = useState<string[]>(lname)
-
-    const writeName = () => {
-        if (myName.length < name.length)
-            setMyName([...myName, name[myName.length]])
-        else if (myLName.length < lname.length)
-            setMyLName([...myLName, lname[myLName.length]])
-    }
    
     useEffect(() => {
-        if (myName.length < name.length || myLName.length < lname.length) {
-            const timer = setInterval(() => {
-                writeName()
-            }, 500)
-    
-            return () => clearInterval(timer)
-        }
-    
         onFinishedName()
     }, [ myName, myLName ])
 
