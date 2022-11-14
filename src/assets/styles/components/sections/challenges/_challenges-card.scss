@@ -7,7 +7,7 @@
     .challenge-card {
         display: flex;
         position: relative;
-        width: 350px;
+        width: 100%;
 
         .challenge-info {
             display: flex;
@@ -27,7 +27,7 @@
             }
 
             .action-btn {
-                margin-top: 15px;
+                margin-top: 40px;
             }
         }
 
