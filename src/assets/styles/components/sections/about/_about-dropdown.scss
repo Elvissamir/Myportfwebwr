@@ -14,20 +14,20 @@
         .dropdown-item {
             display: flex;
             justify-content: center;
-            font-size: 16px;
             flex-direction: column;
             width: 100%;
             max-width: 450px;
-
+            
             .dropdown-btn {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 background-color: var(--brand-color-e);
                 border: 2px white solid;
+                box-shadow: 0 0 5px white;
                 cursor: pointer;
                 color: white;
-                justify-content: center;
-                box-shadow: 0 0 5px white;
+                font-size: 16px;
                 height: 50px;
                 width: 100%;
                 z-index: 2;
@@ -46,6 +46,18 @@
                 box-shadow: 0 0 10px var(--brand-color-a);
                 border: 2px var(--brand-color-a) solid;
                 text-shadow: 0 0 5px var(--brand-color-a);
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-dropdown {
+        .dropdown-list {
+            .dropdown-item {
+                .dropdown-btn {
+                    font-size: 17px;
+                }
             }
         }
     }

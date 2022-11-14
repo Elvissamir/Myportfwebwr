@@ -27,3 +27,17 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .about-header {
+        .text-container {
+            .text-header {
+                font-size: 18px;
+            }
+
+            .text {
+                font-size: 17px;
+            }
+        }
+    }
+}
