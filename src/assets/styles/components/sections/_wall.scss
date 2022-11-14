@@ -33,12 +33,6 @@
                     align-items: center;
                     justify-content: center;
 
-                    .ec-my-name, .ec-my-lname {
-                        font-size: 40px;
-                        font-family: var(--font);
-                        font-weight: bolder;
-                    }
-
                     .ec-letter {
                         color: transparent;
                         letter-spacing: 2px;
@@ -160,7 +154,7 @@
                 border: 3px solid var(--brand-color-a);
                 border-radius: 60px;
                 box-shadow: 0 0 15px var(--brand-color-a);
-                margin-top: calc(100% - 75px);
+                margin-top: calc(100% - 120px);
                 position: relative;
                 height: 50px;
                 width: 30px;
@@ -199,6 +193,26 @@
 
         .show-bottom {
             opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .wall-container {
+        .wall {
+            .top {
+                .wall-text-container {
+                    .ec-career {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .bottom {
+                .mouse {
+                    margin-top: calc(100% - 90px);
+                }
+            }
         }
     }
 }
