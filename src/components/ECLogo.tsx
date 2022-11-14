@@ -35,17 +35,26 @@ const ECLogo = () => {
             <div className="square-logo-line"></div>
             <p className="ec-logo-footer">Software Engineer</p>
         </div>
-        <div className="ec-logo">
-            <CircuitIcon />
-            <p className="ec-logo-text">ELVIS CARRASCO</p>
-            <div className="ec-logo-line"></div>
-            <p className="ec-logo-footer">Software Engineer</p>
-        </div>
-    */
+
+          <div className="ec-logo">
+                <CircuitIcon />
+                <p className="ec-logo-text">ELVIS CARRASCO</p>
+                <div className="ec-logo-line"></div>
+                <p className="ec-logo-footer">Software Engineer</p>
+            </div>
+        */
 
     return (
-        <div className="ec-logo-container">
-            
+        <div className="ec-logo-container">         
+            <div className="ec-logo">
+                <a className="logo-link" href="/">
+                    <CircuitIcon />
+                    <div className="ec-logo-text">
+                        <p className="E">E</p>
+                        <p className="C">C</p>
+                    </div>
+                </a>
+            </div>
         </div>
     )
 }
