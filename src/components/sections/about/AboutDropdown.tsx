@@ -22,7 +22,7 @@ const AboutDropdown = () => {
         { text: 'My favorite movies?', content: <FavoriteMoviesList /> },
         { text: 'My favorite series of all time?', content: <FavoriteSeries /> },
         { text: 'My favorite songs?', content: <FavoriteSongsList /> },
-        { text: "Things I'd like to learn and hobbies?", content: <HobbiesAndInterestsList /> },
+        { text: "Interests", content: <HobbiesAndInterestsList /> },
     ]
 
     const [ activeIndex, setActiveIndex ] = useState<number | null>(null)

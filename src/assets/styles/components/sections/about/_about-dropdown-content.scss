@@ -13,16 +13,33 @@
         padding: 30px;
         width: 100%;
 
+        .about-software {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                line-height: 1.5;
+                justify-content: flex-start;
+                margin-top: 15px;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+        }
+
         .text {
-            margin-top: 15px;
-            margin-left: 10px;
-            font-size: 16px;
-            justify-self: flex-start;
-            align-self: flex-start;
+           margin-right: auto;
+           margin-top: 10px;
         }
 
         .series-container {
             display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .icon {
@@ -33,6 +50,11 @@
         .list-container {
             display: flex;
             flex-direction: column;
+
+            .list-item:nth-child(even) {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
         }
     }
 }
