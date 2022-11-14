@@ -33,3 +33,13 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .ec-full-name {
+        .ec-name-container {
+            .letter {
+                font-size: 52px;
+            }
+        }
+    }
+}
