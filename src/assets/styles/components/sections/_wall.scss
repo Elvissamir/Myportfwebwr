@@ -35,7 +35,7 @@
 
                     .ec-my-name, .ec-my-lname {
                         font-size: 40px;
-                        font-family: sans-serif;
+                        font-family: var(--font);
                         font-weight: bolder;
                     }
 
@@ -80,7 +80,7 @@
                     justify-content: center;
                     color:#b0b2b8;
                     font-weight: bolder;
-                    font-family: sans-serif;
+                    font-family: var(--font);
                     font-size: 22px;
                     margin-top: 5px;
                 }

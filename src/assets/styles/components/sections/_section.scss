@@ -1,51 +1,63 @@
 .section-container {
     display: flex;
-    margin-top: 60px;
+    margin-top: 100px;
     color: white;
     width: 100%;
     z-index: 2;
 
     .section {
         display: flex;
+        font-family: var(--font);
         flex-direction: column;
         width: 100%;
 
-        .title-container {
+        .section-top {
             display: flex;
+            background-color: var(--brand-bg-glass);
+            backdrop-filter: var(--glass);
+            border: 1px var(--brand-color-a) solid;
+            box-shadow: 0 0 15px var(--brand-color-a);
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            padding: 30px;
+            width: auto;
 
-            .title-text {
+            .title-container {
                 display: flex;
                 flex-direction: column;
-                width: auto;
-
-                .title {
-                    font-size: var(--title-size);
-                    text-shadow:
-                        0 0 1px #fff,
-                        0 0 10px var(--brand-color-a);
-                }
+                align-items: center;
+                justify-content: center;
     
-                .title-underline {
-                    background-color: var(--brand-color-a);
-                    margin-top: 8px;
-                    height: 4px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 60px;
+                .title-text {
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+    
+                    .title {
+                        font-size: var(--title-size);
+                        text-shadow:
+                            0 0 1px #fff,
+                            0 0 10px var(--brand-color-a);
+                    }
+        
+                    .title-underline {
+                        background-color: var(--brand-color-a);
+                        margin-top: 8px;
+                        height: 4px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 60px;
+                    }
                 }
             }
-        }
-
-        .description {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--description-size);
-            margin-top: 40px;
-            width: 100%;
+    
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: var(--description-size);
+                margin-top: 40px;
+                width: 100%;
+            }
         }
 
         .content {
