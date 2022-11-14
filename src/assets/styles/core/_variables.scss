@@ -25,10 +25,17 @@
     
     // Text
     --simple-text: white;
-    --title-size: 45px; 
-    --description-size: 20px;
+    --title-size: 40px; 
+    --description-size: 17px;
 
     // Buttons
     --brand-btn-text: white;
     --brand-btn-bg: var(--brand-color-e);
+}
+
+@media (min-width: 640px) {
+    :root {
+        --title-size: 45px;
+        --description-size: 20px;
+    }
 }
