@@ -1,64 +1,108 @@
 import { useState, useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion, Variant, Variants } from 'framer-motion'
 
 const name = ['E', 'L', 'V', 'I', 'S']
 const lname = ['C', 'A', 'R', 'R', 'A', 'S', 'C', 'O']
 
 const ECName = () => {
-    const [myName, setMyName] = useState<string[]>(['E'])
-    const [myLName, setMyLName] = useState<string[]>(['C'])
+    const [myName, setMyName] = useState<string[]>(name)
+    const [myLName, setMyLName] = useState<string[]>(lname)
    
     useEffect(() => {
         if (myName.length < name.length) {
             const timer = setInterval(() => {
-                console.log('interval')
                 setMyName([...myName, name[myName.length]])
             }, 500)
     
             return () => clearInterval(timer)
         }
+
         else if (myLName.length < lname.length) {
-            const timer2 = setInterval(() => {
-                console.log('interval')
+            const timer = setInterval(() => {
                 setMyLName([...myLName, lname[myLName.length]])
             }, 500)
     
-            return () => clearInterval(timer2)
+            return () => clearInterval(timer)
         }
     }, [ myName, myLName ])
 
-    return (
-        <motion.div 
-            layout
-            className="ec-name-container">
-                {myName.map((letter, index) => 
-                    <AnimatePresence key={index}>
-                        {letter && 
-                            <motion.span 
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className='letter'>
-                                    {letter}
-                            </motion.span>}
-                    </AnimatePresence>
-                )}
+    const container: Variants = {
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.5,
+            repeatType: 'loop',
+          },
+        }
+    }
+      
+    const nameLetter: Variants = {
+        hidden: {
+            opacity: 0,
+            textShadow: '0 0 10px rgba(255, 255, 255, 0)',
+            transform: 'scale(2)',
+        },
+        show: {
+            opacity: 1, 
+            color: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)'],
+            textShadow: ['0 0 30px rgb(255, 255, 255)', '0 0 10px rgba(255, 255, 255, 0)'],
+            transform: 'scale(1)',
+            transition: {
+                duration: 1,
+            }
+        }
+    }
 
-                {myLName.map((letter, index) => 
-                    <AnimatePresence key={index}>
-                        {letter && 
-                            <motion.span 
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className='letter'>
-                                    {letter}
-                            </motion.span>}
-                    </AnimatePresence>
-                )}
-        </motion.div>
+    const lnameLetter: Variants = {
+        hidden: {
+            opacity: 0,
+            transform: 'scale(2)',
+        },
+        show: {
+            opacity: 1,
+            color: ['#29b3eb', '#29b3eb', '#29b3eb', 'rgba(255, 255, 255, 0)'],
+            WebkitTextStrokeColor: ['#29b3eb', '#29b3eb', '#29b3eb', 'rgb(255, 255, 255)'],
+            textShadow: ['0 0 25px #29b3eb', '0 0 10px rgba(255, 255, 255, 0)'],
+            transform: 'scale(1)',
+            transition: {
+                duration: 1,
+            }
+        }
+    }
+      
+    return (
+        <div className='ec-full-name'>
+            <motion.ul 
+                variants={container}
+                layout
+                className="ec-name-container name"
+                initial="hidden"
+                animate="show">
+                    {myName.map((letter, index) => 
+                        <AnimatePresence key={index}>
+                            {letter && 
+                                <motion.span 
+                                    variants={nameLetter}
+                                    custom={index}
+                                    className='name-letter letter'>
+                                        {letter}
+                                </motion.span>}
+                        </AnimatePresence>
+                    )}
+                    {myLName.map((letter, index) => 
+                        <AnimatePresence key={index}>
+                            {letter && 
+                                <motion.span 
+                                    custom={index}
+                                    variants={lnameLetter}
+                                    className='lname-letter letter'>
+                                        {letter}
+                                </motion.span>}
+                        </AnimatePresence>
+                    )}
+            </motion.ul>
+        </div>
     )
 }
 

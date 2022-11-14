@@ -1,16 +1,25 @@
-.ec-name-container {
+.ec-full-name {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 
-    .letter {
-        color: white;
-        font-family: sans-serif;
-        font-size: 40px;
-    }
+    .ec-name-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    
+        .letter {
+            color: transparent;
+            font-family: sans-serif;
+            font-size: 45px;
+            -webkit-text-stroke-width: 1px;
+        }
+        
+        .name-letter {
+            -webkit-text-stroke-color: white; 
+        }
 
-    .letter:nth-child(6) {
-        margin-left: 5px;
+        .letter:nth-child(6) {
+            margin-left: 10px;
+        }
     }
 }
