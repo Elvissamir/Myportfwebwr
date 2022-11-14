@@ -34,7 +34,7 @@ const ProjectsSection = () => {
     const projectList: ProjectData[] = [
         {
             title: 'Takenjobs', 
-            subtitle: 'Takenjobs - Encuentra tu nuevo futuro', 
+            subtitle: 'Encuentra tu nuevo futuro', 
             frontImage: imagesDir+'tkj/tkj01.png', 
             images: [imagesDir+'tkj/tkj02.png', imagesDir+'tkj/tkj03.png', imagesDir+'tkj/tkj04.png', imagesDir+'tkj/tkj05.png'], 
             description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply to jobs and contact companies.',

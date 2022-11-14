@@ -1,6 +1,7 @@
 .project-details {
     display: flex;
     flex-direction: column;
+    font-family: var(--font);
     color: white;
     width: 100%;
 
@@ -15,6 +16,7 @@
     .top {
         display: flex;
         flex-direction: column;
+        width: 100%;
         
         .title {
             font-size: 28px;
@@ -28,11 +30,14 @@
     }
 
     .description-container {
+        display: flex;
+        flex-direction: column;
         margin-top: 20px;
+        width: 100%;
 
         .details {
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 
@@ -93,24 +98,7 @@
         }
     }
 
-    .check-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--brand-bg);
-        border: 2px var(--brand-color-a) solid;
-        background-color: var(--brand-color-a);
-        border-radius: 10px;
-        font-weight: bolder;
-        text-decoration: none;
+   .action-btn {
         margin-top: 28px;
-        padding: 10px;
-        width: 100px;
-    }
-
-    .check-btn:hover {
-        background-color: var(--brand-bg);
-        color: var(--brand-color-a);
-        box-shadow: 0 0 10px var(--brand-color-a);
-    }
+   }
 }
