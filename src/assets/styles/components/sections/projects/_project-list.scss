@@ -12,6 +12,14 @@
     }
 }
 
+@media (min-width: 640px) {
+    .project-list-container {
+        .project-list {
+            grid-template-columns: repeat(2, 270px);
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     .project-list-container {
         .project-list {
