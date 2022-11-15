@@ -44,7 +44,7 @@ const ProjectsSection = () => {
         {
             title: 'Myportfwebwr', 
             subtitle: 'My web portfolio v2 (with React)', 
-            frontImage: '', 
+            frontImage: imagesDir+'myportfwebwr/01.png', 
             images: [], 
             description: 'My awesome web portfolio v2. The design was inspired by paperpillars and theta network.',
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />],
