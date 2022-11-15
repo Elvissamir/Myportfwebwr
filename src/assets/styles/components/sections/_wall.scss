@@ -247,3 +247,34 @@
         }
     }
 }
+
+@media (min-width: 1366px) {
+    .wall-container {
+        .wall {
+            .top {
+                margin-top: 130px;
+
+                .wall-text-container {
+                    .ec-career {
+                        font-size: 35px;
+                    }
+                }
+
+                .wall-circuit-container {
+                    .wall-circuit {
+                        .ec-logo-circuit {   
+                            height: 120px;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                .mouse {
+                    margin-top: calc(100% - 40px);
+                }
+            }
+        }
+    }
+}
