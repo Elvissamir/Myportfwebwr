@@ -3,7 +3,7 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    background-color: var(--brand-bg);
+    backdrop-filter: var(--glass);
     top: 0;
     left: 0;
     height: calc(100vh - 50px);
@@ -34,11 +34,10 @@
         .window {
             height: auto;
             max-height: 400px;
-            background-color: var(--brand-bg-glass);
+            background-color: var(--brand-color-c);
             border-radius: 15px;
             padding: 30px 45px;
             box-shadow: 0 0 20px var(--brand-color-a);
-            backdrop-filter: var(--glass);
             width: auto;
             max-width: 800px;
         }
