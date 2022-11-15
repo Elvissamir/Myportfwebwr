@@ -1,6 +1,6 @@
 const GoogleMapIcon = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+        <svg className="google-map-icon icon" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             aria-label="Google Maps" role="img"
             viewBox="0 0 512 512"><rect id="a"
             width="512" height="512"
