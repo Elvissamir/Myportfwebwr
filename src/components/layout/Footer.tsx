@@ -1,4 +1,5 @@
 import links from "../../core/links"
+import ECLogo from "../ECLogo"
 import GithubIcon from "../icons/GithubIcon"
 import LinkedinIcon from "../icons/LinkedinIcon"
 import MailIcon from "../icons/MailIcon"
@@ -30,7 +31,7 @@ const Footer = () => {
                         <p className="text-sm">Designed & Developed</p>
                     </div>
                     <p className="text-sm">by</p>
-                    <p className="text-sm">Elvis Carrasco</p>
+                    <ECLogo />
                 </div>
                 <div className="bottom">
                     <p className="text-xs">My web portfolio</p>
