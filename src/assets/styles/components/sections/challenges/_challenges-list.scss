@@ -29,7 +29,7 @@
 @media (min-width: 1366px) {
     .challenges-list-container {
         .challenges-list {
-            grid-template-columns: repeat(4, minmax(270px, max-content));
+            grid-template-columns: repeat(4, 270px);
         }
     }
 }
