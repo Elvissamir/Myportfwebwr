@@ -50,8 +50,8 @@ const ECLogo = () => {
                 <a className="logo-link" href="/">
                     <CircuitIcon />
                     <div className="ec-logo-text">
-                        <p className="E">E</p>
-                        <p className="C">C</p>
+                        <p className="E">ELVIS</p>
+                        <p className="C">CARRASCO</p>
                     </div>
                 </a>
             </div>
