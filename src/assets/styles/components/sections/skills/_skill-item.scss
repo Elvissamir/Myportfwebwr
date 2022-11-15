@@ -27,3 +27,14 @@
         }
     }
 }
+
+@media (min-width: 1366px) {
+    .skill-item-container {
+        .skill-item {
+            .icon-container {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+}
