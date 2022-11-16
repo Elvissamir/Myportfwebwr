@@ -96,3 +96,11 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .education-list-container {
+        .education-list {
+            grid-template-columns: repeat(5, 270px);
+        }
+    }
+}
