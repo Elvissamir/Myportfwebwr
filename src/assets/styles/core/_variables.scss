@@ -39,3 +39,10 @@
         --description-size: 20px;
     }
 }
+
+@media (min-width: 1920px) {
+    :root {
+        --title-size: 60px;
+        --description-size: 30px;
+    }
+}
