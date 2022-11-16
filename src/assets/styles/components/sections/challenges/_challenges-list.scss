@@ -33,3 +33,11 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .challenges-list-container {
+        .challenges-list {
+            grid-template-columns: repeat(4, 300px);
+        }
+    }
+}
