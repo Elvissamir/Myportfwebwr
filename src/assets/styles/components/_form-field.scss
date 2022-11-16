@@ -36,3 +36,15 @@
 .form-field:not(:first-child) {
     margin-top: 15px;
 }
+
+@media (min-width: 1920px) {
+    .form-field {
+        .input-label, .input-text, .input-area {
+            font-size: 20px;
+        }
+
+        .input-text, .input-area {
+            margin-top: 10px;
+        }
+    }
+}
