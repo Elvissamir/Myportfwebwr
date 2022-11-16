@@ -27,6 +27,7 @@ const Section = ({ id, title, description, content}: SectionProps) => {
                 variants={sectionVariants}
                 initial='start'
                 whileInView='show'
+                viewport={{ once: true }}
                 transition={{ duration: 1.5 }}
                 className="section">
                     <div className="section-top">

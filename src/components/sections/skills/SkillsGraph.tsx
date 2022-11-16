@@ -1,4 +1,4 @@
-import { motion, Transition, Variant, Variants } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 import FirebaseIcon from "../../icons/FirebaseIcon"
 import GitIcon from "../../icons/GitIcon"
 import GoogleMapIcon from "../../icons/GoogleMapIcon"
@@ -28,6 +28,7 @@ const SkillsGraph = () => {
             <motion.div 
                 layout
                 initial='start'
+                viewport={{ once: true, amount: 0.2 }}
                 whileInView='show'
                 transition={{ staggerChildren: 0.25 }}
                 className="skill-graph">
