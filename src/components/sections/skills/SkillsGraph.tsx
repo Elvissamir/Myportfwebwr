@@ -19,6 +19,7 @@ const SkillsGraph = () => {
         show: {
             opacity: [0, 1], 
             x: 0,
+            transition: { bounce: 0 }
         }
     }
 
@@ -27,7 +28,7 @@ const SkillsGraph = () => {
             <motion.div 
                 layout
                 initial='start'
-                animate='show'
+                whileInView='show'
                 transition={{ staggerChildren: 0.25 }}
                 className="skill-graph">
                     <div className="skill-row">
