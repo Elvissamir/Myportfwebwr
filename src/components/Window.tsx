@@ -16,7 +16,7 @@ const Window = ({ show, content, closeWindow}: WindowProps) => {
                     exit={{ opacity: 0 }}
                     id='window-container'
                     className="window-container">
-                        <div className="window">
+                        <div className="window scroll">
                             <div className="window-top">
                                 <button 
                                     onClick={closeWindow} 
