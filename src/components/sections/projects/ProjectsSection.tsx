@@ -38,7 +38,9 @@ const ProjectsSection = () => {
             subtitle: 'My web portfolio v2 (with React)', 
             frontImage: imagesDir+'myportfwebwr/01.png', 
             images: [imagesDir+'myportfwebwr/01.png', imagesDir+'myportfwebwr/02.png', imagesDir+'myportfwebwr/03.png',], 
-            description: 'My awesome web portfolio v2. The design was inspired by paperpillars and theta network.',
+            description: `My awesome web portfolio v2 (This time, made with React!). 
+                The design and development was done by me, and the theme is inspired in circuits and technology. 
+                I used simple css transitions and Framer Motion to implement the animations.`,
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />],
             githubUrl: 'https://github.com/Elvissamir/Myportfweb'
         },
@@ -56,7 +58,7 @@ const ProjectsSection = () => {
             subtitle: 'Algorithms & Challenges', 
             frontImage: imagesDir+'algoaac/shortest.png', 
             images: [imagesDir+'algoaac/fizzbuzz.png', imagesDir+'algoaac/binarytree.png',  imagesDir+'algoaac/maxchars.png', imagesDir+'algoaac/linkedlist.png'], 
-            description: 'AAC is a project aimed to gather cool algorithms and coding challenges, and present a UI for them.',
+            description: 'AAC is a project aimed to gather cool algorithms and coding challenges, and present a UI for them. It was designed and developed by me.',
             stack: [  <JavascriptIcon />, <VueIcon />, <TailwindIcon />],
             githubUrl: 'https://github.com/Elvissamir/AAC'
         },    
@@ -74,7 +76,7 @@ const ProjectsSection = () => {
             subtitle: 'React/Redux Front Store', 
             frontImage: imagesDir+'/frontStore/01.png',
             images: [imagesDir+'/frontStore/02.png', imagesDir+'/frontStore/03.png', imagesDir+'/frontStore/04.png', imagesDir+'/frontStore/05.png',], 
-            description: 'Front Store developed using react and redux made for Scandiweb.',
+            description: 'Front Store made for Scandiweb using React, Graphql and Redux',
             stack: [ <ReactIcon />, <JavascriptIcon />, <GraphqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/Scweb'
         },
