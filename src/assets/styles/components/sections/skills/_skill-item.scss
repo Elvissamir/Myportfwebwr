@@ -39,3 +39,15 @@
         }
     }
 }
+
+@media (min-width: 1366px) {
+    .skill-item-container {
+        .skill-item {
+            .icon-container {
+                padding: 20px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
