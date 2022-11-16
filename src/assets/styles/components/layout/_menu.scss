@@ -78,3 +78,15 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .menu-container {
+        .menu {
+            .menu-item {
+                .menu-link {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

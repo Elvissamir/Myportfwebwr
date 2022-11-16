@@ -329,3 +329,23 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .ec-logo-container {
+        .ec-logo {
+            .circuit-icon {
+                height: 52px;
+                width: 52px;
+            }
+
+            
+            .ec-logo-text {
+                font-size: 35px;
+
+                .E {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
