@@ -59,3 +59,16 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .hire-me-container {
+        height: 120px;
+        padding: 0;
+
+        .hire-me {
+            .hire-me-text {
+                font-size: 50px;
+            }
+        }
+    }
+}
