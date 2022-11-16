@@ -114,3 +114,59 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .footer-container {
+        .footer {
+            .top-text {
+                font-size: 22px;
+            }
+
+            .email-container {
+                font-size: 20px;
+
+                .mail-icon {
+                    height: 25px;
+                    width: 25px;
+                }
+            }           
+
+            .social-networks-container {
+                .world-icon {
+                    height: 35px;
+                    width: 35px;
+                }
+
+                .github-icon {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                .linkedin-icon {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .details-container {
+                .designed-text {
+                    font-size: 22px;
+                }
+
+                .text-sm {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .bottom {
+            margin-top: 25px;
+            font-size: 20px;
+
+            .text-with-icon {
+                margin-top: 10px !important;
+                font-size: 18px;
+            }
+        }
+    }
+}
