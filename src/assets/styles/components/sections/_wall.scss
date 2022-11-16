@@ -280,3 +280,36 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .wall-container {
+        .wall {
+            align-items: center;
+            justify-content: center;
+
+            .top {
+                .wall-text-container {
+                    .ec-career {
+                        font-size: 45px;
+                    }
+                }
+
+                .wall-circuit-container {
+                    .wall-circuit {
+                        .ec-logo-circuit {   
+                            margin-bottom: 30px;
+                            height: 160px;
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                .mouse {
+                    margin-top: calc(100%);
+                }
+            }
+        }
+    }
+}
