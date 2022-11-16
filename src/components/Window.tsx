@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion"
+import useHideOuterScroll from "../hooks/useHideOuterScroll"
 
 interface WindowProps {
     show: boolean
@@ -7,6 +8,8 @@ interface WindowProps {
 }
 
 const Window = ({ show, content, closeWindow}: WindowProps) => {
+    useHideOuterScroll({ hideScroll: show })
+
     return (
         <AnimatePresence>
             { show && 
