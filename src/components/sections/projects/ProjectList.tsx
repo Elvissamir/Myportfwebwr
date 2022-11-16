@@ -1,3 +1,4 @@
+import { motion, Variants } from "framer-motion"
 import ProjectCard from "./ProjectCard"
 import { ProjectData } from "./ProjectsSection"
 
@@ -8,9 +9,14 @@ interface ProjectListProps {
 
 const ProjectList = ({ projectList, handleSeeDetails }: ProjectListProps) => {
     return (
-        <>
-            <div className="project-list-container">
-                <div className="project-list">
+        <motion.div className="project-list-container">
+            <motion.div 
+                layout
+                initial={'start'}
+                whileInView={'show'}
+                viewport={{ once: true }}
+                transition={{ staggerChildren: 0.5 }}
+                className="project-list">
                     {projectList.map((project, index) => 
                         <ProjectCard 
                             key={index}
@@ -19,11 +25,10 @@ const ProjectList = ({ projectList, handleSeeDetails }: ProjectListProps) => {
                             subtitle={project.subtitle}
                             frontImage={project.frontImage}
                             githubUrl={project.githubUrl} 
-                            seeDetails={handleSeeDetails}/>                
+                            seeDetails={handleSeeDetails}/> 
                     )}
-                </div>
-            </div>
-        </>
+            </motion.div>
+        </motion.div>
     )
 }
 
