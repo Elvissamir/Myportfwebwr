@@ -1,3 +1,4 @@
+import { motion, Variants } from "framer-motion"
 import ChallengeCard from "./ChallengeCard"
 
 export interface ChallengeData {
@@ -60,15 +61,32 @@ const ChallengesList = () => {
         }
     ]
 
+    const challengeItemVariants: Variants = {
+        start: {
+            opacity: 0
+        },
+        show: {
+            opacity: 1
+        }
+    }
+
     return (
         <div className="challenges-list-container">
-            <ul className="challenges-list">
-                {challengeList.map((challenge, index) => 
-                    <li className="challenge-item" key={index}>
-                        <ChallengeCard data={challenge} />
-                    </li>
-                )}
-            </ul>
+            <motion.ul 
+                initial={'start'}
+                whileInView={'show'}
+                viewport={{ once: true }}
+                transition={{ staggerChildren: 0.25, bounce: 0 }}
+                className="challenges-list">
+                    {challengeList.map((challenge, index) => 
+                        <motion.li 
+                            variants={challengeItemVariants}
+                            className="challenge-item" 
+                            key={index}>
+                                <ChallengeCard data={challenge} />
+                        </motion.li>
+                    )}
+            </motion.ul>
         </div>
     )
 }
