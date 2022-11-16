@@ -41,3 +41,17 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .about-header {
+        .text-container {
+            .text-header {
+                font-size: 25px;
+            }
+
+            .text {
+                font-size: 20px;
+            }
+        }
+    }
+}
