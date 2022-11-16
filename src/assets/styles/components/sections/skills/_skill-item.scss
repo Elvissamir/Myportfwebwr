@@ -1,21 +1,22 @@
 .skill-item-container {
     display: flex;
     z-index: 1;
-
+    
     .skill-item {
         display: flex;
-
+        
         .icon-container {
             display: flex;
             border-radius: 50%;
             background-color: white;
             box-shadow: 0 0 10px white;
-            border: 2px white solid;
+            border: 2px var(--brand-color-d) solid;
             padding: 15px;
             height: 77px;
             width: 77px;
-
+            
             .icon {
+                opacity: 1;
                 height: 100%;
                 width: 100%;
             }
