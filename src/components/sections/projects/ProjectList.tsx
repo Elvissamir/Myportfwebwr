@@ -1,6 +1,6 @@
 import { motion, Variants } from "framer-motion"
+import { ProjectData } from "../../../core/projects"
 import ProjectCard from "./ProjectCard"
-import { ProjectData } from "./ProjectsSection"
 
 interface ProjectListProps {
     projectList: ProjectData[]

@@ -1,6 +1,6 @@
+import { ProjectData } from "../../../core/projects"
 import Window from "../../Window"
 import ProjectDetails from "./ProjectDetails"
-import { ProjectData } from "./ProjectsSection"
 
 interface ProjectWindowProps {
     show: boolean

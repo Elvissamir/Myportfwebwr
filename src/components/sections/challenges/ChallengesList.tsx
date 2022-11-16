@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion"
+import { imagesDir } from "../../../core/imagesDir"
 import ChallengeCard from "./ChallengeCard"
 
 export interface ChallengeData {
@@ -8,7 +9,7 @@ export interface ChallengeData {
 }
 
 const ChallengesList = () => {
-    const imageDir = "/images/algoaac/"
+    const imageDir = `${imagesDir}/algoaac`
     const challengeList: ChallengeData[] = [
         { 
             name: 'Anagram', 

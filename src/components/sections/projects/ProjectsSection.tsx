@@ -17,20 +17,12 @@ import VueIcon from "../../icons/VueIcon"
 import ProjectList from "./ProjectList"
 import ProjectWindow from "./ProjectWindow"
 import Section from "../Section"
-
-export interface ProjectData {
-    title: string 
-    subtitle: string 
-    frontImage: string
-    images: string[]
-    stack: JSX.Element[]
-    description: string
-    githubUrl: string
-}
+import { imagesDir } from "../../../core/imagesDir"
+import { ProjectData } from "../../../core/projects"
 
 const ProjectsSection = () => {
-    const imagesDir = '/images/'
-    const description = "These are some of the projects I've developed:" 
+    const description = "These are some of the projects I've developed:"
+
     const projectList: ProjectData[] = [
         {
             title: 'Takenjobs', 
@@ -45,7 +37,7 @@ const ProjectsSection = () => {
             title: 'Myportfwebwr', 
             subtitle: 'My web portfolio v2 (with React)', 
             frontImage: imagesDir+'myportfwebwr/01.png', 
-            images: [], 
+            images: [imagesDir+'myportfwebwr/01.png', imagesDir+'myportfwebwr/02.png', imagesDir+'myportfwebwr/03.png',], 
             description: 'My awesome web portfolio v2. The design was inspired by paperpillars and theta network.',
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />],
             githubUrl: 'https://github.com/Elvissamir/Myportfweb'
@@ -96,7 +88,7 @@ const ProjectsSection = () => {
             githubUrl: 'https://github.com/Elvissamir/registrationManager'
         },
     ]
-
+    
     const [currentProject, setCurrentProject] = useState<ProjectData>(projectList[0])
     const [showDetails, setShowDetails] = useState(false)
 

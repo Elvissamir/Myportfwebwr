@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion"
+import { imagesDir } from "../../../core/imagesDir"
 
 interface EducationData {
     name: string
@@ -7,7 +8,7 @@ interface EducationData {
 }
 
 const EducationList = () => {
-    const imageDir = '/images/Certificates/'
+    const imageDir = `${imagesDir}/Certificates`
 
     const educationList: EducationData[] = [
         {name: 'HTML5', imageUrl: imageDir+'03html.png', link: 'http://coursera.org/verify/J27UJY2P9M9K'},

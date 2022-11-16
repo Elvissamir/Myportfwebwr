@@ -1,4 +1,4 @@
-import { ProjectData } from "./ProjectsSection"
+import { ProjectData } from "../../../core/projects"
 
 interface ProjectDetailsProps {
     data: ProjectData
