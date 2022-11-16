@@ -1,3 +1,5 @@
+import { motion, Variants } from "framer-motion"
+
 interface EducationData {
     name: string
     imageUrl: string
@@ -20,22 +22,35 @@ const EducationList = () => {
         {name: 'Python Conclusion', imageUrl: imageDir+'05py.jpg', link: 'http://coursera.org/verify/XZGEYJAFWZTG'},
     ]
 
+    const courseVariants: Variants = {
+        start: { opacity: 0 },
+        show: { opacity: 1 }
+    }
+
     return (
         <div className="education-list-container">
-            <ul className="education-list">
-                {educationList.map((course, index) => 
-                    <li className="course-details-container" key={index}>
-                        <a href={course.link} className="course-details">
-                            <img className="course-image" src={course.imageUrl} alt={'course '+course.name}  width='350' height='180' />
-                            <div className="course-text-container">
-                                <span className="right-line"></span>
-                                <p className="course-text">{course.name}</p>
-                                <span className="left-line"></span>
-                            </div>
-                        </a>
-                    </li>
-                )}
-            </ul>
+            <motion.ul 
+                initial={'start'}
+                whileInView={'show'}
+                viewport={{ once: true }}
+                transition={{ staggerChildren: 0.25 }}
+                className="education-list">
+                    {educationList.map((course, index) => 
+                        <motion.li 
+                            variants={courseVariants}
+                            className="course-details-container" 
+                            key={index}>
+                                <a href={course.link} className="course-details">
+                                    <img className="course-image" src={course.imageUrl} alt={'course '+course.name}  width='350' height='180' />
+                                    <div className="course-text-container">
+                                        <span className="right-line"></span>
+                                        <p className="course-text">{course.name}</p>
+                                        <span className="left-line"></span>
+                                    </div>
+                                </a>
+                        </motion.li>
+                    )}
+            </motion.ul>
         </div>
     )
 }
