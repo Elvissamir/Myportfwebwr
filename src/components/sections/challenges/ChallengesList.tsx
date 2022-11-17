@@ -9,7 +9,7 @@ export interface ChallengeData {
 }
 
 const ChallengesList = () => {
-    const imageDir = `${imagesDir}/algoaac`
+    const imageDir = `${imagesDir}algoaac/`
     const challengeList: ChallengeData[] = [
         { 
             name: 'Anagram', 

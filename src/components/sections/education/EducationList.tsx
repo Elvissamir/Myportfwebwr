@@ -8,7 +8,7 @@ interface EducationData {
 }
 
 const EducationList = () => {
-    const imageDir = `${imagesDir}/Certificates`
+    const imageDir = `${imagesDir}Certificates/`
 
     const educationList: EducationData[] = [
         {name: 'HTML5', imageUrl: imageDir+'03html.png', link: 'http://coursera.org/verify/J27UJY2P9M9K'},
