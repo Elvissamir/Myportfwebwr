@@ -91,10 +91,10 @@ const ProjectsSection = () => {
         {
             title: 'AlgoUI', 
             subtitle: 'Work in progress...', 
-            frontImage: imagesDir+'servm/servm01.png', 
-            images: [imagesDir+'servm/servm02.png'], 
+            frontImage: imagesDir+'algoui/01.png', 
+            images: [imagesDir+'algoui/01.png'], 
             description: "AlgoUI is a personal project and it's not ready yet. :) I hope it's finished soon!",
-            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
+            stack: [ <TypescriptIcon />, <ReactIcon />, <JavascriptIcon />, <SassIcon />],
             githubUrl: null
         },
     ]
