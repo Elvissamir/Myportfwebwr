@@ -6,6 +6,8 @@
     backdrop-filter: var(--glass);
     position: fixed;
     height: calc(100vh - 50px);
+    border-right: 1px var(--brand-color-a) solid;
+    box-shadow: 0 0 15px var(--brand-color-a);
     width: 100%;
     z-index: 5;
 

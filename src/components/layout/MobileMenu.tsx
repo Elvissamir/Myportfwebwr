@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
+import useHideOuterScroll from "../../hooks/useHideOuterScroll"
 import ECLogo from "../ECLogo"
 import Menu from "./Menu"
 
@@ -7,6 +8,8 @@ interface MobileMenuProps {
 }
 
 const MobileMenu = ({ showMobileMenu }: MobileMenuProps) => {
+    useHideOuterScroll({ hideScroll: showMobileMenu })
+
     return (
         <AnimatePresence>
             {showMobileMenu && 
