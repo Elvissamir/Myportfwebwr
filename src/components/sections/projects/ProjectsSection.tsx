@@ -31,7 +31,7 @@ const ProjectsSection = () => {
             images: [imagesDir+'tkj/tkj02.png', imagesDir+'tkj/tkj03.png', imagesDir+'tkj/tkj04.png', imagesDir+'tkj/tkj05.png'], 
             description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply for jobs and contact companies.',
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />, <NodeJsIcon />, <FirebaseIcon />, <GoogleMapIcon />],
-            githubUrl: ''
+            githubUrl: null
         },
         {
             title: 'Myportfwebwr', 
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
             description: `My awesome web portfolio v2 (This time, made with React!). The design and development were done by me, and the theme is based on circuits and technology. 
                 I used simple css transitions and Framer Motion to implement the animations.`,
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />],
-            githubUrl: 'https://github.com/Elvissamir/Myportfweb'
+            githubUrl: null
         },
         {
             title: 'Fullrvmovies', 
@@ -87,6 +87,15 @@ const ProjectsSection = () => {
             description: 'Servm is a management system developed for the "Antonio José" school. It allows the management of students, teachers, courses, subjects, and more.',
             stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/registrationManager'
+        },
+        {
+            title: 'AlgoUI', 
+            subtitle: 'Work in progress...', 
+            frontImage: imagesDir+'servm/servm01.png', 
+            images: [imagesDir+'servm/servm02.png'], 
+            description: "AlgoUI is a personal project and it's not ready yet. :) I hope it's finished soon!",
+            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
+            githubUrl: null
         },
     ]
     

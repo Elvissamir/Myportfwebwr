@@ -4,7 +4,7 @@ interface ProjectCardProps {
     title: string 
     subtitle: string 
     frontImage: string 
-    githubUrl: string 
+    githubUrl: string | null
     index: number
     seeDetails: (index: number) => void
 }
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, subtitle, frontImage, githubUrl, index, seeDetails
                                 <p className="project-subtitle">{subtitle}</p>
                             </div>
                             <div className="project-btns">
-                                <a className="project-github-link" href={githubUrl}>Github</a>
+                                { githubUrl && <a className="project-github-link" href={githubUrl}>Github</a> }
                                 <button onClick={() => seeDetails(index)} className="action-btn">Details</button>
                             </div>
                         </div>

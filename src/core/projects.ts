@@ -5,5 +5,5 @@ export interface ProjectData {
     images: string[]
     stack: JSX.Element[]
     description: string
-    githubUrl: string
+    githubUrl: string | null
 }
