@@ -7,7 +7,7 @@ const AboutHeader = () => {
             <div className="text-container">
                 <p className="text-header">Hey, I'm Elvis, a Venezuelan software engineer.!</p>
                 <p className="text">
-                    I enjoy learning new things, reading, running, listening to music and cooking. 
+                    I enjoy learning new things, reading, running, listening to music, and cooking. 
                 </p>
             </div>
         </div>

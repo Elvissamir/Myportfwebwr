@@ -6,7 +6,7 @@ import useMessageForm from "../../../hooks/messages/useMessageForm"
 import ContactSuccessWindow from "./ContactSuccessWindow"
 
 const ContactMeSection = () => {
-    const description = "I'm glad you're here!. Contact me on linkedin, by email or send me a message."
+    const description = "I'm glad you're here! Please contact me on Linkedin, by email, or send me a message."
     const {
         messageData, 
         loading, 

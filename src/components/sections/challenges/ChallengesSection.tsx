@@ -3,7 +3,7 @@ import ChallengesList from "./ChallengesList"
 import Section from "../Section"
 
 const ChallengesSection = () => {
-    const description = 'Here are some common and cool algorithms and coding challenges with UI: '
+    const description = 'Here are some algorithms and coding challenges with UI that I added to AAC:'
 
     return (
         <Section
