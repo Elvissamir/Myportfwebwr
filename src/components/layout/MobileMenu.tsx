@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
+import ECLogo from "../ECLogo"
 import Menu from "./Menu"
 
 interface MobileMenuProps {
@@ -16,6 +17,9 @@ const MobileMenu = ({ showMobileMenu }: MobileMenuProps) => {
                     transition={{ bounce: 0 }}
                     className="mobile-menu-container">
                         <div className="mobile-menu">
+                            <div className="mobile-menu-logo">
+                                <ECLogo />
+                            </div>
                             <Menu />
                         </div>
                 </motion.div>}

@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        // margin-top: 40px;
         align-items: center;
         height: 100%;
         width: 100%;
@@ -21,6 +21,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-top: auto;
 
             .wall-text-container {
                 display: flex;
@@ -161,48 +162,49 @@
                 .action-btn {
                     margin-top: 30px
                 }
-            }      
-            
-            .mouse {
-                border: 3px solid var(--brand-color-a);
-                border-radius: 60px;
-                box-shadow: 0 0 15px var(--brand-color-a);
-                margin-top: calc(100% - 120px);
-                position: relative;
-                height: 50px;
-                width: 30px;
-            }
-              
-            .mouse::before {
-                content: "";
-                width: 9px;
-                height: 9px;
-                position: absolute;
-                top: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                box-shadow: 0 0 20px var(--brand-color-a);
-                background-color: var(--brand-color-a);
-                border-radius: 50%;
-                opacity: 1;
-                animation: wheel 2s infinite;
-                -webkit-animation: wheel 2s infinite;
-            }
-              
-            @keyframes wheel {
-                to {
-                  opacity: 0;
-                  top: 35px;
-                }
-            }
-            
-            @-webkit-keyframes wheel {
-                to {
-                  opacity: 0;
-                  top: 35px;
-                }
-            }   
+            }        
         }
+
+        .mouse {
+            border: 3px solid var(--brand-color-a);
+            border-radius: 60px;
+            box-shadow: 0 0 15px var(--brand-color-a);
+            margin-top: auto;
+            margin-bottom: 65px;
+            position: relative;
+            height: 50px;
+            width: 30px;
+        }
+          
+        .mouse::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 20px var(--brand-color-a);
+            background-color: var(--brand-color-a);
+            border-radius: 50%;
+            opacity: 1;
+            animation: wheel 2s infinite;
+            -webkit-animation: wheel 2s infinite;
+        }
+          
+        @keyframes wheel {
+            to {
+              opacity: 0;
+              top: 35px;
+            }
+        }
+        
+        @-webkit-keyframes wheel {
+            to {
+              opacity: 0;
+              top: 35px;
+            }
+        } 
 
         .show-bottom {
             opacity: 1;

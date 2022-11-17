@@ -17,9 +17,7 @@
             overflow: hidden;
 
             .menu-link {
-                // background-clip: text;
-                // background-image: linear-gradient(to left, transparent, transparent);
-                font-size: 20px;
+                font-size: 16px;
                 padding: 0 5px;
                 font-weight: bold;
                 text-decoration: none;
@@ -27,7 +25,6 @@
             }
 
             .menu-link-underline {
-                // background-image: linear-gradient(to left, var(--brand-color-b), var(--brand-color-a));
                 background-color: var(--brand-color-a);
                 height: 2.5px;
                 width: 100%;
@@ -61,12 +58,6 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-
-            .menu-item {
-                .menu-link {
-                    font-size: 16px;
-                }
-            }
 
             .menu-item:not(:first-child) {
                 margin-top: 0;

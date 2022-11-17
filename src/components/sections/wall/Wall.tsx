@@ -51,8 +51,8 @@ const Wall = () => {
                         </div>
                         <button className="action-btn">Resume</button>
                     </div>
-                    <div className="mouse"></div>
                 </div>
+                <div className="mouse"></div>
             </div>
         </div>
     )

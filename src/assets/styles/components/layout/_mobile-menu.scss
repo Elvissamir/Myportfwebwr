@@ -11,7 +11,12 @@
 
     .mobile-menu {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
+
+        .mobile-menu-logo {
+            margin-bottom: 30px;
+        }
     }
 }
