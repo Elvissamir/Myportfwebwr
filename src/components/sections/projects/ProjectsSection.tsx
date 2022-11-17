@@ -29,7 +29,7 @@ const ProjectsSection = () => {
             subtitle: 'Encuentra tu nuevo futuro', 
             frontImage: imagesDir+'tkj/tkj01.png', 
             images: [imagesDir+'tkj/tkj02.png', imagesDir+'tkj/tkj03.png', imagesDir+'tkj/tkj04.png', imagesDir+'tkj/tkj05.png'], 
-            description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply to jobs and contact companies.',
+            description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply for jobs and contact companies.',
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />, <NodeJsIcon />, <FirebaseIcon />, <GoogleMapIcon />],
             githubUrl: ''
         },
@@ -38,8 +38,7 @@ const ProjectsSection = () => {
             subtitle: 'My web portfolio v2 (with React)', 
             frontImage: imagesDir+'myportfwebwr/01.png', 
             images: [imagesDir+'myportfwebwr/01.png', imagesDir+'myportfwebwr/02.png', imagesDir+'myportfwebwr/03.png',], 
-            description: `My awesome web portfolio v2 (This time, made with React!). 
-                The design and development was done by me, and the theme is inspired in circuits and technology. 
+            description: `My awesome web portfolio v2 (This time, made with React!). The design and development were done by me, and the theme is based on circuits and technology. 
                 I used simple css transitions and Framer Motion to implement the animations.`,
             stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />],
             githubUrl: 'https://github.com/Elvissamir/Myportfweb'
@@ -58,7 +57,7 @@ const ProjectsSection = () => {
             subtitle: 'Algorithms & Challenges', 
             frontImage: imagesDir+'algoaac/shortest.png', 
             images: [imagesDir+'algoaac/fizzbuzz.png', imagesDir+'algoaac/binarytree.png',  imagesDir+'algoaac/maxchars.png', imagesDir+'algoaac/linkedlist.png'], 
-            description: 'AAC is a project aimed to gather cool algorithms and coding challenges, and present a UI for them. It was designed and developed by me.',
+            description: 'AAC is a project created to cover algorithms and coding challenges such as a binary tree, linked lists, fizzbuzz, and palindromes and present a UI for them. It was designed and developed by me.',
             stack: [  <JavascriptIcon />, <VueIcon />, <TailwindIcon />],
             githubUrl: 'https://github.com/Elvissamir/AAC'
         },    
@@ -67,7 +66,7 @@ const ProjectsSection = () => {
             subtitle: 'Crypto Portfolio Tracker', 
             frontImage: imagesDir+'cpt/cpt01.png', 
             images: [imagesDir+'cpt/cpt02.png', imagesDir+'cpt/cpt03.png', imagesDir+'cpt/cpt04.png',imagesDir+'cpt/cpt05.png'], 
-            description: 'CPT keeps track of your crypto portfolio and markets. The main features are: portfolio management, charts (top cryptos, distribution), crypto markets.',
+            description: 'CPT keeps track of your crypto portfolio and markets. The main features are portfolio management, charts (top cryptos, distribution), and crypto markets.',
             stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/cryptoPT'
         },
@@ -76,7 +75,7 @@ const ProjectsSection = () => {
             subtitle: 'React/Redux Front Store', 
             frontImage: imagesDir+'/frontStore/01.png',
             images: [imagesDir+'/frontStore/02.png', imagesDir+'/frontStore/03.png', imagesDir+'/frontStore/04.png', imagesDir+'/frontStore/05.png',], 
-            description: 'Front Store made for Scandiweb using React, Graphql and Redux',
+            description: 'Front Store made for Scandiweb using React, Graphql, and Redux.',
             stack: [ <ReactIcon />, <JavascriptIcon />, <GraphqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/Scweb'
         },
@@ -85,7 +84,7 @@ const ProjectsSection = () => {
             subtitle: 'School Management', 
             frontImage: imagesDir+'servm/servm01.png', 
             images: [imagesDir+'servm/servm02.png', imagesDir+'servm/servm03.png', imagesDir+'servm/servm04.png', imagesDir+'servm/servm05.png',], 
-            description: 'Servm is a management system developed for the "Antonio José" school. It allows management of students, teachers, courses, subjects and more.',
+            description: 'Servm is a management system developed for the "Antonio José" school. It allows the management of students, teachers, courses, subjects, and more.',
             stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
             githubUrl: 'https://github.com/Elvissamir/registrationManager'
         },
