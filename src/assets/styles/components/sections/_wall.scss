@@ -11,6 +11,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
+        align-items: center;
         height: 100%;
         width: 100%;
 
@@ -19,7 +21,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 40px;
 
             .wall-text-container {
                 display: flex;
@@ -123,7 +124,6 @@
         .bottom {
             display: flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
             margin-top: 40px;
             opacity: 0;
@@ -132,26 +132,37 @@
 
             .resume-download-container {
                 display: flex;
-                flex-direction: column;
                 align-items: center;
+                flex-direction: column;
                 justify-content: center;
                 font-family: var(--font);
 
                 .resume-download-selection {
                     display: flex;
+                    align-items: center;
                     color: white;
                     
                     .wall-bottom-text {
                         font-size: 16px;
                         margin-right: 10px;
                     }
+
+                    .input-select {
+                        background-color: var(--brand-bg-glass);
+                        border: 1px white solid;
+                        border-radius: 4px;
+                        box-shadow: 0 0 5px white;
+                        color: white;
+                        cursor: pointer;
+                        padding: 4px 8px;
+                    }
                 }
 
                 .action-btn {
-                    margin-top: 20px
+                    margin-top: 30px
                 }
-            }
-
+            }      
+            
             .mouse {
                 border: 3px solid var(--brand-color-a);
                 border-radius: 60px;
@@ -190,7 +201,7 @@
                   opacity: 0;
                   top: 35px;
                 }
-            }            
+            }   
         }
 
         .show-bottom {
@@ -202,6 +213,9 @@
 @media (min-width: 640px) {
     .wall-container {
         .wall {
+            margin-top: 0;
+            justify-content: center;
+
             .top {
                 .wall-text-container {
                     .ec-career {
@@ -222,12 +236,14 @@
 @media (min-width: 1024px) {
     .wall-container {
         .wall {
+            justify-content: unset;
+
             .top {
                 margin-top: 100px;
 
                 .wall-text-container {
                     .ec-career {
-                        font-size: 35px;
+                        font-size: 40px;
                     }
                 }
 
@@ -243,7 +259,7 @@
 
             .bottom {
                 .mouse {
-                    margin-top: calc(100% - 95px);
+                    margin-top: calc(100% - 100px);
                 }
             }
         }
