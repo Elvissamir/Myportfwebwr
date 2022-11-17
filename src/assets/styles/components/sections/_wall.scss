@@ -223,12 +223,6 @@
                     }
                 }
             }
-
-            .bottom {
-                .mouse {
-                    margin-top: calc(100% - 90px);
-                }
-            }
         }
     }
 }
@@ -257,10 +251,8 @@
                 }
             }
 
-            .bottom {
-                .mouse {
-                    margin-top: calc(100% - 100px);
-                }
+            .mouse {
+                margin-bottom: 30px;
             }
         }
     }
@@ -285,12 +277,6 @@
                             width: 120px;
                         }
                     }
-                }
-            }
-
-            .bottom {
-                .mouse {
-                    margin-top: calc(100% - 40px);
                 }
             }
         }
@@ -320,12 +306,6 @@
                             width: 160px;
                         }
                     }
-                }
-            }
-
-            .bottom {
-                .mouse {
-                    margin-top: calc(100%);
                 }
             }
         }

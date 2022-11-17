@@ -14,6 +14,7 @@ const useMessageForm = () => {
     const [ errors, setErrors ] = useState<FormError>({})
     const { handleSingleError } = useHandleFormError({ errors, setErrors })
     const [ sentStatus, setSentStatus ] = useState<SentState>(null)
+    const [ showSuccessWindow, setShowSuccessWindow ] = useState(false)
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -40,11 +41,13 @@ const useMessageForm = () => {
         const result = await MessagesService.save(messageData)
         finishLoading()
 
+        
         if (result) {
             setMessageData({...initialData})
+            setShowSuccessWindow(true)
             return setSentStatus('success')
         }
-
+            
         setSentStatus('failed')
     }
 
@@ -65,11 +68,17 @@ const useMessageForm = () => {
         setMessageData(nmessageData)
     }
 
+    const closeWindow = () => {
+        setShowSuccessWindow(false)
+    }
+
     return {
         loading,
         messageData,
+        showSuccessWindow,
         errors,
         sentStatus,
+        closeWindow,
         handleSendMessage,
         handleChangeInput
     }
