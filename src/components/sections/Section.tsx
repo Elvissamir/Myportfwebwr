@@ -21,9 +21,8 @@ const Section = ({ id, title, description, content}: SectionProps) => {
     }
 
     return (
-        <div className="section-container">
+        <div id={id} className="section-container">
             <motion.section 
-                id={id} 
                 variants={sectionVariants}
                 initial='start'
                 whileInView='show'
