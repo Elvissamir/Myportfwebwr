@@ -11,8 +11,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // margin-top: 40px;
-        align-items: center;
         height: 100%;
         width: 100%;
 
@@ -306,6 +304,8 @@
             justify-content: center;
 
             .top {
+                margin-top: auto;
+
                 .wall-text-container {
                     .ec-career {
                         font-size: 45px;
