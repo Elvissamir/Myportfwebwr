@@ -1,3 +1,5 @@
+export type Lang = 'eng' | 'spa'
+
 export interface FormFieldError {
     message: string 
 }

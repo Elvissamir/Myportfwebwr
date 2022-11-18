@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from "react"
+import { Lang } from "../../../core/types"
 import ECCircuit from "../../ECCircuit"
+import DownloadResumeBtn from "./DownloadResumeBtn"
 import ECName from "./ECName"
-
-type Lang = 'eng' | 'spa'
 
 const Wall = () => {
     const [resume_lang, setResume_lang] = useState<Lang>('eng')
@@ -49,7 +49,7 @@ const Wall = () => {
                                     <option className="select-option" value="spa">Spanish</option>
                             </select>
                         </div>
-                        <button className="action-btn">Resume</button>
+                        <DownloadResumeBtn lang={resume_lang} />
                     </div>
                 </div>
                 <div className="mouse"></div>
