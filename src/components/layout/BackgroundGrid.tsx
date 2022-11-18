@@ -7,6 +7,7 @@ const BackgroundGrid = () => {
     const [tiles, setTiles] = useState<number[]>(new Array(columns * rows).fill(0))
 
     const createGrid = () => {
+
         const ncolums = Math.floor(window.innerWidth / 100)
         const nrows = Math.floor(document.body.scrollHeight / 100)
         const ntiles = new Array(ncolums * nrows).fill(0)
