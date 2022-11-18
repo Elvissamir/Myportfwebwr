@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    height: 130px;
-    padding: 15px 0;
+    height: 150px;
+    padding: 10px 0;
     width: 100%;
     animation: backgroundI 5s linear infinite;
 
@@ -34,8 +34,13 @@
 
         .hire-me-text {
             font-size: 30px;
+            margin-right: 10px;
             text-shadow: 0 0 3px var(--brand-color-a);
-            margin-right: 20px;
+        }
+
+        .action-btn {
+            margin-top: 5px;
+            width: 130px !important;
         }
     }
 }
@@ -49,8 +54,6 @@
 
 @media (min-width: 1366px) {
     .hire-me-container {
-        height: 100px;
-        padding: 0;
 
         .hire-me {
             .hire-me-text {
