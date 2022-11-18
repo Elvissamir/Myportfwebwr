@@ -1,7 +1,7 @@
 import { motion, Variants } from "framer-motion"
+import ExpressIcon from "../../icons/ExpressIcon"
 import FirebaseIcon from "../../icons/FirebaseIcon"
 import GitIcon from "../../icons/GitIcon"
-import GoogleMapIcon from "../../icons/GoogleMapIcon"
 import JavascriptIcon from "../../icons/JavascriptIcon"
 import MongoIcon from "../../icons/MongoIcon"
 import NodeJsIcon from "../../icons/NodeJsIcon"
@@ -62,13 +62,13 @@ const SkillsGraph = () => {
                         <div className="space"></div>
                         <motion.span 
                             variants={itemVariants}>
-                                <SkillItem name="Firebase Auth" icon={<FirebaseIcon />} />
+                                <SkillItem name="Firebase Auth" icon={<ExpressIcon />} />
                         </motion.span>
                     </div>
                     <div className="skill-row">
                         <motion.span 
                             variants={itemVariants}>
-                                <SkillItem name="Google Maps" icon={<GoogleMapIcon />} />
+                                <SkillItem name="Google Maps" icon={<FirebaseIcon />} />
                         </motion.span>
                         <div className="space"></div>
                         <motion.span 
