@@ -1,4 +1,3 @@
-import ECCircuit from "./ECCircuit"
 import CircuitIcon from "./icons/CircuitIcon"
 
 const ECLogo = () => {
