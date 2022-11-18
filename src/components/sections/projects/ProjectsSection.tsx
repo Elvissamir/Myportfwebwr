@@ -19,6 +19,8 @@ import ProjectWindow from "./ProjectWindow"
 import Section from "../Section"
 import { imagesDir } from "../../../core/imagesDir"
 import { ProjectData } from "../../../core/projects"
+import DockerIcon from "../../icons/DockerIcon"
+import ExpressIcon from "../../icons/ExpressIcon"
 
 const ProjectsSection = () => {
     const description = "These are some of the projects I've developed:"
@@ -30,7 +32,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'tkj/tkj01.png', 
             images: [imagesDir+'tkj/tkj02.png', imagesDir+'tkj/tkj03.png', imagesDir+'tkj/tkj04.png', imagesDir+'tkj/tkj05.png'], 
             description: 'Takenjobs is a platform developed to help users find jobs in Chile. It uses tags to filter and order job postings. Users can also apply for jobs and contact companies.',
-            stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />, <NodeJsIcon />, <FirebaseIcon />, <GoogleMapIcon />],
+            stack: [<ReactIcon />, <TypescriptIcon />, <JavascriptIcon />, <SassIcon />, <NodeJsIcon />, <ExpressIcon />, <FirebaseIcon />, <GoogleMapIcon />],
             githubUrl: null
         },
         {
@@ -49,7 +51,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'/fullrvmovies/01.png', 
             images: [imagesDir+'/fullrvmovies/02.png', imagesDir+'/fullrvmovies/03.png', imagesDir+'/fullrvmovies/04.png', imagesDir+'/fullrvmovies/05.png',], 
             description: 'Movie inventory manager created with Node and React.',
-            stack: [ <NodeJsIcon />, <ReactIcon />, <MongoIcon />, <JavascriptIcon />, <TailwindIcon />],
+            stack: [ <NodeJsIcon />, <ReactIcon />, <ExpressIcon />, <MongoIcon />, <JavascriptIcon />, <TailwindIcon />, <DockerIcon />],
             githubUrl: 'https://github.com/Elvissamir/Fullrvmovies'
         },
         {
@@ -58,7 +60,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'algoaac/shortest.png', 
             images: [imagesDir+'algoaac/fizzbuzz.png', imagesDir+'algoaac/binarytree.png',  imagesDir+'algoaac/maxchars.png', imagesDir+'algoaac/linkedlist.png'], 
             description: 'AAC is a project created to cover algorithms and coding challenges such as a binary tree, linked lists, fizzbuzz, and palindromes and present a UI for them. It was designed and developed by me.',
-            stack: [  <JavascriptIcon />, <VueIcon />, <TailwindIcon />],
+            stack: [  <JavascriptIcon />, <VueIcon />, <TailwindIcon />, <DockerIcon /> ],
             githubUrl: 'https://github.com/Elvissamir/AAC'
         },    
         {
@@ -67,7 +69,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'cpt/cpt01.png', 
             images: [imagesDir+'cpt/cpt02.png', imagesDir+'cpt/cpt03.png', imagesDir+'cpt/cpt04.png',imagesDir+'cpt/cpt05.png'], 
             description: 'CPT keeps track of your crypto portfolio and markets. The main features are portfolio management, charts (top cryptos, distribution), and crypto markets.',
-            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
+            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />, <DockerIcon />],
             githubUrl: 'https://github.com/Elvissamir/cryptoPT'
         },
         {
@@ -76,7 +78,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'/frontStore/01.png',
             images: [imagesDir+'/frontStore/02.png', imagesDir+'/frontStore/03.png', imagesDir+'/frontStore/04.png', imagesDir+'/frontStore/05.png',], 
             description: 'Front Store made for Scandiweb using React, Graphql, and Redux.',
-            stack: [ <ReactIcon />, <JavascriptIcon />, <GraphqlIcon />],
+            stack: [ <ReactIcon />, <JavascriptIcon />, <GraphqlIcon /> ],
             githubUrl: 'https://github.com/Elvissamir/Scweb'
         },
         {
@@ -85,7 +87,7 @@ const ProjectsSection = () => {
             frontImage: imagesDir+'servm/servm01.png', 
             images: [imagesDir+'servm/servm02.png', imagesDir+'servm/servm03.png', imagesDir+'servm/servm04.png', imagesDir+'servm/servm05.png',], 
             description: 'Servm is a management system developed for the "Antonio José" school. It allows the management of students, teachers, courses, subjects, and more.',
-            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />],
+            stack: [ <PhpIcon />, <LaravelIcon />, <VueIcon />, <JavascriptIcon />, <TailwindIcon />, <MysqlIcon />, <DockerIcon />],
             githubUrl: 'https://github.com/Elvissamir/registrationManager'
         },
         {
