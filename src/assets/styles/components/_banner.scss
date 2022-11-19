@@ -1,0 +1,69 @@
+.banner-container {
+    display: flex;
+    background-color: var(--brand-bg-glass);
+    margin-top: 100px;
+    height: 196px;
+    width: 782px;
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+        width: 100%;
+
+        .banner-top {
+            display: flex;
+
+            .logo {
+                display: flex;
+    
+                .ec-logo-circuit {
+                    height: 40px;
+                    width: 40px;
+                }
+    
+                .ec-full-name {
+                    margin-left: 15px;
+                    
+                    .name {
+                        .name-letter, .lname-letter {
+                            font-size: 40px !important;
+                        }
+                    }
+                }
+            }
+
+            .technologies {
+                display: flex;
+                margin-top: auto;
+                margin-left: auto;
+    
+                .skill-item-container {
+                    .icon-container {
+                        padding: 12px;
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+    
+                .skill-item-container:not(:last-child) {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .career-text {
+            display: flex;
+            margin-top: auto;
+            justify-content: flex-end;
+
+            .tag-line {
+                color: white;
+                font-size: 25px;
+                font-family: sans-serif;
+                font-weight: bolder;
+            }
+        }
+
+    }
+}
