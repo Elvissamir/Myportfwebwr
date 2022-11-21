@@ -1,5 +1,6 @@
 .project-card-container {
     display: flex;
+    position: relative;
     background-color: var(--brand-color-c);
     border: 2px var(--brand-color-a) solid;
     box-shadow: 0 0 10px var(--brand-color-a);

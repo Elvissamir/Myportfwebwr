@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion"
+import TechnoSquare from "../../TechnoSquare"
 
 interface ProjectCardProps {
     title: string 
@@ -23,7 +24,10 @@ const ProjectCard = ({ title, subtitle, frontImage, githubUrl, index, seeDetails
     return (
         <motion.div 
             variants={cardVariants}
+            initial={'start'}
+            animate='show'
             className="project-card-container">
+                <TechnoSquare />
                 <div 
                     className="project-card">
                         <div className="top">

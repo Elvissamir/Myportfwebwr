@@ -1,0 +1,21 @@
+.techno-square {
+    --piece-width: 100px;
+    --piece-height: 100px;
+
+    display: grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    grid-template-columns: repeat(var(--piece-width), 1fr);
+    border: 2px var(--brand-color-a) solid;
+    height: 100%;
+    width: 100%;
+
+    .square-piece {
+        background-color: var(--brand-color-c);
+        border: 1px var(--brand-color-a) solid;
+        background-color: var(--brand-color-d);
+        z-index: 3;
+        pointer-events: none;
+    }
+}
