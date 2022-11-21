@@ -1,7 +1,7 @@
 .challenge-card-container {
     display: flex;
-    border: 2px white solid;
-    box-shadow: 0 0 10px white;
+    border: 2px var(--brand-color-a) solid;
+    box-shadow: 0 0 10px var(--brand-color-a);
     width: 100%;
 
     .challenge-card {
@@ -14,16 +14,16 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-color: rgba(31, 41, 150, 0.85);
+            background-color: var(--brand-color-c);
             position: absolute;
             height: 100%;
             width: 100%;
 
             .challenge-name {
-                font-size: 18px;
+                font-family: var(--font-a);
+                font-size: 22px;
                 font-weight: bolder;
                 color: white;
-                text-shadow: 0 0 10px white;
             }
 
             .action-btn {
@@ -47,7 +47,7 @@
     .challenge-card-container {
         .challenge-card {
             .challenge-info {
-                background-color: var(--brand-color-d);
+                background-color: var(--brand-color-c);
                 opacity: 0;
                 transition: all 0.5s ease-in-out;
             }

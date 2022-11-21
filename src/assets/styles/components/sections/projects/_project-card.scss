@@ -1,9 +1,8 @@
 .project-card-container {
     display: flex;
-    background-color: var(--brand-bg-glass);
-    backdrop-filter: var(--glass);
-    border: 2px white solid;
-    box-shadow: 0 0 10px white;
+    background-color: var(--brand-color-c);
+    border: 2px var(--brand-color-a) solid;
+    box-shadow: 0 0 10px var(--brand-color-a);
     width: 100%;
 
     .project-card {
@@ -28,6 +27,7 @@
             align-items: center;
             flex-direction: column;
             opacity: 1;
+            padding: 20px 0;
             position: absolute;
             background-color: transparent;
             top: 0;
@@ -44,17 +44,19 @@
 
                 .project-title {
                     font-size: 22px;
+                    font-family: var(--font-a);
                     text-shadow: 0 0 10px var(--brand-color-a);
                 }
 
                 .project-subtitle {
+                    font-family: var(--font-b);
                     margin-top: 5px;
                 }
             }
 
             .project-btns {
                 display: flex;
-                margin-top: 20px;
+                margin-top: auto;
                 
                 .project-github-link, .project-details-btn {
                     display: flex;

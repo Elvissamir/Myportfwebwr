@@ -37,7 +37,7 @@ const ProjectsSection = () => {
         },
         {
             title: 'Myportfwebwr', 
-            subtitle: 'My web portfolio v2 (with React)', 
+            subtitle: 'My portfolio v2 (with React)', 
             frontImage: imagesDir+'myportfwebwr/01.png', 
             images: [imagesDir+'myportfwebwr/01.png', imagesDir+'myportfwebwr/02.png', imagesDir+'myportfwebwr/03.png',], 
             description: `My awesome web portfolio v2 (This time, made with React!). The design and development were done by me, and the theme is based on circuits and technology. 
