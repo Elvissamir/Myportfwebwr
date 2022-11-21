@@ -1,10 +1,11 @@
 .project-details {
     display: flex;
     flex-direction: column;
-    font-family: var(--font);
+    font-family: var(--font-b);
+    line-height: 2;
     color: white;
     width: 100%;
-
+    
     .point {
         display: flex;
         align-items: center;
@@ -12,7 +13,7 @@
         text-shadow: 0 0 10px var(--brand-color-a);
         text-decoration: underline;
     }
-
+    
     .top {
         display: flex;
         flex-direction: column;
@@ -23,12 +24,12 @@
             font-weight: bolder;
             text-shadow: 0 0 10px var(--brand-color-a);
         }
-
+        
         .subtitle {
             color: white;
         }
     }
-
+    
     .description-container {
         display: flex;
         flex-direction: column;
