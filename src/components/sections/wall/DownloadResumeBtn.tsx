@@ -5,7 +5,7 @@ interface DownloadResumeBtnProps {
     lang: Lang
 }
 
-const engResumeUrl = '/files/ELVIS CARRASCO RESUME ENG.pdf'
+const engResumeUrl = '/files/ELVIS CARRASCO RESUME ENG UPD.pdf'
 const spaResumeUrl = '/files/ELVIS CARRASCO RESUME SPA.pdf'
 
 const DownloadResumeBtn = ({ lang }: DownloadResumeBtnProps) => {
