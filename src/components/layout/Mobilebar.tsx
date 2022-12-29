@@ -1,5 +1,6 @@
 import GithubIcon from "../icons/GithubIcon"
 import MobilebarBtn from "./MobilebarBtn"
+import links from '../../core/links'
 
 interface MobilebarProps {
     showMobileMenu: boolean
@@ -16,10 +17,10 @@ const Mobilebar = ({ showMobileMenu, toggleMobileMenu }: MobilebarProps) => {
                         toggleMobileMenu={toggleMobileMenu} />
                 </div>
                 <div className="center-line"></div>
-                <div className="right">
+                <a className="right" href={links.github} rel="noreferrer" target='_blank'>
                     <p className="text">My Github</p>
                     <GithubIcon />
-                </div>
+                </a>
             </div>
         </div>
     )
